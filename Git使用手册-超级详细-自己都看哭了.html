@@ -1,0 +1,1149 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="💕一个二次元的个人博客网站💕">
+  <meta name="author" content="CodeAnime">
+  <meta name="keywords" content="个人博客">
+  
+  <title>Git使用手册--超级详细,自己都看哭了 - 不荒废现在,不畏惧未来🌸</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      
+        
+          
+          
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.min.css" />
+      
+      
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
+      
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/diy/gundongtiao.css">
+<link rel="stylesheet" href="/css/diy/indeximg-hover.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"codeanime.cc","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":120,"cursorChar":"🍬","loop":true},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/lamu.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"efUGH3iRCQVYfCMKsbvjfxyw-gzGzoHsz","app_key":"MWcG5RaewKo24maCvfnwCjBQ","server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="不荒废现在,不畏惧未来🌸" type="application/atom+xml">
+</head>
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>🌸さくら荘 の 一只二刺猿</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/bangumis/">
+                <i class="iconfont icon-bilibili-fill"></i>
+                追番
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://api.codeanime.cn/">
+                <i class="iconfont icon-bug"></i>
+                API
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-books"></i>
+                文档
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">
+                    
+                    主题博客
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">
+                    
+                    配置指南
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/icon/">
+                    
+                    图标用法
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">
+                    
+                    主题 GitHub 仓库
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://www.dmoe.cc/random.php') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Git使用手册--超级详细,自己都看哭了">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      CodeAnime
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-09-24 19:12" pubdate>
+        2021年9月24日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      4.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      57
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Git使用手册--超级详细,自己都看哭了</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年10月4日 早上
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h2 id="Git"><a href="#Git" class="headerlink" title="Git"></a>Git</h2><h3 id="一-git简介"><a href="#一-git简介" class="headerlink" title="一.git简介"></a>一.git简介</h3><p>Git是目前世界上最先进的分布式版本控制系统（没有之一）。</p>
+<p><strong>关于版本控制系统</strong>:</p>
+<p>版本控制是一种记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统.有了它你就可以将选定的文件回溯到之前的状态，甚至将整个项目都回退到过去某个时间点的状态，你可以比较文件的变化细节，查出最后是谁修改了哪个地方，从而找出导致怪异问题出现的原因，又是谁在何时报告了某个功能缺陷等等</p>
+<h3 id="二-安装"><a href="#二-安装" class="headerlink" title="二.安装"></a>二.安装</h3><p>在使用Git前我们需要先安装 Git。Git 目前支持 Linux/Unix、Solaris、Mac和 Windows 平台上运行。</p>
+<p>Git 各平台安装包下载地址为：<a target="_blank" rel="noopener" href="http://git-scm.com/downloads">http://git-scm.com/downloads</a></p>
+<p><strong>Linux 平台上安装</strong></p>
+<p>Git 的工作需要调用 curl，zlib，openssl，expat，libiconv 等库的代码，所以需要先安装这些依赖工具。</p>
+<p>在有 yum 的系统上（比如 Fedora）或者有 apt-get 的系统上（比如 Debian 体系），可以用下面的命令安装：</p>
+<p>各 Linux 系统可以使用其安装包管理工具（apt-get、yum 等）进行安装：</p>
+<p><strong>Debian/Ubuntu</strong></p>
+<p>Debian/Ubuntu Git 安装命令为：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">apt-get</span> <span class="token function">install</span> libcurl4-gnutls-dev libexpat1-dev gettext <span class="token punctuation">\</span>
+  libz-dev libssl-dev
+
+$ <span class="token function">apt-get</span> <span class="token function">install</span> <span class="token function">git</span>
+
+$ <span class="token function">git</span> --version
+<span class="token function">git</span> version <span class="token number">1.8</span>.1.2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p><strong>Centos/RedHat</strong></p>
+<p>如果你使用的系统是 Centos/RedHat 安装命令为：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ yum <span class="token function">install</span> curl-devel expat-devel gettext-devel <span class="token punctuation">\</span>
+  openssl-devel zlib-devel
+
+$ yum -y <span class="token function">install</span> git-core
+
+$ <span class="token function">git</span> --version
+<span class="token function">git</span> version <span class="token number">1.7</span>.1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p><strong>源码安装</strong></p>
+<p>我们也可以在官网下载源码包来安装，最新源码包下载地址：<a target="_blank" rel="noopener" href="https://git-scm.com/download">https://git-scm.com/download</a></p>
+<p>安装指定系统的依赖包：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># Centos/RedHat</span>
+$ yum <span class="token function">install</span> curl-devel expat-devel gettext-devel <span class="token punctuation">\</span>
+  openssl-devel zlib-devel
+
+<span class="token comment"># Debian/Ubuntu</span>
+$ <span class="token function">apt-get</span> <span class="token function">install</span> libcurl4-gnutls-dev libexpat1-dev gettext <span class="token punctuation">\</span>
+  libz-dev libssl-dev<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>解压安装下载的源码包：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">tar</span> -zxf git-1.7.2.2.tar.gz
+$ <span class="token builtin class-name">cd</span> git-1.7.2.2
+$ <span class="token function">make</span> <span class="token assign-left variable">prefix</span><span class="token operator">=</span>/usr/local all
+$ <span class="token function">sudo</span> <span class="token function">make</span> <span class="token assign-left variable">prefix</span><span class="token operator">=</span>/usr/local <span class="token function">install</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<hr>
+<p><strong>Windows 平台上安装</strong></p>
+<p>在 Windows 平台上安装 Git 同样轻松，有个叫做 msysGit 的项目提供了安装包，可以到 GitHub 的页面上下载 exe 安装文件并运行：</p>
+<p>安装包下载地址：<a target="_blank" rel="noopener" href="https://gitforwindows.org/">https://gitforwindows.org/</a></p>
+<p>官网慢，可以用国内的镜像：<a target="_blank" rel="noopener" href="https://npm.taobao.org/mirrors/git-for-windows/%E3%80%82">https://npm.taobao.org/mirrors/git-for-windows/。</a></p>
+<h3 id="三-创建版本库"><a href="#三-创建版本库" class="headerlink" title="三.创建版本库"></a>三.创建版本库</h3><p>我们先来理解下 Git 工作区、暂存区和版本库概念：</p>
+<ul>
+<li><strong>工作区：</strong>就是你在电脑里能看到的目录。</li>
+<li><strong>暂存区：</strong>英文叫 stage 或 index。一般存放在 <strong><code>.git</code></strong> 目录下的 index 文件（.git/index）中，所以我们把暂存区有时也叫作索引（index）。</li>
+<li><strong>版本库：</strong>工作区有一个隐藏目录 **<code>.git</code><strong>，这个不算工作区，而是 Git 的版本库。版本库又名仓库，英文名</strong><code>repository</code>**，你可以简单理解成一个目录，这个目录里面的所有文件都可以被Git管理起来，每个文件的修改、删除，Git都能跟踪，以便任何时刻都可以追踪历史，或者在将来某个时刻可以“还原”。</li>
+</ul>
+<h4 id="1-创建一个目录作或者选择一个有内容的目录为工作区"><a href="#1-创建一个目录作或者选择一个有内容的目录为工作区" class="headerlink" title="1.创建一个目录作或者选择一个有内容的目录为工作区"></a>1.创建一个目录作或者选择一个有内容的目录为工作区</h4><h4 id="2-使用当前目录作为Git仓库，我们只需使它初始化"><a href="#2-使用当前目录作为Git仓库，我们只需使它初始化" class="headerlink" title="2.使用当前目录作为Git仓库，我们只需使它初始化"></a>2.使用当前目录作为Git仓库，我们只需使它初始化</h4><div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>Git 使用 <strong><code>git init</code></strong> 命令来初始化一个 Git 仓库，Git 的很多命令都需要在 Git 的仓库中运行，所以 <strong><code>git init</code></strong> 是使用 Git 的第一个命令。</p>
+<p>在执行完成 <strong><code>git init</code></strong> 命令后，Git 仓库会生成一个 .git 目录，该目录包含了资源的所有元数据，其他的项目目录保持不变。</p>
+<p><strong>补充:</strong></p>
+<p>使用指定目录作为Git仓库</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> init newtest<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>初始化后，会在 newtest 目录下会出现一个名为 .git 的目录，所有 Git 需要的数据和资源都存放在这个目录中。</p>
+<p><img src="https://i.loli.net/2021/09/24/GzsMieV7OfAglxq.png" srcset="/img/lamu.gif" lazyload alt="image-20210924093150441"></p>
+<h4 id="3-把文件添加到版本库"><a href="#3-把文件添加到版本库" class="headerlink" title="3.把文件添加到版本库"></a>3.把文件添加到版本库</h4><p>这里我在工作区里添加一个文本文件作为演示:</p>
+<p><img src="https://i.loli.net/2021/09/24/d8rfViSX2K4nzHk.png" srcset="/img/lamu.gif" lazyload alt="image-20210924092324274"></p>
+<p><strong>一个文件放到Git仓库只要三步( 把大象当冰箱 ):</strong></p>
+<p><strong>(1)把文件放到工作区或者新建文件,保证文件是在工作区目录下或子目录下</strong></p>
+<p><strong>(2)用<code>git add </code>命令把文件添加到暂存区 : <code>git add read.txt</code></strong></p>
+<p><img src="https://i.loli.net/2021/09/24/Ezqnsul158jQWH9.png" srcset="/img/lamu.gif" lazyload alt="image-20210924093310094"></p>
+<p><strong>(3)用<code>git commit</code>命令用把文件提交到仓库</strong></p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> commit -m <span class="token string">"第一次提交"</span>  <span class="token comment"># -m后面输入的是本次提交的说明(message)</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/ArI6qVKhEasSRMJ.png" srcset="/img/lamu.gif" lazyload alt="image-20210924094110000"></p>
+<p>提交后发现和<code>git add</code>一样没有任何反应,<strong>在linux中没有反应是最好的反应</strong></p>
+<h3 id="四-版本回退"><a href="#四-版本回退" class="headerlink" title="四.版本回退"></a>四.版本回退</h3><p><code>git log</code>命令:查看历史提交记录</p>
+<p>假如说我修改read.txt文件,添加一行文字<code>测试修改</code></p>
+<p><img src="https://i.loli.net/2021/09/24/PhC7K29MRxcvIDw.png" srcset="/img/lamu.gif" lazyload alt="image-20210924095910028"></p>
+<p>使用<code>git log</code>命令查看提交记录</p>
+<p><img src="https://i.loli.net/2021/09/24/Mgi6RuYBdLbr5Sc.png" srcset="/img/lamu.gif" lazyload alt="image-20210924100229414"></p>
+<p>如果提交次数很多,可以使用<code>git log --pretty=oneline</code>查看提交记录</p>
+<p><img src="https://i.loli.net/2021/09/24/7CTZrpx4OMNWhVk.png" srcset="/img/lamu.gif" lazyload alt="image-20210924100811619"></p>
+<p><strong>说明:</strong></p>
+<p>提交记录里面那一大串字符``(20b123….)<code>是 </code>commit id`（版本号）</p>
+<p><strong>版本回退:</strong></p>
+<p>使用命令<code>git reset</code>回退版本:</p>
+<p><strong>说明:</strong></p>
+<p>在Git中，用<code>HEAD</code>表示当前版本，也就是最新的提交<code>20b123....</code>，上一个版本就是<code>HEAD^</code>，上上一个版本就是<code>HEAD^^</code>，当然往上100个版本写100个<code>^</code>比较容易数不过来，所以写成<code>HEAD~100</code></p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> reset --hard HEAD^<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/HUtdRrWx3hEiJOA.png" srcset="/img/lamu.gif" lazyload alt="image-20210924101641245"></p>
+<p>打开之前添加的文字修改,发现回退到第一次提交的版本</p>
+<p><img src="https://i.loli.net/2021/09/24/vAb8jSFtNeklhq4.png" srcset="/img/lamu.gif" lazyload alt="image-20210924101455734"></p>
+<p>用命令<code>git log</code>查看版本历史,我们如果想再回到最新版本(添加文字修改过的那个版本)怎么办:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> reset --hard 20b123<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>id没必要写全,前几位就可以了，Git会自动去找</p>
+<p><img src="https://i.loli.net/2021/09/24/i5GzItWYOys3Qlp.png" srcset="/img/lamu.gif" lazyload alt="image-20210924102240066"></p>
+<p>问题来了,假如说,我关机了,或者关掉git了,ID不知道怎么办.在git中,总有后悔药可以吃:</p>
+<p>使用命令<code>git reflog</code>查看命令历史</p>
+<p><img src="https://i.loli.net/2021/09/24/nPegjzyqcDI2ETB.png" srcset="/img/lamu.gif" lazyload alt="image-20210924102704700"></p>
+<p>知道了id不是想怎么玩就怎么玩!</p>
+<h3 id="五-查看仓库当前的状态"><a href="#五-查看仓库当前的状态" class="headerlink" title="五.查看仓库当前的状态"></a>五.查看仓库当前的状态</h3><p>命令<code>git status</code>查看仓库当前的状态，显示有变更的文件</p>
+<p>我在工作区中再添加一个文件</p>
+<p><img src="https://i.loli.net/2021/09/24/DgY4MRISbotpeqZ.png" srcset="/img/lamu.gif" lazyload alt="image-20210924103641139"></p>
+<p>使用命令:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> status<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/paHzM5Ly4CcATuR.png" srcset="/img/lamu.gif" lazyload alt="image-20210924103754374"></p>
+<p>me.txt文件没有被添加,所以它的状态是<code>Untracked</code>。</p>
+<p>那现在来添加一下,再查看:</p>
+<p><img src="https://i.loli.net/2021/09/24/XoifkPWjz6OZ72A.png" srcset="/img/lamu.gif" lazyload alt="image-20210924104244925"></p>
+<p>提交后，如果你又没有对工作区做任何修改，那么工作区就是“干净”的(working tree clean)</p>
+<h3 id="六-添加远程仓库–Github"><a href="#六-添加远程仓库–Github" class="headerlink" title="六.添加远程仓库–Github"></a>六.添加远程仓库–Github</h3><p>首先你需要你个Github账户,再者你要创建一个仓库,注册账户就不说了,闭上眼注册就行了,我们来说一下创建仓库吧</p>
+<p><img src="https://i.loli.net/2021/09/24/97krfZpgDw1uKzT.png" srcset="/img/lamu.gif" lazyload alt="image-20210924105758719"></p>
+<p>接着确定就行了….</p>
+<p>创建好的效果如图:</p>
+<p><img src="https://i.loli.net/2021/09/24/cGzkvmtJ2SPZFj3.png" srcset="/img/lamu.gif" lazyload alt="image-20210924105931868"></p>
+<p>接着,我们从这里找到github仓库的地址</p>
+<p><img src="https://i.loli.net/2021/09/24/rW9mhcCYEsjwK3y.png" srcset="/img/lamu.gif" lazyload alt="image-20210924110355453"></p>
+<p>执行命令:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> remote <span class="token function">add</span> origin https://github.com/code-anime/test.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>添加后，远程库的名字就是<code>origin</code>，这是Git默认的叫法，也可以改成别的</p>
+<p>下一步，就可以把本地库的所有内容推送到远程库上：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>执行完毕后我们可以看到github上远程仓库内容和本地的内容一样.</p>
+<p><img src="https://i.loli.net/2021/09/24/BxWEVuDTekNQ5iM.png" srcset="/img/lamu.gif" lazyload alt="image-20210924152157440"></p>
+<p><strong><font color="#dd0000">注意：</font></strong> </p>
+<p>执行途中可能遇到的问题:</p>
+<p>(1)SSH错误</p>
+<p>由于你的本地 Git 仓库和 GitHub 仓库之间的传输是通过SSH加密的，所以我们需要配置验证信息：</p>
+<p>使用以下命令生成 SSH Key：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">$ ssh-keygen -t rsa -C &quot;youremail@example.com&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>后面的 <strong><a href="mailto:&#121;&#111;&#x75;&#x72;&#95;&#101;&#109;&#x61;&#105;&#x6c;&#x40;&#x79;&#111;&#x75;&#x72;&#101;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;">&#121;&#111;&#x75;&#x72;&#95;&#101;&#109;&#x61;&#105;&#x6c;&#x40;&#x79;&#111;&#x75;&#x72;&#101;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#x6f;&#x6d;</a></strong> 改为你在 Github 上注册的邮箱，之后会要求确认路径和输入密码，我们这使用默认的一路回车就行。</p>
+<p>成功的话会在 <strong>~/</strong> 下生成 <strong>.ssh</strong> 文件夹，进去，打开 <strong>id_rsa.pub</strong>，复制里面的 <strong>key</strong>。</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ ssh-keygen -t rsa -C <span class="token string">"2272166487@qq.com"</span>
+Generating public/private rsa key pair.
+Enter <span class="token function">file</span> <span class="token keyword">in</span> <span class="token function">which</span> to save the key <span class="token punctuation">(</span>/Users/tianqixin/.ssh/id_rsa<span class="token punctuation">)</span>: 
+Enter passphrase <span class="token punctuation">(</span>empty <span class="token keyword">for</span> no passphrase<span class="token punctuation">)</span>:    <span class="token comment"># 直接回车</span>
+Enter same passphrase again:                   <span class="token comment"># 直接回车</span>
+Your identification has been saved <span class="token keyword">in</span> /Users/tianqixin/.ssh/id_rsa.
+Your public key has been saved <span class="token keyword">in</span> /Users/tianqixin/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:MDKVidPTDXIQoJwoqUmI4LBAsg5XByBlrOEzkxrwARI <span class="token number">429240967</span>@qq.com
+The key's randomart image is:
++---<span class="token punctuation">[</span>RSA <span class="token number">3072</span><span class="token punctuation">]</span>----+
+<span class="token operator">|</span>E*+.<span class="token operator">+=</span>**oo       <span class="token operator">|</span>
+<span class="token operator">|</span>%Oo+oo<span class="token operator">=</span>o. <span class="token builtin class-name">.</span>      <span class="token operator">|</span>
+<span class="token operator">|</span>%**.o.o.         <span class="token operator">|</span>
+<span class="token operator">|</span>OO.  o o         <span class="token operator">|</span>
+<span class="token operator">|</span>+o+     S        <span class="token operator">|</span>
+<span class="token operator">|</span><span class="token builtin class-name">.</span>                <span class="token operator">|</span>
+<span class="token operator">|</span>                 <span class="token operator">|</span>
+<span class="token operator">|</span>                 <span class="token operator">|</span>
+<span class="token operator">|</span>                 <span class="token operator">|</span>
++----<span class="token punctuation">[</span>SHA256<span class="token punctuation">]</span>-----+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>回到 github 上，进入 Account =&gt; Settings（账户配置）。</p>
+<p><img src="https://i.loli.net/2021/09/24/mUKJewORHIbrXC9.jpg" srcset="/img/lamu.gif" lazyload alt="48840BF0-992F-4CCC-A388-15CB74819D88"></p>
+<p>左边选择 <strong>SSH and GPG keys</strong>，然后点击 <strong>New SSH key</strong> 按钮,title 设置标题，可以随便填，粘贴在你电脑上生成的 key。</p>
+<p><img src="https://i.loli.net/2021/09/24/QGJrjOvehsnxfXo.jpg" srcset="/img/lamu.gif" lazyload alt="img"></p>
+<p><img src="https://i.loli.net/2021/09/24/K2t7mb6OxH3qpCh.jpg" srcset="/img/lamu.gif" lazyload alt="img"></p>
+<p>添加成功后界面如下所示</p>
+<p><img src="https://i.loli.net/2021/09/24/MyavhetVYEXijbP.jpg" srcset="/img/lamu.gif" lazyload alt="img"></p>
+<p>为了验证是否成功，输入以下命令：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">ssh</span> -T git@github.com
+The authenticity of <span class="token function">host</span> <span class="token string">'github.com (52.74.223.119)'</span> can<span class="token string">'t be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes                   # 输入 yes
+Warning: Permanently added '</span>github.com,52.74.223.119<span class="token string">' (RSA) to the list of known hosts.
+Hi tianqixin! You'</span>ve successfully authenticated, but GitHub does not provide shell access. <span class="token comment"># 成功信息</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>以下命令说明我们已成功连上 Github。</p>
+<p>(2)下面这个错误</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">warning: redirecting to https://github.com/code-anime/test.git/
+To http://github.com/code-anime/test.git
+ <span class="token operator">!</span> <span class="token punctuation">[</span>rejected<span class="token punctuation">]</span>        master -<span class="token operator">></span> master <span class="token punctuation">(</span>non-fast-forward<span class="token punctuation">)</span>
+error: failed to push some refs to <span class="token string">'http://github.com/code-anime/test.git'</span>
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes <span class="token punctuation">(</span>e.g.
+hint: <span class="token string">'git pull ...'</span><span class="token punctuation">)</span> before pushing again.
+hint: See the <span class="token string">'Note about fast-forwards'</span> <span class="token keyword">in</span> <span class="token string">'git push --help'</span> <span class="token keyword">for</span> details.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>解决:</p>
+<p>执行命令:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> pull --rebase origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/LknDerGX4qdI2ap.png" srcset="/img/lamu.gif" lazyload alt="image-20210924154216282"></p>
+<p>接着再试一下:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://cdn.jsdelivr.net/gh/code-anime/autopiccdn@9719c6eb6cfb88346882b088061cddc4974515e0/2021/09/24/ba1791bfe98c3873cb9e0bdd1e5bcaa8.png" srcset="/img/lamu.gif" lazyload></p>
+<h3 id="七-移除远程仓库"><a href="#七-移除远程仓库" class="headerlink" title="七.移除远程仓库"></a>七.移除远程仓库</h3><p>如果添加的时候地址写错了，或者就是想删除远程库,可以用<code>git remote rm &lt;name&gt;</code></p>
+<p>建议执行该命令之前执行<code>git remote -v</code>查看远程库信息</p>
+<p><img src="https://i.loli.net/2021/09/24/dVLKNexQnTIi5f2.png" srcset="/img/lamu.gif" lazyload alt="image-20210924154708648"></p>
+<p>然后根据名字删除,比如删除<code>origin</code></p>
+<p><img src="https://cdn.jsdelivr.net/gh/code-anime/autopiccdn@3df4227194231e11cf4200afa9670068803525c1/2021/09/24/9b913cac5dd27f88ebb15936326ee1a0.png" srcset="/img/lamu.gif" lazyload></p>
+<p>此处的“删除”其实是解除了本地和远程的绑定关系，并不是物理上删除了远程库。远程库本身并没有任何改动。要真正删除远程库，需要登录到GitHub，在后台页面找到删除按钮再删除。</p>
+<p>查看<code>.git</code>目录下的config文件,发现原来的这条没有了:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token punctuation">[</span>remote <span class="token string">"origin"</span><span class="token punctuation">]</span>
+	url <span class="token operator">=</span> https://github.com/code-anime/test.git
+	fetch <span class="token operator">=</span> +refs/heads/*:refs/remotes/origin/*<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<p>如果想重新建立与远程库之间的连接:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> remote <span class="token function">add</span> origin <span class="token function">git</span> remote <span class="token function">add</span> origin https://github.com/code-anime/test.git
+<span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">"第三次提交"</span>
+<span class="token function">git</span> push -u origin master<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/dLjiaK6q1wZhzfS.png" srcset="/img/lamu.gif" lazyload></p>
+<p><img src="https://i.loli.net/2021/09/24/Zuxg71DWNklbrp9.png" srcset="/img/lamu.gif" lazyload></p>
+<h3 id="八-从远程库克隆"><a href="#八-从远程库克隆" class="headerlink" title="八.从远程库克隆"></a>八.从远程库克隆</h3><p>上面所讲到的是先有本地库,后有远程库,如何关联远程库.</p>
+<p>现在,我们来说先有远程库,再有本地库(从远程库克隆),这里我把本地test工作区删除,github上面的test仓库也删除了.从零开始演示.毕竟是test</p>
+<p>接着就是创建github仓库,这里不做赘述了.</p>
+<p><img src="https://i.loli.net/2021/09/24/r8QPfFkoRNlhZ7n.png" srcset="/img/lamu.gif" lazyload alt="image-20210924161133414"></p>
+<p>我在桌面新建了一个文件夹<code>repos</code>,没别的意思就是<code>repository</code>的简写</p>
+<p><img src="https://i.loli.net/2021/09/24/nR69k4NqUBSKLY8.png" srcset="/img/lamu.gif" lazyload alt="image-20210924161331081"></p>
+<p>然后打开文件夹 , 然后<code>git bash here</code></p>
+<p>执行命令:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone git@github.com:code-anime/test.git<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>上面<code>git clone</code>后跟的是仓库地址.</p>
+<p><img src="https://i.loli.net/2021/09/24/tkf2KZvTiswxmJB.png" srcset="/img/lamu.gif" lazyload alt="image-20210924161716540"></p>
+<p>执行命令后,会发现<code>repos</code>目录里面多了一个test文件夹(就是克隆github上的test仓库)</p>
+<p><img src="https://i.loli.net/2021/09/24/spoND9ZJcQ65VKS.png" srcset="/img/lamu.gif" lazyload alt="image-20210924161948468"></p>
+<p>打开test文件夹后我们会发现,和远程仓库内容是一样的</p>
+<p>注意:</p>
+<p>GitHub给出的地址不止一个，还可以用<code>https://github.com/code-anime/test.git</code>这样的地址。实际上，Git支持多种协议，默认的<code>git://</code>使用ssh，但也可以使用<code>https</code>等其他协议。</p>
+<p>使用<code>https</code>除了速度慢以外，还有个最大的麻烦是每次推送都必须输入口令，但是在某些只开放http端口的公司内部就无法使用<code>ssh</code>协议而只能用<code>https</code></p>
+<h3 id="九-分支管理"><a href="#九-分支管理" class="headerlink" title="九.分支管理"></a>九.分支管理</h3><p>首先,列出分支:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> branch<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/lUL2XWNVJqO7Gju.png" srcset="/img/lamu.gif" lazyload alt="image-20210924163643370"></p>
+<p>意思就是，我们有一个叫做 <strong>master</strong> 的分支，并且该分支是当前分支.当你执行 <strong>git init</strong> 的时候，默认情况下 Git 就会为你创建 <strong>master</strong> 分支。</p>
+<p>如果我们要手动创建一个分支。执行 <strong>git branch (branchname)</strong> 即可。</p>
+<p>创建一个<code>testing</code>分支:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> branch testing<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/wNebtKF1gzAHXV4.png" srcset="/img/lamu.gif" lazyload alt="image-20210924163759356"></p>
+<p>现在我们可以看到，有了一个新分支 <strong>testing</strong>。</p>
+<p>当你以此方式在上次提交更新之后创建了新分支，如果后来又有更新提交， 然后又切换到了 <strong>testing</strong> 分支，Git 将还原你的工作目录到你创建分支时候的样子。</p>
+<p>我们切换到<code>testing</code>分支进行实验:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout testing<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/SRsQ38JOdnBPqjG.png" srcset="/img/lamu.gif" lazyload alt="image-20210924164433951"></p>
+<p>接下来我们将演示如何切换分支，我们用<code>git checkout (branch) </code> 切换到我们要修改的分支。</p>
+<p>我们在<code>testing</code>分支上正常提交，比如创建文件<code>readme.txt</code>,内容写上:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">测试testing分支<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>然后提交:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">"添加文字测试testing分支"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/7yPbvU3qRaFI2Jk.png" srcset="/img/lamu.gif" lazyload alt="image-20210924165518165"></p>
+<p>现在我们切换会<code>master</code>分支后,再查看<code>readme.txt</code>文件,文件不见了!</p>
+<p>!<img src="https://i.loli.net/2021/09/24/tpIsqRHXUASBk6E.png" srcset="/img/lamu.gif" lazyload alt="image-20210924165412661"></p>
+<p>当我们满怀怀疑的时候我们切换回来<code>testing</code>分支,发现还在</p>
+<p><img src="https://i.loli.net/2021/09/24/VaKfgYxIbQZwj8e.png" srcset="/img/lamu.gif" lazyload alt="image-20210924165631400"></p>
+<p>因为那个提交是在<code>testing</code>分支上，而<code>master</code>分支此刻的提交点并没有变：</p>
+<p>现在，我们把<code>testing</code>分支的工作成果合并到<code>master</code>分支上：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> checkout master
+<span class="token function">git</span> merge testing<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/IWJSRxPGCOpfqjE.png" srcset="/img/lamu.gif" lazyload alt="image-20210924165843223"></p>
+<p>合并完成后，就可以放心地删除<code>testing</code>分支了：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> branch -d testing<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/XUvorehsZ6pkFQf.png" srcset="/img/lamu.gif" lazyload alt="image-20210924170024645"></p>
+<h3 id="十-合并冲突"><a href="#十-合并冲突" class="headerlink" title="十.合并冲突"></a>十.合并冲突</h3><p>合并并不仅仅是简单的文件添加、移除的操作，Git 也会合并修改。</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> branch
+* master
+<span class="token function">cat</span> readme.txt
+测试testing分支<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>现在我们只有一条主分支<code>master</code>且<code>readme.txt</code>文件中只有<code>测试testing分支</code>这一段文字.</p>
+<p>首先,我们创建一个<code>test1</code>分支, 切换过去，我们将<code>readme.txt</code>文件添加<code>123</code>三个数字</p>
+<p><img src="https://i.loli.net/2021/09/24/WYxC2al8NEcJroe.png" srcset="/img/lamu.gif" lazyload alt="image-20210924171453362"></p>
+<p>将修改的内容提交到 change_site 分支中。 现在，假如切换回 master 分支我们可以看内容恢复到我们修改前的内容,没有<code>123</code></p>
+<p><img src="https://i.loli.net/2021/09/24/EsmQdOgFalr3PIx.png" srcset="/img/lamu.gif" lazyload alt="image-20210924172006902"></p>
+<p>我们再次修改<code> readme.txt</code>文件,添加数字<code>456</code></p>
+<p><img src="https://i.loli.net/2021/09/24/tkKfzLduywbamsQ.png" srcset="/img/lamu.gif" lazyload alt="image-20210924172154332"></p>
+<p>现在这些改变已经记录到我的 <code>master</code>分支了。接下来我们将 <code>test1</code>分支合并过来。</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> merge test1
+Auto-merging readme.txt
+CONFLICT <span class="token punctuation">(</span>content<span class="token punctuation">)</span>: Merge conflict <span class="token keyword">in</span> readme.txt
+Automatic merge failed<span class="token punctuation">;</span> fix conflicts and <span class="token keyword">then</span> commit the result.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>打开文件,看见冲突内容</p>
+<p><img src="https://i.loli.net/2021/09/24/XQYtm57qlfAwaZM.png" srcset="/img/lamu.gif" lazyload alt="image-20210924172413734"></p>
+<p>我们将前一个分支合并到 master 分支，一个合并冲突就出现了，接下来我们需要手动去修改它。</p>
+<p>Git用<code>&lt;&lt;&lt;&lt;&lt;&lt;&lt;</code>，<code>=======</code>，<code>&gt;&gt;&gt;&gt;&gt;&gt;&gt;</code>标记出不同分支的内容，我们修改如下后保存：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token number">123456</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>再提交:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> <span class="token function">add</span> <span class="token builtin class-name">.</span>
+<span class="token function">git</span> commit -m <span class="token string">"分支冲突解决"</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/8ZKXpn4GNM925Ye.png" srcset="/img/lamu.gif" lazyload alt="image-20210924173037796"></p>
+<p>用带参数的<code>git log</code>也可以看到分支的合并情况：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> log --graph --pretty<span class="token operator">=</span>oneline --abbrev-commit<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/l5Ohxr1B4RQzyjb.png" srcset="/img/lamu.gif" lazyload alt="image-20210924173113409"></p>
+<p>最后,删除分支:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> branch -d test1<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/2uxSKVPwDOha5eW.png" srcset="/img/lamu.gif" lazyload alt="image-20210924173258947"></p>
+<h3 id="十一-标签管理"><a href="#十一-标签管理" class="headerlink" title="十一.标签管理"></a>十一.标签管理</h3><p>如果你达到一个重要的阶段，并希望永远记住那个特别的提交快照，你可以使用 git tag 给它打上标签。</p>
+<p>比如说，我们想为我们的 <code>test</code>项目发布一个<code>1.0</code>版本。 我们可以用 <code>git tag V1.0 </code>命令给最新一次提交打上（HEAD）<code>v1.0</code>的标签。</p>
+<p>首先，切换到需要打标签的分支上：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> tag v1.0 <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>当你执行 git tag -a 命令时，Git 会打开你的编辑器，让你写一句标签注解，就像你给提交写注解一样。</p>
+<p>可以用命令<code>git tag</code>查看所有标签：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> tag
+v1.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<p>默认标签是打在最新提交的commit上的。有时候，如果忘了打标签，比如，本该在昨天打的tag没打怎么办?</p>
+<p>方法是找到历史提交的commit id，然后打上就可以了：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> log --pretty<span class="token operator">=</span>oneline --abbrev-commit<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/LYaSbQeuRsirnCz.png" srcset="/img/lamu.gif" lazyload alt="image-20210924183517132"></p>
+<p>比方说要对<code>添加456三个数组</code>这次提交打标签，它对应的commit id是<code>fe6c8d7</code>，敲入命令：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> tag v0.9 fe6c8d7<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>再用命令<code>git tag</code>查看标签：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> tag
+v0.9
+v1.0<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<p>注意，标签不是按时间顺序列出，而是按字母排序的。可以用<code>git show &lt;tagname&gt;</code>查看标签信息：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> show v0.9<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/NCEZIDVSQynKYOJ.png" srcset="/img/lamu.gif" lazyload alt="image-20210924183926673"></p>
+<p>可以看到，<code>v0.9</code>确实打在<code>add 添加456三个数字</code>这次提交上。</p>
+<p>还可以创建带有说明的标签，用<code>-a</code>指定标签名，<code>-m</code>指定说明文字：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> tag -a v0.6 -m <span class="token string">"version 0.6 released"</span> 1094adb<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>用命令<code>git show &lt;tagname&gt;</code>可以看到说明文字：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> show v0.6<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/GyxXfu7t9iow5gT.png" srcset="/img/lamu.gif" lazyload alt="image-20210924184645266"></p>
+<p>用命令<code>git tag -d &lt;tagname&gt;</code>删除标签</p>
+<p>因为创建的标签都只存储在本地，不会自动推送到远程。所以，打错的标签可以在本地安全删除。</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> tag -d v0.6<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/RSpi8oOdavJQUBN.png" srcset="/img/lamu.gif" lazyload alt="image-20210924184827587"></p>
+<p>如果要推送某个标签到远程，使用命令<code>git push origin &lt;tagname&gt;</code>：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> push origin v1.0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/mb6UOpI3hTjlGAM.png" srcset="/img/lamu.gif" lazyload alt="image-20210924185208955"></p>
+<p><img src="https://i.loli.net/2021/09/24/nIaSqFB65Pw971t.png" srcset="/img/lamu.gif" lazyload alt="image-20210924185236112"></p>
+<p>或者，一次性推送全部尚未推送到远程的本地标签：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> push origin --tags<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/sOih7PAWdLtrqVJ.png" srcset="/img/lamu.gif" lazyload alt="image-20210924185304118"></p>
+<p><img src="https://i.loli.net/2021/09/24/KXUV4xbo8zkDuI7.png" srcset="/img/lamu.gif" lazyload alt="image-20210924185326118"></p>
+<p>如果标签已经推送到远程，要删除远程标签就麻烦一点，先从本地删除：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> tag -d v1.0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>然后，从远程删除。删除命令也是push，但是格式如下：</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ <span class="token function">git</span> push origin :refs/tags/v1.0<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>要看看是否真的从远程库删除了标签，可以登陆GitHub查看。</p>
+<p><img src="https://i.loli.net/2021/09/24/MJ6AewT32zLoucq.png" srcset="/img/lamu.gif" lazyload alt="image-20210924185520588"></p>
+<h3 id="十二-Gitee使用-hexo博客部署到gitee"><a href="#十二-Gitee使用-hexo博客部署到gitee" class="headerlink" title="十二.Gitee使用(hexo博客部署到gitee)"></a>十二.Gitee使用(hexo博客部署到gitee)</h3><p><strong>如果你-ssh密钥删除了或者不见了,新建一个ssh密钥</strong></p>
+<p><img src="https://i.loli.net/2021/09/24/97aVKpYMPIQkvTs.png" srcset="/img/lamu.gif" lazyload alt="image-20210924190947679"></p>
+<p>需要重新上传到github</p>
+<p>打开你本地生成的ssh密钥(默认路径是C:\user\你的电脑用户名\ .ssh\id_rua_pub)</p>
+<p><img src="https://i.loli.net/2021/09/24/3Z4CmqWVQyRUXTb.png" srcset="/img/lamu.gif" lazyload alt="image-20210924192156924"></p>
+<p>放到github上:</p>
+<p><img src="https://i.loli.net/2021/09/24/9zxkrNaKU1o6mYS.png" srcset="/img/lamu.gif" lazyload alt="image-20210924192007187"></p>
+<p><img src="https://i.loli.net/2021/09/24/y4oul1Fne5iMZwO.png" srcset="/img/lamu.gif" lazyload alt="image-20210924192454932"></p>
+<p>第一次要密码,输入你创建ssh密钥时候的密码即可.</p>
+<p><img src="https://i.loli.net/2021/09/24/hkrgecJzH6bBmod.png" srcset="/img/lamu.gif" lazyload alt="image-20210924192603706"></p>
+<p>使用Gitee和使用GitHub类似，我们在Gitee上注册账号并登录后，需要先上传自己的SSH公钥。选择右上角用户头像 -&gt; 菜单“修改资料”，然后选择“SSH公钥”，填写一个便于识别的标题，然后把用户主目录下的<code>.ssh/id_rsa.pub</code>文件的内容粘贴进去</p>
+<p><img src="https://i.loli.net/2021/09/24/MSnVrQGkpTLDWm7.png" srcset="/img/lamu.gif" lazyload alt="image-20210924192837739"></p>
+<p>这里我来演示一下在gitee上搭建Hexo博客吧,顺便复习一下:</p>
+<p><strong>准备:</strong></p>
+<p>安装git,nodejs,npm</p>
+<h4 id="1-首先-创建一个工作目录作为我们的博客目录"><a href="#1-首先-创建一个工作目录作为我们的博客目录" class="headerlink" title="(1)首先,创建一个工作目录作为我们的博客目录"></a>(1)首先,创建一个工作目录作为我们的博客目录</h4><p><img src="https://i.loli.net/2021/09/24/o3b98kCDX6TpOB1.png" srcset="/img/lamu.gif" lazyload alt="image-20210924193136037"></p>
+<p>右键<code>git bash here</code></p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo init<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>初始化hexo</p>
+<h4 id="2-下载主题安装-这里以butterfly主题为例"><a href="#2-下载主题安装-这里以butterfly主题为例" class="headerlink" title="(2)下载主题安装,这里以butterfly主题为例"></a>(2)下载主题安装,这里以butterfly主题为例</h4><p>在你的 Hexo 根目目录</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">git</span> clone -b master https://github.com/jerryc127/hexo-theme-butterfly.git themes/butterfly<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>修改 Hexo 根目录下的 <code>_config.yml</code>，把主題为butterfly</p>
+<div class="code-wrapper"><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml"><span class="token key atrule">theme</span><span class="token punctuation">:</span> butterfly<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+
+
+<p><img src="https://i.loli.net/2021/09/24/ahzOPbjBfUSAuei.png" srcset="/img/lamu.gif" lazyload alt="image-20210924193754607"></p>
+<h4 id="3-安装插件"><a href="#3-安装插件" class="headerlink" title="(3)安装插件"></a>(3)安装插件</h4><div class="code-wrapper"><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">npm install hexo<span class="token punctuation">-</span>renderer<span class="token punctuation">-</span>pug hexo<span class="token punctuation">-</span>renderer<span class="token punctuation">-</span>stylus <span class="token punctuation">-</span><span class="token punctuation">-</span>save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>在 hexo 的根目录创建一个文件<code> _config.butterfly.yml</code>，并把主题目录的 <code>_config.yml </code>内容复制到<code>_config.butterfly.yml</code>去。</p>
+<p>注意： 不要把主題目录的<code> _config.yml</code> 刪掉</p>
+<p>以后只需要在<code> _config.butterfly.yml</code>進行配置就行。</p>
+<p>Hexo会自动合并主题中的<code>_config.yml</code>和 <em><code>config.butterfly.yml</code>里的配置，如果存在同名配置，會使用</em><code>config.butterfly.yml</code>的配置，其优先度较高</p>
+<p><img src="https://i.loli.net/2021/09/24/5WfyGHVoibQIkqz.png" srcset="/img/lamu.gif" lazyload alt="image-20210924194202773"></p>
+<p>然后执行:</p>
+<div class="code-wrapper"><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">hexo clean <span class="token important">&amp;&amp;</span> hexo g <span class="token important">&amp;&amp;</span> hexo s<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><img src="https://i.loli.net/2021/09/24/AH1dTlU5kKmGgjF.png" srcset="/img/lamu.gif" lazyload alt="image-20210924194518098"></p>
+<p>在浏览器打开<code>http://localhost:4000</code>:</p>
+<p><img src="https://i.loli.net/2021/09/24/ewNSToGKgUhm9YH.png" srcset="/img/lamu.gif" lazyload alt="image-20210924194553580"></p>
+<p>能打开说明是好的</p>
+<p>(4)部署到gitee</p>
+<p>安装组件:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">npm</span> <span class="token function">install</span> hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>然后:</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo d<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>最后出现下面那个图为正解.</p>
+<p><img src="https://i.loli.net/2021/09/24/v58DQHLalVosbtg.png" srcset="/img/lamu.gif" lazyload alt="image-20210924200326794"></p>
+<p>(5)开启网页服务</p>
+<p><img src="https://i.loli.net/2021/09/24/UavdtkPAQs8cTYM.png" srcset="/img/lamu.gif" lazyload alt="image-20210924200432706"></p>
+<p>直接点击生成即可，就会显示已开启 Gitee Pages 服务，网站地址： xxxxxx</p>
+<p>至此，一个用户名.gitee.io的博客网站部署完成</p>
+<p><img src="https://i.loli.net/2021/09/24/rxFb2oPL7eIw9Xn.png" srcset="/img/lamu.gif" lazyload alt="image-20210924200607307"></p>
+<p><img src="https://i.loli.net/2021/09/24/PmjcKDyRpSnTYzX.png" srcset="/img/lamu.gif" lazyload alt="image-20210924200709360"></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Git/">Git</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Git/">Git</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Github/">Github</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a>
+                    
+                      <a class="hover-with-bg" href="/tags/Gitee/">Gitee</a>
+                    
+                  </div>
+                
+              </div>
+              <p class="note note-warning">
+                <strong>本文作者: </strong><a href="/">CodeAnime</a> <br>
+                <strong>本文链接: </strong><a href="https://codeanime.cc/Git%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C-%E8%B6%85%E7%BA%A7%E8%AF%A6%E7%BB%86-%E8%87%AA%E5%B7%B1%E9%83%BD%E7%9C%8B%E5%93%AD%E4%BA%86.html">https://codeanime.cc/Git%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C-%E8%B6%85%E7%BA%A7%E8%AF%A6%E7%BB%86-%E8%87%AA%E5%B7%B1%E9%83%BD%E7%9C%8B%E5%93%AD%E4%BA%86.html</a> <br>
+                <strong>版权声明: </strong>本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                   </p>
+                   
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/Java-io%E6%B5%81-%E6%8B%B7%E8%B4%9D%E7%9B%AE%E5%BD%95.html">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Java io流---拷贝目录</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/JDBC%E5%B0%8F%E8%AE%B0.html">
+                        <span class="hidden-mobile">JDBC小记</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"efUGH3iRCQVYfCMKsbvjfxyw-gzGzoHsz","appKey":"MWcG5RaewKo24maCvfnwCjBQ","placeholder":"说点什么","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"requiredFields":[]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-x-md">
+    <div class="container custom post-custom mx-auto">
+      <img src="http://p4.music.126.net/P_CPl0PsdbYkDxxA7KC4_A==/109951166172055304.jpg" srcset="/img/lamu.gif" lazyload class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">
+    </div>
+  </div>
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+  
+  <!-- 备案信息 -->
+  <div class="beian">
+    <span>
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+        京ICP证123456号
+      </a>
+    </span>
+    
+      
+        <span>
+          <a
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12345678"
+            rel="nofollow noopener"
+            class="beian-police"
+            target="_blank"
+          >
+            
+              <span style="visibility: hidden; width: 0">|</span>
+              <img src="/img/police_beian.png" srcset="/img/lamu.gif" lazyload alt="police-icon"/>
+            
+            <span>京公网安备12345678号</span>
+          </a>
+        </span>
+      
+    
+  </div>
+
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+    
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/mermaid@8.10.1/dist/mermaid.min.js" ></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({"theme":"default"});
+    }
+  </script>
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  
+<script src="/js/diy/yinghua.js"></script>
+<script src="/js/diy/click_show_text.js"></script>
+<script src="/js/diy/FunnyTitle.js"></script>
+<script src="/js/diy/lihua.js"></script>
+<script src="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/metowolf/Metingjs@1.2/dist/Meting.min.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script>
+  <link defer rel="stylesheet" href="/styles/backgroundize.css" />
+  <!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":170,"height":297.5,"position":"lift","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":1,"opacityOnHover":0.5},"log":false});</script></body>
+</html>

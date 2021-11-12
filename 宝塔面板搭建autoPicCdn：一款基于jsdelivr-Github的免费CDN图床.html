@@ -1,0 +1,761 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="💕一个二次元的个人博客网站💕">
+  <meta name="author" content="CodeAnime">
+  <meta name="keywords" content="个人博客">
+  
+  <title>宝塔面板搭建autoPicCdn：一款基于jsdelivr+Github的免费CDN图床 - 不荒废现在,不畏惧未来🌸</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      
+        
+          
+          
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.min.css" />
+      
+      
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
+      
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/diy/gundongtiao.css">
+<link rel="stylesheet" href="/css/diy/indeximg-hover.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"codeanime.cc","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":120,"cursorChar":"🍬","loop":true},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/lamu.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"efUGH3iRCQVYfCMKsbvjfxyw-gzGzoHsz","app_key":"MWcG5RaewKo24maCvfnwCjBQ","server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="不荒废现在,不畏惧未来🌸" type="application/atom+xml">
+</head>
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>🌸さくら荘 の 一只二刺猿</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/bangumis/">
+                <i class="iconfont icon-bilibili-fill"></i>
+                追番
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://api.codeanime.cn/">
+                <i class="iconfont icon-bug"></i>
+                API
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-books"></i>
+                文档
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">
+                    
+                    主题博客
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">
+                    
+                    配置指南
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/icon/">
+                    
+                    图标用法
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">
+                    
+                    主题 GitHub 仓库
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://www.dmoe.cc/random.php') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="宝塔面板搭建autoPicCdn：一款基于jsdelivr+Github的免费CDN图床">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      CodeAnime
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-08-06 13:22" pubdate>
+        2021年8月6日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      11
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">宝塔面板搭建autoPicCdn：一款基于jsdelivr+Github的免费CDN图床</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年8月7日 晚上
+                
+              </p>
+            
+            <div class="markdown-body">
+              <p>autoPicCdn是白嫖Github的存储空间，通过<a target="_blank" rel="noopener" href="https://www.daniao.org/tag/jsdelivr/">jsdelivr</a>全球加速(含有国内节点)。实现图床加速的目的。</p>
+<p>加速效果非常不错，用站长工具检测，也是一片绿油油，所以用来存储一些静态文件是最合适不过了。</p>
+<hr>
+<p><strong>相关文章</strong>：<a target="_blank" rel="noopener" href="https://www.daniao.org/8594.html">Github+jsDelivr+PicGo 为脚本/图片等静态文件加速的全球CDN</a></p>
+<hr>
+<p><strong>活动：</strong>堡塔（宝塔面板）724运维节，本活动一年就这一次，错过再等一年。组队免费送服务器插件（堡塔APP、堡塔企业级备份、堡塔资源监视器）不拿白不拿，现在就来组队吧！<a target="_blank" rel="noopener" href="https://www.bt.cn/724/a2?group_id=f5dff75d">https://www.bt.cn/724/a2?group_id=f5dff75d</a></p>
+<hr>
+<h4 id="1、简介"><a href="#1、简介" class="headerlink" title="1、简介"></a>1、简介</h4><p>项目：<a target="_blank" rel="noopener" href="https://github.com/yumusb/autoPicCdn">https://github.com/yumusb/autoPicCdn</a></p>
+<h4 id="2、功能"><a href="#2、功能" class="headerlink" title="2、功能"></a>2、功能</h4><p><strong>1）选择Github（推荐）</strong></p>
+<p>白嫖Github的存储空间，通过<a target="_blank" rel="noopener" href="https://www.daniao.org/tag/jsdelivr/">jsdelivr</a>全球加速(含有国内节点)。实现图床的目的。</p>
+<p><strong>2）选择Gitee</strong></p>
+<p>白嫖Gitee的存储空间， 实现图床的目的。存储和访问节点都在国内，请在遵循国内相关法律的前提下使用。 文件在1M以上需要访客登录才能访问。1M以下，相当稳。</p>
+<h4 id="3、准备"><a href="#3、准备" class="headerlink" title="3、准备"></a>3、准备</h4><p>1）宝塔面板最新版本（宝塔服务器面板，一键全能部署及管理，送你3188元礼包，点我领取<a target="_blank" rel="noopener" href="https://www.bt.cn/?invite_code=MV9ub2NxdmI=%EF%BC%89">https://www.bt.cn/?invite_code=MV9ub2NxdmI=）</a></p>
+<p>2）lnmp自己安装好（nginx1.18、mysql5.7、PHP7.3、phpmyadmin4.7）</p>
+<h4 id="4、新建仓库"><a href="#4、新建仓库" class="headerlink" title="4、新建仓库"></a>4、新建仓库</h4><p>这里具体的可以参考，上面的文章推荐！</p>
+<p>1）当然你得先有一个github账号！网址：<a target="_blank" rel="noopener" href="https://github.com/">https://github.com/</a></p>
+<p>2）登录/注册GitHub，新建一个仓库，填写好仓库名，仓库描述，根据需求选择是否为仓库初始化一个README.md描述文件</p>
+<p><a target="_blank" rel="noopener" href="https://www.daniao.org/wp-content/uploads/2020/07/autoPicCdn-1.png"><img src="https://cdn.jsdelivr.net/gh/code-anime/piccdn@main/img/autoPicCdn-1.png" srcset="/img/lamu.gif" lazyload alt="宝塔面板搭建autoPicCdn：一款基于jsdelivr+Github的免费CDN图床"></a></p>
+<p>3）新建好即可，下面我们生成token</p>
+<h4 id="5、生成token"><a href="#5、生成token" class="headerlink" title="5、生成token"></a>5、生成token</h4><p><a target="_blank" rel="noopener" href="https://github.com/settings/tokens">https://github.com/settings/tokens</a> 去这个页面生成一个有写权限的token（repo：Full control of private repositories 和write:packages前打勾）~</p>
+<p><a target="_blank" rel="noopener" href="https://www.daniao.org/wp-content/uploads/2020/07/autoPicCdn-2.png"><img src="https://cdn.jsdelivr.net/gh/code-anime/piccdn@main/img/autoPicCdn-2.png" srcset="/img/lamu.gif" lazyload alt="宝塔面板搭建autoPicCdn：一款基于jsdelivr+Github的免费CDN图床"></a></p>
+<p>得到token后，保存备用。</p>
+<h4 id="6、下载程序以及新建数据库"><a href="#6、下载程序以及新建数据库" class="headerlink" title="6、下载程序以及新建数据库"></a>6、下载程序以及新建数据库</h4><p><strong>1）可以利用宝塔的远程下载来搞定，下载好之后解压，把文件都复制你自己的网站根目录。</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.daniao.org/wp-content/uploads/2020/07/autoPicCdn-3.png"><img src="https://cdn.jsdelivr.net/gh/code-anime/piccdn@main/img/autoPicCdn-3.png" srcset="/img/lamu.gif" lazyload alt="宝塔面板搭建autoPicCdn：一款基于jsdelivr+Github的免费CDN图床"></a></p>
+<p><strong>2）新建数据库，至于宝塔如何新建，简单看个图吧。</strong></p>
+<p><a target="_blank" rel="noopener" href="https://www.daniao.org/wp-content/uploads/2020/07/autoPicCdn-4.png"><img src="https://cdn.jsdelivr.net/gh/code-anime/piccdn@main/img/autoPicCdn-4.png" srcset="/img/lamu.gif" lazyload alt="宝塔面板搭建autoPicCdn：一款基于jsdelivr+Github的免费CDN图床"></a></p>
+<h4 id="7、导入数据库"><a href="#7、导入数据库" class="headerlink" title="7、导入数据库"></a>7、导入数据库</h4><p>把网站根目录下的pic.sql文件复制到（/www/backup/database）然后再数据库中导入这个文件。</p>
+<p><a target="_blank" rel="noopener" href="https://www.daniao.org/wp-content/uploads/2020/07/autoPicCdn-5.png"><img src="https://cdn.jsdelivr.net/gh/code-anime/piccdn@main/img/autoPicCdn-5.png" srcset="/img/lamu.gif" lazyload alt="宝塔面板搭建autoPicCdn：一款基于jsdelivr+Github的免费CDN图床"></a></p>
+<h4 id="8、配置up-php中的相关字段"><a href="#8、配置up-php中的相关字段" class="headerlink" title="8、配置up.php中的相关字段"></a>8、配置up.php中的相关字段</h4><p>打开你网站根目录下的up.php文件，配置其中的相关字段。</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">&#x2F;&#x2F;必选项define(&quot;TYPE&quot;,&quot;GITHUB&quot;);&#x2F;&#x2F;选择github&#x2F;&#x2F;define(&quot;TYPE&quot;,&quot;GITEE&quot;);&#x2F;&#x2F;选择gitee，如果使用gitee，需要手动建立master分支，可以看这里 https:&#x2F;&#x2F;gitee.com&#x2F;help&#x2F;articles&#x2F;4122 define(&quot;USER&quot;,&quot;pic-cdn&quot;);&#x2F;&#x2F;你的GitHub&#x2F;Gitee的用户名 define(&quot;REPO&quot;,&quot;cdn2&quot;);&#x2F;&#x2F;必须是上面用户名下的 公开仓库 define(&quot;MAIL&quot;,&quot;yumusb@foxmail.com&quot;);&#x2F;&#x2F;邮箱无所谓，随便写 define(&quot;TOKEN&quot;,&quot;213&quot;);&#x2F;&#x2F;贴入你刚才得到的token<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p>之后配置数据库信息</p>
+<p>此处为隐藏的内容！</p>
+<p>发表评论并刷新，方可查看</p>
+<p><a target="_blank" rel="noopener" href="https://www.daniao.org/10086.html#respond">发表评论</a></p>
+<p>保存后，搭建完毕。</p>
+<h4 id="9、效果"><a href="#9、效果" class="headerlink" title="9、效果"></a>9、效果</h4><p>效果还是很不错的，比之前的picgo要方便一点。</p>
+<p><img src="https://cdn.jsdelivr.net/gh/tmmtoo/dnpython@latest/2020/07/18/2cdab2d1d03faee6c744bd7c776ca967.png" srcset="/img/lamu.gif" lazyload alt="宝塔面板搭建autoPicCdn：一款基于jsdelivr+Github的免费CDN图床"></p>
+<h4 id="10、最后"><a href="#10、最后" class="headerlink" title="10、最后"></a>10、最后</h4><p>看着写了很多，其实整个步骤很简单，仓库建好后，就是新建网站，下载程序，导入数据库，配置up.php,之后就可以了。</p>
+<p>不过你需要知道的是jsDelivr仅能针对50M以下的文件CDN加速！</p>
+<p>仓库单个文件50M会收到警告，大于100M会被拒绝！</p>
+<p>目前<a target="_blank" rel="noopener" href="https://www.daniao.org/tag/github/">GITHUB</a>仓库容量是没有上限的！不过官方推荐在1G以内！</p>
+<p>所以，资源不要滥用，这个图床私用就可以了，不要搞的大家都不好用了。</p>
+<hr>
+<p>文章来源： <a target="_blank" rel="noopener" href="https://www.daniao.org/10086.html">www.daniao.org</a>， 作者：大鸟博客，版权归原作者所有，如需转载，请联系作者。</p>
+<p>源文链接： <a target="_blank" rel="noopener" href="https://www.daniao.org/10086.html">https://www.daniao.org/10086.html</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%94%9F%E5%91%BD%E4%B8%8D%E7%86%84%EF%BC%8C%E6%8A%98%E8%85%BE%E4%B8%8D%E6%AD%A2%EF%BC%81/">生命不熄，折腾不止！</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%94%9F%E5%91%BD%E4%B8%8D%E6%81%AF%EF%BC%8C%E6%8A%98%E8%85%BE%E4%B8%8D%E6%AD%A2%EF%BC%81/">生命不息，折腾不止！</a>
+                    
+                  </div>
+                
+              </div>
+              <p class="note note-warning">
+                <strong>本文作者: </strong><a href="/">CodeAnime</a> <br>
+                <strong>本文链接: </strong><a href="https://codeanime.cc/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E6%90%AD%E5%BB%BAautoPicCdn%EF%BC%9A%E4%B8%80%E6%AC%BE%E5%9F%BA%E4%BA%8Ejsdelivr-Github%E7%9A%84%E5%85%8D%E8%B4%B9CDN%E5%9B%BE%E5%BA%8A.html">https://codeanime.cc/%E5%AE%9D%E5%A1%94%E9%9D%A2%E6%9D%BF%E6%90%AD%E5%BB%BAautoPicCdn%EF%BC%9A%E4%B8%80%E6%AC%BE%E5%9F%BA%E4%BA%8Ejsdelivr-Github%E7%9A%84%E5%85%8D%E8%B4%B9CDN%E5%9B%BE%E5%BA%8A.html</a> <br>
+                <strong>版权声明: </strong>本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                   </p>
+                   
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/Hexo-fluid%E4%B8%BB%E9%A2%98%E8%AE%BE%E7%BD%AE%E7%BB%9F%E8%AE%A1%E5%8D%9A%E5%AE%A2%E9%98%85%E8%AF%BB%E9%87%8F.html">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Hexo-fluid主题设置统计博客阅读量</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/%E5%85%8D%E8%B4%B9CDN%EF%BC%9AjsDelivr-Github-%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95.html">
+                        <span class="hidden-mobile">免费CDN：jsDelivr+Github 使用方法</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"efUGH3iRCQVYfCMKsbvjfxyw-gzGzoHsz","appKey":"MWcG5RaewKo24maCvfnwCjBQ","placeholder":"说点什么","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"requiredFields":[]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-x-md">
+    <div class="container custom post-custom mx-auto">
+      <img src="http://p4.music.126.net/P_CPl0PsdbYkDxxA7KC4_A==/109951166172055304.jpg" srcset="/img/lamu.gif" lazyload class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">
+    </div>
+  </div>
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+  
+  <!-- 备案信息 -->
+  <div class="beian">
+    <span>
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+        京ICP证123456号
+      </a>
+    </span>
+    
+      
+        <span>
+          <a
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12345678"
+            rel="nofollow noopener"
+            class="beian-police"
+            target="_blank"
+          >
+            
+              <span style="visibility: hidden; width: 0">|</span>
+              <img src="/img/police_beian.png" srcset="/img/lamu.gif" lazyload alt="police-icon"/>
+            
+            <span>京公网安备12345678号</span>
+          </a>
+        </span>
+      
+    
+  </div>
+
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+    
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/mermaid@8.10.1/dist/mermaid.min.js" ></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({"theme":"default"});
+    }
+  </script>
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  
+<script src="/js/diy/yinghua.js"></script>
+<script src="/js/diy/click_show_text.js"></script>
+<script src="/js/diy/FunnyTitle.js"></script>
+<script src="/js/diy/lihua.js"></script>
+<script src="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/metowolf/Metingjs@1.2/dist/Meting.min.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script>
+  <link defer rel="stylesheet" href="/styles/backgroundize.css" />
+  <!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":170,"height":297.5,"position":"lift","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":1,"opacityOnHover":0.5},"log":false});</script></body>
+</html>

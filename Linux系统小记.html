@@ -1,0 +1,1083 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="💕一个二次元的个人博客网站💕">
+  <meta name="author" content="CodeAnime">
+  <meta name="keywords" content="个人博客">
+  
+  <title>Linux系统小记 - 不荒废现在,不畏惧未来🌸</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      
+        
+          
+          
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.min.css" />
+      
+      
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
+      
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/diy/gundongtiao.css">
+<link rel="stylesheet" href="/css/diy/indeximg-hover.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"codeanime.cc","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":120,"cursorChar":"🍬","loop":true},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/lamu.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"efUGH3iRCQVYfCMKsbvjfxyw-gzGzoHsz","app_key":"MWcG5RaewKo24maCvfnwCjBQ","server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="不荒废现在,不畏惧未来🌸" type="application/atom+xml">
+</head>
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>🌸さくら荘 の 一只二刺猿</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/bangumis/">
+                <i class="iconfont icon-bilibili-fill"></i>
+                追番
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://api.codeanime.cn/">
+                <i class="iconfont icon-bug"></i>
+                API
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-books"></i>
+                文档
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">
+                    
+                    主题博客
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">
+                    
+                    配置指南
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/icon/">
+                    
+                    图标用法
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">
+                    
+                    主题 GitHub 仓库
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://www.dmoe.cc/random.php') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="Linux系统小记">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      CodeAnime
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-09-11 15:43" pubdate>
+        2021年9月11日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      5k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      56
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">Linux系统小记</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年10月10日 上午
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h2 id="Linux系统小记"><a href="#Linux系统小记" class="headerlink" title="Linux系统小记"></a>Linux系统小记</h2><h3 id="系统目录结构"><a href="#系统目录结构" class="headerlink" title="系统目录结构"></a>系统目录结构</h3><p><img src="https://cdn.jsdelivr.net/gh/code-anime/piccdn@main/img/003vPl7Rty6E8kZRlAEdc690.jpg" srcset="/img/lamu.gif" lazyload alt="003vPl7Rty6E8kZRlAEdc&amp;690"></p>
+<p>以下是对这些目录的解释：</p>
+<ul>
+<li><p><strong>/bin</strong>：<br>bin 是 Binaries (二进制文件) 的缩写, 这个目录存放着最经常使用的命令。</p>
+</li>
+<li><p><strong>/boot：</strong><br>这里存放的是启动 Linux 时使用的一些核心文件，包括一些连接文件以及镜像文件。</p>
+</li>
+<li><p><strong>/dev ：</strong><br>dev 是 Device(设备) 的缩写, 该目录下存放的是 Linux 的外部设备，在 Linux 中访问设备的方式和访问文件的方式是相同的。</p>
+</li>
+<li><p><strong>/etc：</strong><br>etc 是 Etcetera(等等) 的缩写,这个目录用来存放所有的系统管理所需要的配置文件和子目录。</p>
+</li>
+<li><p><strong>/home</strong>：<br>用户的主目录，在 Linux 中，每个用户都有一个自己的目录，一般该目录名是以用户的账号命名的，如上图中的 alice、bob 和 eve。</p>
+</li>
+<li><p><strong>/lib</strong>：<br>lib 是 Library(库) 的缩写这个目录里存放着系统最基本的动态连接共享库，其作用类似于 Windows 里的 DLL 文件。几乎所有的应用程序都需要用到这些共享库。</p>
+</li>
+<li><p><strong>/lost+found</strong>：<br>这个目录一般情况下是空的，当系统非法关机后，这里就存放了一些文件。</p>
+</li>
+<li><p><strong>/media</strong>：<br>linux 系统会自动识别一些设备，例如U盘、光驱等等，当识别后，Linux 会把识别的设备挂载到这个目录下。</p>
+</li>
+<li><p><strong>/mnt</strong>：<br>系统提供该目录是为了让用户临时挂载别的文件系统的，我们可以将光驱挂载在 /mnt/ 上，然后进入该目录就可以查看光驱里的内容了。</p>
+</li>
+<li><p><strong>/opt</strong>：<br>opt 是 optional(可选) 的缩写，这是给主机额外安装软件所摆放的目录。比如你安装一个ORACLE数据库则就可以放到这个目录下。默认是空的。</p>
+</li>
+<li><p><strong>/proc</strong>：<br>proc 是 Processes(进程) 的缩写，/proc 是一种伪文件系统（也即虚拟文件系统），存储的是当前内核运行状态的一系列特殊文件，这个目录是一个虚拟的目录，它是系统内存的映射，我们可以通过直接访问这个目录来获取系统信息。<br>这个目录的内容不在硬盘上而是在内存里，我们也可以直接修改里面的某些文件，比如可以通过下面的命令来屏蔽主机的ping命令，使别人无法ping你的机器：</p>
+<div class="code-wrapper"><pre class="line-numbers language-none"><code class="language-none">echo 1 &gt; &#x2F;proc&#x2F;sys&#x2F;net&#x2F;ipv4&#x2F;icmp_echo_ignore_all<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div></li>
+<li><p><strong>/root</strong>：<br>该目录为系统管理员，也称作超级权限者的用户主目录。</p>
+</li>
+<li><p><strong>/sbin</strong>：<br>s 就是 Super User 的意思，是 Superuser Binaries (超级用户的二进制文件) 的缩写，这里存放的是系统管理员使用的系统管理程序。</p>
+</li>
+<li><p><strong>/selinux</strong>：<br> 这个目录是 Redhat/CentOS 所特有的目录，Selinux 是一个安全机制，类似于 windows 的防火墙，但是这套机制比较复杂，这个目录就是存放selinux相关的文件的。</p>
+</li>
+<li><p><strong>/srv</strong>：<br> 该目录存放一些服务启动之后需要提取的数据。</p>
+</li>
+<li><p><strong>/sys</strong>：</p>
+<p>这是 Linux2.6 内核的一个很大的变化。该目录下安装了 2.6 内核中新出现的一个文件系统 sysfs 。</p>
+<p>sysfs 文件系统集成了下面3种文件系统的信息：针对进程信息的 proc 文件系统、针对设备的 devfs 文件系统以及针对伪终端的 devpts 文件系统。</p>
+<p>该文件系统是内核设备树的一个直观反映。</p>
+<p>当一个内核对象被创建的时候，对应的文件和目录也在内核对象子系统中被创建。</p>
+</li>
+<li><p><strong>/tmp</strong>：<br>tmp 是 temporary(临时) 的缩写这个目录是用来存放一些临时文件的。</p>
+</li>
+<li><p><strong>/usr</strong>：<br> usr 是 unix shared resources(共享资源) 的缩写，这是一个非常重要的目录，用户的很多应用程序和文件都放在这个目录下，类似于 windows 下的 program files 目录。</p>
+</li>
+<li><p><strong>/usr/bin：</strong><br>系统用户使用的应用程序。</p>
+</li>
+<li><p><strong>/usr/sbin：</strong><br>超级用户使用的比较高级的管理程序和系统守护程序。</p>
+</li>
+<li><p><strong>/usr/src：</strong><br>内核源代码默认的放置目录。</p>
+</li>
+<li><p><strong>/var</strong>：<br>var 是 variable(变量) 的缩写，这个目录中存放着在不断扩充着的东西，我们习惯将那些经常被修改的目录放在这个目录下。包括各种日志文件。</p>
+</li>
+<li><p><strong>/run</strong>：<br>是一个临时文件系统，存储系统启动以来的信息。当系统重启时，这个目录下的文件应该被删掉或清除。如果你的系统上有 /var/run 目录，应该让它指向 run。</p>
+</li>
+</ul>
+<h3 id="登陆"><a href="#登陆" class="headerlink" title="登陆"></a>登陆</h3><p>一般来说，用户登陆方式有三种：</p>
+<ul>
+<li>命令行登陆</li>
+<li>ssh登陆</li>
+<li>图形界面登陆</li>
+</ul>
+<h3 id="shutdown：关机"><a href="#shutdown：关机" class="headerlink" title="shutdown：关机"></a>shutdown：关机</h3><blockquote>
+<p>关机指令：shutdown</p>
+</blockquote>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sync</span> <span class="token comment"># 将数据由内存同步到硬盘</span>
+<span class="token function">shutdown</span> <span class="token comment"># 关机指令，可以使用man shutdown来看一下帮助文档</span>
+<span class="token function">shutdown</span> -h <span class="token number">10</span> <span class="token comment"># 10分钟后关机</span>
+<span class="token function">shutdown</span> -h now <span class="token comment"># 马上关机</span>
+<span class="token function">shutdown</span> -h <span class="token number">10</span>:11 <span class="token comment"># 10点11分关机</span>
+<span class="token function">shutdown</span> -h +now <span class="token comment"># 十分钟后关机</span>
+<span class="token function">shutdown</span> -r now <span class="token comment"># 马上重启</span>
+<span class="token function">shutdown</span> -r +10 <span class="token comment"># 十分钟后重启</span>
+<span class="token function">reboot</span> <span class="token comment"># 重启</span>
+<span class="token function">halt</span> <span class="token comment"># 关闭系统</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p><strong>注：关机或重启之前要运行<code>sync</code>命令，把内存中的数据同写到磁盘</strong></p>
+<h3 id="ls：列出目录"><a href="#ls：列出目录" class="headerlink" title="ls：列出目录"></a>ls：列出目录</h3><p>语法：<code>ls [选项] [目录名称]</code></p>
+<p>选项与参数：</p>
+<ul>
+<li><p><code>-a</code>：显示所有文件及目录，连同隐藏文件（以<code>.</code>开头）</p>
+</li>
+<li><p><code>-l</code>：使用长格式列出文件及目录信息（包括文件的属性与权限等等数据）</p>
+</li>
+</ul>
+<h3 id="cd：切换目录"><a href="#cd：切换目录" class="headerlink" title="cd：切换目录"></a>cd：切换目录</h3><p><code>cd</code>：是change directory的缩写，该命令的功能是从当前目录切换到指定目录</p>
+<p>语法：<code>cd [相对路径或绝对路径]</code></p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">cd</span> /home <span class="token comment"># 切换到home目录</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span> <span class="token comment"># 返回上一级目录</span>
+<span class="token builtin class-name">cd</span> / <span class="token comment"># 回到根目录</span>
+<span class="token builtin class-name">cd</span> ~ <span class="token comment"># 回到家目录</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="pwd：显示当前目录"><a href="#pwd：显示当前目录" class="headerlink" title="pwd：显示当前目录"></a>pwd：显示当前目录</h3><p>pwd是print working directory的缩写，也就是<strong>显示当前工作目录的绝对路径</strong></p>
+<p>语法：<code>pwd [参数]</code></p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token builtin class-name">pwd</span> <span class="token comment"># 显示当前工作目录</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="mkdir：创建新目录"><a href="#mkdir：创建新目录" class="headerlink" title="mkdir：创建新目录"></a>mkdir：创建新目录</h3><p>mkdir是“make directories”的缩写，用来创建目录。</p>
+<p>语法：<code>mkdir [选项] [目录]</code></p>
+<ul>
+<li><code>-m</code>：建立目录的同时设置目录的权限</li>
+<li><code>-p</code>：递归创建多级目录</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mkdir</span> codeanime <span class="token comment">#创建codenaime目录</span>
+<span class="token function">mkdir</span> -p test1/test2/test3/test4 <span class="token comment">#递归创建多层目录</span>
+<span class="token function">mkdir</span> -m <span class="token number">711</span> test2 <span class="token comment"># 创建权限为rwx--x--x的目录</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="rmdir：删除空目录"><a href="#rmdir：删除空目录" class="headerlink" title="rmdir：删除空目录"></a>rmdir：删除空目录</h3><p>rmdir是remove directory的缩写，用来删除空目录</p>
+<p>语法：<code>rmdir [选项] [目录]</code></p>
+<ul>
+<li>-p：用递归的方式删除指定的目录路径中的所有父级目录，非空则报错</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rmdir</span> -p test1 <span class="token comment"># 删除非空目录</span>
+<span class="token function">rmdir</span> test2 <span class="token comment"># 删除空目录</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<h3 id="cp：复制文件或目录"><a href="#cp：复制文件或目录" class="headerlink" title="cp：复制文件或目录"></a>cp：复制文件或目录</h3><p>cp是copy的缩写，用来复制文件或目录</p>
+<p>语法：<code>cp [选项] [文件或目录]</code></p>
+<ul>
+<li><code>-p</code>：保留源文件或目录的所有属性</li>
+<li><code>-d</code>：当复制符号连接时，把目标文件或目录也建立为符号连接，并指向与源文件或目录连接的原始文件或目录</li>
+<li><code>-r</code>：递归复制文件和目录（recursion）</li>
+<li><code>-a</code>：等价于<code>-dpr</code>选项</li>
+<li><code>-f</code>：为强制（force）的意思，若目标文件已存在，则会直接覆盖原文件</li>
+<li><code>-i</code>：若目标文件已存在，则会询问是否覆盖。（inquire）</li>
+<li><code>-l</code>：对源文件建立硬连接，而非复制文件</li>
+<li><code>-s</code>：对源文件建立符号连接，而非复制文件，（即捷径）</li>
+<li><code>-u</code>：当源文件比目标文件新，或者目标文件不存在时，才执行复制此操作</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cp</span> /root/install.sh /tmp/codeanime <span class="token comment"># 把root目录下的install.sh文件复制到/tmp/codeanime目录下</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="rm：移除文件或目录"><a href="#rm：移除文件或目录" class="headerlink" title="rm：移除文件或目录"></a>rm：移除文件或目录</h3><p>rm是remove的缩写，用来移除文件或目录，即删除。</p>
+<p>语法：<code>rm [选项] [文件或目录]</code></p>
+<ul>
+<li><code>-f</code>：就是force的意思，忽略不存在的文件，不会出现警告信息</li>
+<li><code>-i</code>：删除前会询问用户是否操作</li>
+<li><code>-r</code>：递归删除（recursion）</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">rm</span> /tmp/codenaime/install.sh <span class="token comment"># 删除/tmp/codeanime目录下的install.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="mv：移动文件与目录（或修改名称）"><a href="#mv：移动文件与目录（或修改名称）" class="headerlink" title="mv：移动文件与目录（或修改名称）"></a>mv：移动文件与目录（或修改名称）</h3><p>mv是“move”单词的缩写，可以移动文件或对其改名。</p>
+<p>语法：<code>mv [选项]</code></p>
+<ul>
+<li><code>-f</code>：force强制，覆盖已有文件时，不进行任何提示</li>
+<li><code>-i</code>：inquire询问，若存在同名文件，则向用户询问是否覆盖</li>
+<li><code>-u</code>：当源文件比目标文件新，或者目标文件不存在时，才执行移动此操作</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mv</span> install.sh <span class="token builtin class-name">test</span> <span class="token comment"># 移动当前目录下install.sh到本目录下的test文件夹下</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="chgrp：更改文件用户组"><a href="#chgrp：更改文件用户组" class="headerlink" title="chgrp：更改文件用户组"></a>chgrp：更改文件用户组</h3><p>语法：<code>chgrp [选型] [文件或目录]</code></p>
+<ul>
+<li><code>-R</code>：递归处理，将指定目录下的所有文件及子目录一并处理（recursion）</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">chgrp</span> -R root install.sh <span class="token comment"># 更改文件install.sh的组为root</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="chown：改变文件或目录用户和用户组"><a href="#chown：改变文件或目录用户和用户组" class="headerlink" title="chown：改变文件或目录用户和用户组"></a>chown：改变文件或目录用户和用户组</h3><p>语法：<code>chown [选项]</code></p>
+<ul>
+<li><code>-R</code>：对目前目录下的所有文件与子目录进行相同的拥有者变更</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">chown</span> root install.sh <span class="token comment"># 更改文件install.sh用户为root</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="chmod：改变文件或目录权限"><a href="#chmod：改变文件或目录权限" class="headerlink" title="chmod：改变文件或目录权限"></a>chmod：改变文件或目录权限</h3><p>语法：<code>chmod [选项] [文件或文件夹]</code></p>
+<ul>
+<li><code>-R</code>：对目前目录下的所有文件与子目录进行相同的权限变更(即以递回的方式逐个变更)</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">chmod</span> <span class="token number">770</span> install.sh <span class="token comment"># 改变install.sh的权限为770，即-rwx-rwx---</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="cat：由第一行开始显示文本内容"><a href="#cat：由第一行开始显示文本内容" class="headerlink" title="cat：由第一行开始显示文本内容"></a>cat：由第一行开始显示文本内容</h3><p>语法：<code>cat [选项] [文件]</code></p>
+<ul>
+<li><code>-n</code>：显示行数（空行也编号）</li>
+<li><code>-b</code>：显示行数（空行不编号）</li>
+<li><code>-E</code>：每行结束处显示$符号</li>
+<li><code>-T</code>：将TAB字符显示为 ^I符号</li>
+<li><code>-v</code>：使用 ^ 和 M- 引用，除了 LFD 和 TAB 之外</li>
+<li><code>-e</code>：等价于”-vE”组合</li>
+<li><code>-t</code>：等价于”-vT”组合</li>
+<li><code>-A</code>：等价于 -vET组合</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">cat</span> -A install.sh <span class="token comment"># 查看instal.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="tac：与cat相反"><a href="#tac：与cat相反" class="headerlink" title="tac：与cat相反"></a>tac：与cat相反</h3><p>文件内容从最后一行开始显示，可以看出tac是cat倒着写的</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">tac</span> -A install.sh <span class="token comment"># 查看instal.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="nl：添加行号"><a href="#nl：添加行号" class="headerlink" title="nl：添加行号"></a>nl：添加行号</h3><p>语法：<code>nl [选项] [文件]</code></p>
+<ul>
+<li><code>-b</code>：指定行号指定的方式。主要有两种：<code>-b a</code>表示无论为空行，也同样列出行号（类似<code>cat -n</code>）;<code>-b t</code>如果有空行，空的那一行不要列出行号（默认值）</li>
+<li><code>-n</code>：列出行号表示的方式。主要有三种：<code>-n ln</code>：行号在荧幕的的最左方显示；<code>-n rn</code>：行号在自己栏位的最右方显示，且不加0；<code>-n rz</code>：行号在自己栏位的最右方显示，且加0；</li>
+<li><code>-w</code>：行号栏位的占用的位数</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">nl</span> -n <span class="token function">ln</span> install.sh
+<span class="token function">nl</span> -b t install.sh
+<span class="token function">nl</span> -w <span class="token number">10</span> install.sh <span class="token comment"># 行号占位10位</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="more：显示文本文件内容"><a href="#more：显示文本文件内容" class="headerlink" title="more：显示文本文件内容"></a>more：显示文本文件内容</h3><p>语法：<code>more [文件]</code></p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># 空格键：向下翻一页</span>
+<span class="token comment"># Enter键：向下翻一行</span>
+<span class="token comment"># /字串：在这个显示的内容中，向下搜寻“字串”这个关键字</span>
+<span class="token comment"># :f：立刻显示出档名中以及显示的行数</span>
+<span class="token comment"># q：立刻离开more，不再显示该文件内容</span>
+<span class="token comment"># b或[ctrl]-b：往回翻页，只对文件有用，对管线无用</span>
+<span class="token comment"># H键：显示帮助屏</span>
+<span class="token comment"># B键：显示上一屏内容</span>
+<span class="token comment"># Q键：退出more命令</span>
+<span class="token comment"># Ctrl+F、空格键：向下滚动一屏</span>
+<span class="token comment"># Ctrl+B：返回上一屏</span>
+<span class="token comment"># =： 输出当前的行号</span>
+<span class="token comment"># V：调用vi编辑器</span>
+<span class="token comment"># !：调用Shell，并执行命令</span>
+<span class="token function">more</span> install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="less：一页一页滚动"><a href="#less：一页一页滚动" class="headerlink" title="less：一页一页滚动"></a>less：一页一页滚动</h3><p>语法：<code>less [文件]</code></p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token comment"># PageUp键向上翻页</span>
+<span class="token comment"># PageDown键向下翻页</span>
+<span class="token comment"># q：退出less程序</span>
+<span class="token comment"># 空格键：向下翻动一页</span>
+<span class="token comment"># /字串：向下搜寻“字串”</span>
+<span class="token comment"># ？字串：向上搜寻“字串”</span>
+<span class="token comment"># n：重复前一个搜寻（与/或？有关）</span>
+<span class="token comment"># N：反向的重复前一个搜寻（与/或？有关）</span>
+<span class="token function">less</span> install.sh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="head：取出文件前面几行"><a href="#head：取出文件前面几行" class="headerlink" title="head：取出文件前面几行"></a>head：取出文件前面几行</h3><p>语法：<code>head [选项] [文件]</code></p>
+<ul>
+<li>-n后面跟数字，代表显示几行</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">head</span> -n10 install.sh <span class="token comment"># 显示文件前十行</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="tail：取出文件后几行"><a href="#tail：取出文件后几行" class="headerlink" title="tail：取出文件后几行"></a>tail：取出文件后几行</h3><p>语法：<code>tail [选项] [文件]</code></p>
+<ul>
+<li>-n后面接数字，代表显示几行</li>
+</ul>
+<p>默认显示最后10行。</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">tail</span> -n20 install.sh <span class="token comment"># 显示文件最后20行</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="ln：为文件创建链接"><a href="#ln：为文件创建链接" class="headerlink" title="ln：为文件创建链接"></a>ln：为文件创建链接</h3><p>ln英文全称是“link”，即链接的意思，它的功能是为某一个文件在另外一个位置建立一个同步的链接。 一种是hard link，又称为硬链接；另一种是symbolic link，又称为符号链接。</p>
+<p>通俗一点理解，可以把硬链接当成源文件的副本，他和源文件一样的大小，但是事实上却不占任何空间。符号链接可以理解为类似windows一样的快捷方式。</p>
+<p>符号链接 ：</p>
+<ul>
+<li>符号链接以路径的形式存在，类似于Windows操作系统中的快捷方式。</li>
+<li>符号链接可以跨文件系统 ，硬链接不可以。</li>
+<li>符号链接可以对一个不存在的文件名进行链接，硬链接不可以。</li>
+<li> 符号链接可以对目录进行链接，硬链接不可以。</li>
+</ul>
+<p>硬链接：</p>
+<ul>
+<li>硬链接以文件副本的形式存在，但不占用实际空间。</li>
+<li>硬链接不允许给目录创建硬链接。</li>
+<li>硬链接只有在同一个文件系统中才能创建。</li>
+</ul>
+<p><strong>语法格式：</strong> <code>ln [选项] [源文件或目录] [目标文件或目录]</code></p>
+<ul>
+<li><code>-b</code>：为每个已存在的目标文件创建备份文件</li>
+<li><code>-f</code>：强制创建链接，即使目标文件已经存在</li>
+<li><code>-n</code>：把指向目录的符号链接视为一个普通文件</li>
+<li><code>-i</code>：交互模式，若目标文件已经存在，则提示用户确认进行覆盖</li>
+<li><code>-s</code>：对源文件建立符号链接，而非硬链接</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">ln</span> -b install.sh <span class="token comment"># 创建备份文件</span>
+<span class="token function">ln</span> install.sh install2.sh <span class="token comment"># 创建install.sh的硬链接文件install2.sh</span>
+<span class="token function">ln</span> -s install.sh install3.sh <span class="token comment"># 创建install.sh的符号链接文件install3.sh</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="useradd：创建用户"><a href="#useradd：创建用户" class="headerlink" title="useradd：创建用户"></a>useradd：创建用户</h3><p>语法：<code>useradd [选项] [用户名]</code></p>
+<ul>
+<li><code>-c</code>：添加备注文字（comment）</li>
+<li><code>-d</code>：目录，新用户每次登陆时所使用的家目录，如果此目录不存在，则同时使用-m选项，可以创建主目录</li>
+<li><code>-g</code>：指定用户对应的用户组</li>
+<li><code>-G</code>：定义此用户为多个不同组的成员</li>
+<li><code>-m</code>：用户目录不存在时则自动创建</li>
+<li><code>-s</code>：Shell文件 指定用户的登录Shell</li>
+<li><code>-u</code>：指定用户id</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">useradd</span> -m codeanime <span class="token comment"># 创建一个用户为codeanime，其中-m为用户codeanime产生一个主目录/home/codeanime</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<p><strong>增加用户账号就是在/etc/passwd文件中为新用户增加一条记录，同时更新其他系统文件如/etc/shadow,.etc/group等。</strong></p>
+<h3 id="su：切换用户名"><a href="#su：切换用户名" class="headerlink" title="su：切换用户名"></a>su：切换用户名</h3><p>语法：<code>su [用户名]</code></p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">sudo</span> <span class="token function">su</span> <span class="token comment"># 从普通用户切换到root用户</span>
+exit或logout或快捷方式ctrl+d <span class="token comment">#退回到原来的用户</span>
+<span class="token function">su</span> - root <span class="token comment"># 在切换用户时，如果想在切换用户之后使用新用户的工作环境，可以在su和username之间加-</span>
+$表示普通用户
+<span class="token comment">#表示超级用户，即root用户</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="userdel：删除账号"><a href="#userdel：删除账号" class="headerlink" title="userdel：删除账号"></a>userdel：删除账号</h3><p>语法：<code>userdel [选项] [用户名]</code></p>
+<ul>
+<li><code>-r</code>：把用户的主目录一起删除</li>
+</ul>
+<p>如果一个用户的账号不再使用，可以从系统中删除。</p>
+<p>删除用户账号就是要将/etc/passwd等系统文件中的该用户记录删除，必要时还删除用户的主目录。</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">userdel</span> codeanime <span class="token comment"># 删除codeanime账户</span>
+<span class="token function">userdel</span> -r codeanime <span class="token comment"># 此命令删除用户codeanime在系统文件中（主要是/etc/passwd, /etc/shadow, /etc/group等）的记录，同时删除用户的主目录。</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<h3 id="usermod：修改账号"><a href="#usermod：修改账号" class="headerlink" title="usermod：修改账号"></a>usermod：修改账号</h3><p>语法：<code>usermod [选项] [账号]</code></p>
+<p>常用的选项包括-c, -d, -m, -g, -G, -s, -u以及-o等，这些选项的意义与useradd命令中的选项一样，可以为用户指定新的资源值。</p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">usermod</span> -s /bin/code -d /home/co –g developer codeanime <span class="token comment"># 此命令将用户codeanime修改为code，主目录改为/home/co，用户组改为developer。</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="passwd：修改用户账户密码"><a href="#passwd：修改用户账户密码" class="headerlink" title="passwd：修改用户账户密码"></a>passwd：修改用户账户密码</h3><p>语法：<code>passwd [选项] [用户名]</code></p>
+<ul>
+<li><code>-l</code>：锁定用户密码，无法被用户自行修改</li>
+<li><code>-u</code>：解开已锁定用户密码，允许用户自行修改</li>
+<li><code>-d</code>：删除密码</li>
+<li><code>-f</code>：强迫用户下次登录时修改密码</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">passwd</span> <span class="token comment"># 修改密码</span>
+<span class="token function">passwd</span> codeanime <span class="token comment"># 修改codeanime用户密码</span>
+<span class="token function">passwd</span> -d codeanime <span class="token comment"># 删除codeanime用户的密码，下次用户codeanime登陆时，系统不再允许codeanime用户登陆</span>
+<span class="token function">passwd</span> -l codeanime <span class="token comment"># 锁定codeanime用户，使其不能登陆</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="groupadd：新建工作组"><a href="#groupadd：新建工作组" class="headerlink" title="groupadd：新建工作组"></a>groupadd：新建工作组</h3><p>用户组的管理涉及用户组的添加、删除和修改。组的增加、删除和修改实际上就是对/etc/group文件的更新</p>
+<p>语法：<code>groupaddd [选项] [用户组]</code></p>
+<ul>
+<li><code>-g</code>：指定新建工作组的id</li>
+<li><code>-o</code>：允许添加组ID号不唯一的工作组</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">groupadd</span> group1 <span class="token comment"># 向系统增加了一个group1新组，新组的组标识号是在当前已有的最大组标识号的基础上加1</span>
+<span class="token function">groupadd</span> -g <span class="token number">101</span> group2 <span class="token comment"># 此命令向系统中增加了一个新组group2，同时指定新组的组标识号是101</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<h3 id="groupdel：删除用户组"><a href="#groupdel：删除用户组" class="headerlink" title="groupdel：删除用户组"></a>groupdel：删除用户组</h3><p>语法：<code>groupdel [选项] [群组名称]</code></p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">groupdel</span> group1 <span class="token comment"># 删除用户组group1</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="groupmod：更改群组识别码或名称"><a href="#groupmod：更改群组识别码或名称" class="headerlink" title="groupmod：更改群组识别码或名称"></a>groupmod：更改群组识别码或名称</h3><p>语法：<code>groupmod [选项] [用户组]</code></p>
+<ul>
+<li><code>-g</code>：设置欲使用的群组识别码</li>
+<li><code>-o</code>：重复使用群组识别码</li>
+<li><code>-n</code>：设置欲使用的群组名称</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">groupmod</span> -g <span class="token number">102</span> group2 <span class="token comment"># 此命令将组group2的组标识号修改为102</span>
+<span class="token function">groupmod</span> –g <span class="token number">103</span> -n group3 group2 <span class="token comment"># 将组group2的标识号改为103，组名修改为group3</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<h3 id="newgrp：登入另一个群组"><a href="#newgrp：登入另一个群组" class="headerlink" title="newgrp：登入另一个群组"></a>newgrp：登入另一个群组</h3><p>newgrp命令类的英文全称为“new group”,该命令类似login指令，当它是以相同的帐号，另一个群组名称，再次登入系统。欲使用newgrp指令切换群组，您必须是该群组的用户，否则将无法登入指定的群组。</p>
+<p>单一用户要同时隶属多个群组，需利用交替用户的设置。若不指定群组名称，则newgrp指令会登入该用户名称的预设群组</p>
+<p>语法：<code>newgrp [选项]</code></p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">newgrp root <span class="token comment"># 将当前用户切换到root用户组，前提条件是root用户组确实是该用户的主组或附加组</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="df：显示磁盘空间使用情况"><a href="#df：显示磁盘空间使用情况" class="headerlink" title="df：显示磁盘空间使用情况"></a>df：显示磁盘空间使用情况</h3><p>df命令的英文全称即“Disk Free”，顾名思义功能是用于显示系统上可使用的磁盘空间。默认显示单位为KB，建议使用“df -h”的参数组合，根据磁盘容量自动变换合适的单位，更利于阅读</p>
+<p>语法：<code>df [选项] [目录或文件]</code></p>
+<ul>
+<li><code>-a</code>：显示所有系统文件</li>
+<li><code>-k</code>：以 KBytes 的容量显示各文件系统</li>
+<li><code>-m</code>：以 MBytes 的容量显示各文件系统</li>
+<li><code>-h</code>：以容易阅读的方式显示</li>
+<li><code>-H</code>：以1000字节为换算单位来显示</li>
+<li><code>-T</code>：输出时显示文件系统类型</li>
+<li><code>-i</code>：显示索引字节信息，不用硬盘容量，而以 inode 的数量来显示</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">df</span> -h <span class="token comment"># 以容易阅读的方式显示</span>
+<span class="token function">df</span> -aT <span class="token comment"># 将系统内的所有特殊文件格式及名称都列出来</span>
+<span class="token function">df</span> -h /etc <span class="token comment">#  将 /etc 底下的可用的磁盘容量以易读的容量格式显示</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="du：查看空间"><a href="#du：查看空间" class="headerlink" title="du：查看空间"></a>du：查看空间</h3><p>du命令的英文全称是“Disk Usage”，即用于查看磁盘占用空间的意思。但是与df命令不同的是du命令是对文件和目录磁盘使用的空间的查看，而不是某个分区,与 df 不一样的是，du 这个命令其实会直接到文件系统内去搜寻所有的文件数据</p>
+<p>语法：<code>du [选项] [文件]</code></p>
+<ul>
+<li><code>-a</code>：显示目录中所有文件大小</li>
+<li><code>-h</code>：以易读方式显示文件大小</li>
+<li><code>-s</code>：仅显示总计</li>
+<li><code>-S</code>：不包括子目录下的总计，与 -s 有点差别</li>
+<li><code>-k</code>：以KB为单位显示文件大小</li>
+<li><code>-m</code>：以MB为单位显示文件大小</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">du</span> <span class="token comment"># 直接输入 du 没有加任何选项时，则 du 会分析当前所在目录的文件与目录所占用的硬盘空间</span>
+<span class="token function">du</span> -a <span class="token comment"># 将文件的容量也列出来</span>
+<span class="token function">du</span> -sm /* <span class="token comment"># 检查根目录底下每个目录所占用的容量,通配符 * 来代表每个目录</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="mount：文件系统挂载"><a href="#mount：文件系统挂载" class="headerlink" title="mount：文件系统挂载"></a>mount：文件系统挂载</h3><p>语法：<code>mount [选项]</code> </p>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">mount</span> /dev/hdc6 /mnt/hdc6 <span class="token comment"># 将 /dev/hdc6 挂载到 /mnt/hdc6 上面</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="umount：卸载文件系统"><a href="#umount：卸载文件系统" class="headerlink" title="umount：卸载文件系统"></a>umount：卸载文件系统</h3><p>语法：<code>umount [选项] [装置文件名或挂载点]</code></p>
+<ul>
+<li><code>-f</code>：强制卸除！可用在类似网络文件系统 (NFS) 无法读取到的情况下</li>
+<li><code>-n</code>：不升级 /etc/mtab 情况下卸除</li>
+</ul>
+<div class="code-wrapper"><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash"><span class="token function">umount</span> /dev/hdc6 <span class="token comment"># 卸载/dev/hdc6</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/Linux/">Linux</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Linux/">Linux</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+                    
+                  </div>
+                
+              </div>
+              <p class="note note-warning">
+                <strong>本文作者: </strong><a href="/">CodeAnime</a> <br>
+                <strong>本文链接: </strong><a href="https://codeanime.cc/Linux%E7%B3%BB%E7%BB%9F%E5%B0%8F%E8%AE%B0.html">https://codeanime.cc/Linux%E7%B3%BB%E7%BB%9F%E5%B0%8F%E8%AE%B0.html</a> <br>
+                <strong>版权声明: </strong>本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                   </p>
+                   
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/Vim%E4%BD%BF%E7%94%A8%E6%89%8B%E5%86%8C.html">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">Vim使用手册</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/%E8%AE%B0%E4%B8%80%E6%AC%A1Hexo%E5%8D%9A%E5%AE%A2%E8%BF%81%E7%A7%BB%E8%87%B3%E5%8F%A6%E4%B8%80%E5%8F%B0%E7%94%B5%E8%84%91.html">
+                        <span class="hidden-mobile">记一次Hexo博客迁移至另一台电脑</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"efUGH3iRCQVYfCMKsbvjfxyw-gzGzoHsz","appKey":"MWcG5RaewKo24maCvfnwCjBQ","placeholder":"说点什么","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"requiredFields":[]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-x-md">
+    <div class="container custom post-custom mx-auto">
+      <img src="http://p4.music.126.net/P_CPl0PsdbYkDxxA7KC4_A==/109951166172055304.jpg" srcset="/img/lamu.gif" lazyload class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">
+    </div>
+  </div>
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+  
+  <!-- 备案信息 -->
+  <div class="beian">
+    <span>
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+        京ICP证123456号
+      </a>
+    </span>
+    
+      
+        <span>
+          <a
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12345678"
+            rel="nofollow noopener"
+            class="beian-police"
+            target="_blank"
+          >
+            
+              <span style="visibility: hidden; width: 0">|</span>
+              <img src="/img/police_beian.png" srcset="/img/lamu.gif" lazyload alt="police-icon"/>
+            
+            <span>京公网安备12345678号</span>
+          </a>
+        </span>
+      
+    
+  </div>
+
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+    
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/mermaid@8.10.1/dist/mermaid.min.js" ></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({"theme":"default"});
+    }
+  </script>
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  
+<script src="/js/diy/yinghua.js"></script>
+<script src="/js/diy/click_show_text.js"></script>
+<script src="/js/diy/FunnyTitle.js"></script>
+<script src="/js/diy/lihua.js"></script>
+<script src="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/metowolf/Metingjs@1.2/dist/Meting.min.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script>
+  <link defer rel="stylesheet" href="/styles/backgroundize.css" />
+  <!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":170,"height":297.5,"position":"lift","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":1,"opacityOnHover":0.5},"log":false});</script></body>
+</html>

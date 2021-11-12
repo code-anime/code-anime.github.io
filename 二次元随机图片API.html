@@ -1,0 +1,849 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="💕一个二次元的个人博客网站💕">
+  <meta name="author" content="CodeAnime">
+  <meta name="keywords" content="个人博客">
+  
+  <title>二次元随机图片API - 不荒废现在,不畏惧未来🌸</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      
+        
+          
+          
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.min.css" />
+      
+      
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
+      
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/diy/gundongtiao.css">
+<link rel="stylesheet" href="/css/diy/indeximg-hover.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"codeanime.cc","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":120,"cursorChar":"🍬","loop":true},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/lamu.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"efUGH3iRCQVYfCMKsbvjfxyw-gzGzoHsz","app_key":"MWcG5RaewKo24maCvfnwCjBQ","server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="不荒废现在,不畏惧未来🌸" type="application/atom+xml">
+</head>
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>🌸さくら荘 の 一只二刺猿</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/bangumis/">
+                <i class="iconfont icon-bilibili-fill"></i>
+                追番
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://api.codeanime.cn/">
+                <i class="iconfont icon-bug"></i>
+                API
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-books"></i>
+                文档
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">
+                    
+                    主题博客
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">
+                    
+                    配置指南
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/icon/">
+                    
+                    图标用法
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">
+                    
+                    主题 GitHub 仓库
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://www.dmoe.cc/random.php') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="二次元随机图片API">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      CodeAnime
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-08-05 13:05" pubdate>
+        2021年8月5日 下午
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      1.7k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      26
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">二次元随机图片API</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年10月4日 早上
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h2 id="俺自己的"><a href="#俺自己的" class="headerlink" title="俺自己的"></a>俺自己的</h2><p><a target="_blank" rel="noopener" href="https://api.codeanime.xyz/random.php">https://api.codeanime.xyz/random.php</a></p>
+<h2 id="东方Project"><a href="#东方Project" class="headerlink" title="东方Project"></a>东方Project</h2><p>API文档：<a target="_blank" rel="noopener" href="https://img.paulzzh.tech/">Paulzzh — 东方Project随机图片API</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="https://img.paulzzh.tech/touhou/random">https://img.paulzzh.tech/touhou/random</a></p>
+<h2 id="樱花"><a href="#樱花" class="headerlink" title="樱花"></a>樱花</h2><p>API文档：<a target="_blank" rel="noopener" href="http://www.dmoe.cc/">随机二次元图片API-樱花</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="http://www.dmoe.cc/random.php">http://www.dmoe.cc/random.php</a></p>
+<h2 id="汐岑"><a href="#汐岑" class="headerlink" title="汐岑"></a>汐岑</h2><p>API文档：<a target="_blank" rel="noopener" href="http://acg.yanwz.cn/">汐岑ACG |- 随机二次元图片API (yanwz.cn)</a></p>
+<p>二次元动漫图片：<a target="_blank" rel="noopener" href="https://acg.yanwz.cn/api.php">https://acg.yanwz.cn/api.php</a></p>
+<p>menhera酱表情包：<a target="_blank" rel="noopener" href="https://acg.yanwz.cn/menhera/api.php">https://acg.yanwz.cn/menhera/api.php</a></p>
+<p>风景图片：<a target="_blank" rel="noopener" href="https://acg.yanwz.cn/scenery/api.php">https://acg.yanwz.cn/scenery/api.php</a></p>
+<p>二次元电脑壁纸：<a target="_blank" rel="noopener" href="https://acg.yanwz.cn/wallpaper/api.php">https://acg.yanwz.cn/wallpaper/api.php</a></p>
+<h2 id="阿珏"><a href="#阿珏" class="headerlink" title="阿珏"></a>阿珏</h2><p>API文档：<a target="_blank" rel="noopener" href="https://random.52ecy.cn/">随机二次元图片API - 阿珏博客</a></p>
+<p>接口：<br><a target="_blank" rel="noopener" href="https://random.52ecy.cn/random.php">https://random.52ecy.cn/random.php</a><br><a target="_blank" rel="noopener" href="https://random.52ecy.cn/randbg.php">https://random.52ecy.cn/randbg.php</a> (推荐)</p>
+<h2 id="苏晓晴"><a href="#苏晓晴" class="headerlink" title="苏晓晴"></a>苏晓晴</h2><p>API文档：<a target="_blank" rel="noopener" href="https://acg.toubiec.cn/">随机二次元接口</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="https://acg.toubiec.cn/random.php">https://acg.toubiec.cn/random.php</a></p>
+<h2 id="岁月小筑"><a href="#岁月小筑" class="headerlink" title="岁月小筑"></a>岁月小筑</h2><p>API文档：<a target="_blank" rel="noopener" href="https://www.xjh.me/3069.html">岁月小筑随机图片API上线了，目前公测中~~ | 岁月小筑</a></p>
+<p>https调用：<a target="_blank" rel="noopener" href="https://img.xjh.me/random_img.php">https://img.xjh.me/random_img.php</a></p>
+<p>http调用：<a target="_blank" rel="noopener" href="http://img.xjh.me/random_img.php">http://img.xjh.me/random_img.php</a></p>
+<h2 id="小歪"><a href="#小歪" class="headerlink" title="小歪"></a>小歪</h2><p>API文档：<a target="_blank" rel="noopener" href="https://api.ixiaowai.cn/">小歪API-图片API，文字API，二维码API，随心所动不再单调</a></p>
+<p>二次元动漫：<a target="_blank" rel="noopener" href="https://api.ixiaowai.cn/api/api.php">https://api.ixiaowai.cn/api/api.php</a></p>
+<p>menhera酱动漫：<a target="_blank" rel="noopener" href="https://api.ixiaowai.cn/mcapi/mcapi.php">https://api.ixiaowai.cn/mcapi/mcapi.php</a></p>
+<h2 id="一堆api"><a href="#一堆api" class="headerlink" title="一堆api"></a>一堆api</h2><p>高清壁纸：<a target="_blank" rel="noopener" href="https://api.ixiaowai.cn/gqapi/gqapi.php">https://api.ixiaowai.cn/gqapi/gqapi.php</a></p>
+<p>电脑动漫图片：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=dongman">http://api.btstu.cn/sjbz/?lx=dongman</a></p>
+<p>电脑美女图片：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=meizi">http://api.btstu.cn/sjbz/?lx=meizi</a></p>
+<p>电脑随机动漫妹子：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=suiji">http://api.btstu.cn/sjbz/?lx=suiji</a></p>
+<p>手机动漫图片：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=m_dongman">http://api.btstu.cn/sjbz/?lx=m_dongman</a></p>
+<p>手机美女图片：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=m_meizi">http://api.btstu.cn/sjbz/?lx=m_meizi</a></p>
+<p>手机随机动漫妹子：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?m_lx=suiji">http://api.btstu.cn/sjbz/?m_lx=suiji</a></p>
+<p>手机性感美女:<a target="_blank" rel="noopener" href="https://uploadbeta.com/api/pictures/random/?key=%E6%8E%A8%E5%A5%B3%E9%83%8E">https://uploadbeta.com/api/pictures/random/?key=%E6%8E%A8%E5%A5%B3%E9%83%8E</a></p>
+<p>手机电脑自动判断，电脑显示适合电脑的壁纸，手机显示适合手机的壁纸</p>
+<p><a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/zsy.php">http://api.btstu.cn/sjbz/zsy.php</a></p>
+<p>风景随机图：<a target="_blank" rel="noopener" href="http://pic.tsmp4.net/api/fengjing/img.php">http://pic.tsmp4.net/api/fengjing/img.php</a><br>女神随机图：<a target="_blank" rel="noopener" href="http://pic.tsmp4.net/api/nvsheng/img.php">http://pic.tsmp4.net/api/nvsheng/img.php</a><br>影视随机图：<a target="_blank" rel="noopener" href="http://pic.tsmp4.net/api/yingshi/img.php">http://pic.tsmp4.net/api/yingshi/img.php</a><br>二次元随机图：<a target="_blank" rel="noopener" href="http://pic.tsmp4.net/api/erciyuan/img.php">http://pic.tsmp4.net/api/erciyuan/img.php</a><br>二次元随机图:<a target="_blank" rel="noopener" href="https://acg.toubiec.cn/random">https://acg.toubiec.cn/random</a><br>二次元随机图:<a target="_blank" rel="noopener" href="http://www.dmoe.cc/random.php">http://www.dmoe.cc/random.php</a></p>
+<p><a target="_blank" rel="noopener" href="https://uploadbeta.com/api/pictures/random/?key=%E6%8E%A8%E5%A5%B3%E9%83%8E">https://uploadbeta.com/api/pictures/random/?key=推女郎</a></p>
+<p><a target="_blank" rel="noopener" href="https://uploadbeta.com/api/pictures/random/?key=%E4%BA%8C%E6%AC%A1%E5%85%83">https://uploadbeta.com/api/pictures/random/?key=二次元</a></p>
+<p><a target="_blank" rel="noopener" href="https://uploadbeta.com/api/pictures/random/?key=%E5%8A%A8%E6%BC%AB">https://uploadbeta.com/api/pictures/random/?key=动漫</a></p>
+<p>api现在已经有几千张图了，每天都在增加，大家可以玩玩</p>
+<h2 id="EEE-DOG"><a href="#EEE-DOG" class="headerlink" title="EEE.DOG"></a>EEE.DOG</h2><p>API文档：<a target="_blank" rel="noopener" href="https://www.eee.dog/tech/rand-pic-api.html">随机图片API - EEE.DOG</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="https://api.yimian.xyz/img">https://api.yimian.xyz/img</a></p>
+<h2 id="随机图片API"><a href="#随机图片API" class="headerlink" title="随机图片API"></a>随机图片API</h2><p>API文档：<a target="_blank" rel="noopener" href="https://api.pixivweb.com/">随机图片API (pixivweb.com)</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="https://api.pixivweb.com/anime18r.php?return=img">https://api.pixivweb.com/anime18r.php?return=img</a></p>
+<h2 id="樱花-1"><a href="#樱花-1" class="headerlink" title="樱花"></a>樱花</h2><p>API文档：<a target="_blank" rel="noopener" href="http://www.dmoe.cc/">随机二次元图片API-樱花</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="http://www.dmoe.cc/random.php">http://www.dmoe.cc/random.php</a></p>
+<h2 id="汐岑-1"><a href="#汐岑-1" class="headerlink" title="汐岑"></a>汐岑</h2><p>API文档：<a target="_blank" rel="noopener" href="http://acg.yanwz.cn/">汐岑ACG |- 随机二次元图片API (yanwz.cn)</a></p>
+<p>二次元动漫图片：<a target="_blank" rel="noopener" href="https://acg.yanwz.cn/api.php">https://acg.yanwz.cn/api.php</a></p>
+<p>menhera酱表情包：<a target="_blank" rel="noopener" href="https://acg.yanwz.cn/menhera/api.php">https://acg.yanwz.cn/menhera/api.php</a></p>
+<p>风景图片：<a target="_blank" rel="noopener" href="https://acg.yanwz.cn/scenery/api.php">https://acg.yanwz.cn/scenery/api.php</a></p>
+<p>二次元电脑壁纸：<a target="_blank" rel="noopener" href="https://acg.yanwz.cn/wallpaper/api.php">https://acg.yanwz.cn/wallpaper/api.php</a></p>
+<h2 id="苏晓晴-1"><a href="#苏晓晴-1" class="headerlink" title="苏晓晴"></a>苏晓晴</h2><p>API文档：<a target="_blank" rel="noopener" href="https://acg.toubiec.cn/">随机二次元接口</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="https://acg.toubiec.cn/random.php">https://acg.toubiec.cn/random.php</a></p>
+<h2 id="岁月小筑-1"><a href="#岁月小筑-1" class="headerlink" title="岁月小筑"></a>岁月小筑</h2><p>API文档：<a target="_blank" rel="noopener" href="https://www.xjh.me/3069.html">岁月小筑随机图片API上线了，目前公测中~~ | 岁月小筑</a></p>
+<p>https调用：<a target="_blank" rel="noopener" href="https://img.xjh.me/random_img.php">https://img.xjh.me/random_img.php</a></p>
+<p>http调用：<a target="_blank" rel="noopener" href="http://img.xjh.me/random_img.php">http://img.xjh.me/random_img.php</a></p>
+<hr>
+<h2 id="随机二次元图片API-樱花"><a href="#随机二次元图片API-樱花" class="headerlink" title="随机二次元图片API-樱花"></a>随机二次元图片API-樱花</h2><p>API文档：<a target="_blank" rel="noopener" href="https://www.dmoe.cc/">https://www.dmoe.cc/</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="https://www.dmoe.cc/random.php">https://www.dmoe.cc/random.php</a></p>
+<h2 id="随机二次元图片"><a href="#随机二次元图片" class="headerlink" title="随机二次元图片"></a>随机二次元图片</h2><p>API文档：<a target="_blank" rel="noopener" href="https://api.vvhan.com/dongman.html">https://api.vvhan.com/dongman.html</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="https://www.niubai.net/yanshi/acgapi/acgurl.php">https://www.niubai.net/yanshi/acgapi/acgurl.php</a></p>
+<p><a target="_blank" rel="noopener" href="https://api.vvhan.com/api/acgimg">https://api.vvhan.com/api/acgimg</a></p>
+<hr>
+<h2 id="随机二次元图片API接口"><a href="#随机二次元图片API接口" class="headerlink" title="随机二次元图片API接口"></a>随机二次元图片API接口</h2><p>APi文档：<a target="_blank" rel="noopener" href="https://api.ghser.com/acg.html">https://api.ghser.com/acg.html</a></p>
+<p>接口地址：</p>
+<p><a target="_blank" rel="noopener" href="https://api.ghser.com/random/api.php">https://api.ghser.com/random/api.php</a></p>
+<p>自判断二次元API基本调用格式：</p>
+<p><a target="_blank" rel="noopener" href="https://api.ghser.com/random/api.php">https://api.ghser.com/random/api.php</a></p>
+<p>PC随机二次元API：</p>
+<p><a target="_blank" rel="noopener" href="https://api.ghser.com/random/pc.php">https://api.ghser.com/random/pc.php</a></p>
+<p>PE随机二次元API：</p>
+<p><a target="_blank" rel="noopener" href="https://api.ghser.com/random/pe.php">https://api.ghser.com/random/pe.php</a></p>
+<p>PC随机二次元风景API：</p>
+<p><a target="_blank" rel="noopener" href="https://api.ghser.com/random/bg.php">https://api.ghser.com/random/bg.php</a></p>
+<hr>
+<h2 id="随机二次元图片-背景图-API"><a href="#随机二次元图片-背景图-API" class="headerlink" title="随机二次元图片(背景图)API"></a>随机二次元图片(背景图)API</h2><p>API文档：<a target="_blank" rel="noopener" href="https://www.nck.cc/index.php/archives/3/">https://www.nck.cc/index.php/archives/3/</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="https://www.rrll.cc/tuceng/ecy.php">https://www.rrll.cc/tuceng/ecy.php</a></p>
+<hr>
+<h2 id="七彩云API"><a href="#七彩云API" class="headerlink" title="七彩云API"></a>七彩云API</h2><p>API文档：<a target="_blank" rel="noopener" href="https://api.qicaiyun.top/ercy/">https://api.qicaiyun.top/ercy/</a></p>
+<p>接口：<code>https://api.qicaiyun.top/ercy/api.php</code></p>
+<hr>
+<h2 id="喵白"><a href="#喵白" class="headerlink" title="喵白"></a>喵白</h2><p>API文档：<a target="_blank" rel="noopener" href="https://acg.teas.moe/">https://acg.teas.moe/</a></p>
+<p>接口：</p>
+<p><a target="_blank" rel="noopener" href="https://acg.teas.moe/man/api.php%EF%BC%88%E4%BA%8C%E6%AC%A1%E5%85%83%E5%8A%A8%E6%BC%AB%EF%BC%89">https://acg.teas.moe/man/api.php（二次元动漫）</a></p>
+<p><a target="_blank" rel="noopener" href="https://acg.teas.moe/hua/api.php%EF%BC%88%E4%BA%8C%E6%AC%A1%E5%85%83%E5%8A%A8%E6%BC%AB2%EF%BC%89">https://acg.teas.moe/hua/api.php（二次元动漫2）</a></p>
+<p><a target="_blank" rel="noopener" href="https://acg.teas.moe/suiji/api.php%EF%BC%88%E9%9A%8F%E6%9C%BA%E5%8A%A8%E6%BC%AB%EF%BC%89">https://acg.teas.moe/suiji/api.php（随机动漫）</a></p>
+<hr>
+<h2 id="汐岑博客"><a href="#汐岑博客" class="headerlink" title="汐岑博客"></a>汐岑博客</h2><p>API文档：<a target="_blank" rel="noopener" href="https://acg.yanwz.cn/">https://acg.yanwz.cn/</a></p>
+<p>接口：</p>
+<p>二次元动漫图片：</p>
+<p><a target="_blank" rel="noopener" href="https://acg.yanwz.cn/api.php">https://acg.yanwz.cn/api.php</a></p>
+<p>menhera酱表情包：</p>
+<p><a target="_blank" rel="noopener" href="https://acg.yanwz.cn/menhera/api.php">https://acg.yanwz.cn/menhera/api.php</a></p>
+<p>风景图片：</p>
+<p><a target="_blank" rel="noopener" href="https://acg.yanwz.cn/scenery/api.php">https://acg.yanwz.cn/scenery/api.php</a></p>
+<p>二次元电脑壁纸：</p>
+<p><a target="_blank" rel="noopener" href="https://acg.yanwz.cn/wallpaper/api.php">https://acg.yanwz.cn/wallpaper/api.php</a></p>
+<h2 id="动漫星空API官网"><a href="#动漫星空API官网" class="headerlink" title="动漫星空API官网"></a>动漫星空API官网</h2><p>API文档：<a target="_blank" rel="noopener" href="https://api.dongmanxingkong.com/zipanduansuijierciyuantupianapi.html">https://api.dongmanxingkong.com/zipanduansuijierciyuantupianapi.html</a></p>
+<p>接口：</p>
+<p><a target="_blank" rel="noopener" href="https://api.ghser.com/random/api.php">https://api.ghser.com/random/api.php</a></p>
+<p>PC随机二次元API</p>
+<p><a target="_blank" rel="noopener" href="https://api.ghser.com/random/pc.php">https://api.ghser.com/random/pc.php</a></p>
+<p>PE随机二次元API</p>
+<p><a target="_blank" rel="noopener" href="https://api.ghser.com/random/pe.php">https://api.ghser.com/random/pe.php</a></p>
+<p>随机二次元风景API</p>
+<p><a target="_blank" rel="noopener" href="https://api.ghser.com/random/bg.php">https://api.ghser.com/random/bg.php</a></p>
+<p><strong>1080P：</strong> <a target="_blank" rel="noopener" href="https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php">https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php</a></p>
+<p><strong>2K：</strong> <a target="_blank" rel="noopener" href="https://api.dongmanxingkong.com/suijitupian/acg/2k/index.php">https://api.dongmanxingkong.com/suijitupian/acg/2k/index.php</a></p>
+<p><strong>4K：</strong> <a target="_blank" rel="noopener" href="https://api.dongmanxingkong.com/suijitupian/acg/4k/index.php">https://api.dongmanxingkong.com/suijitupian/acg/4k/index.php</a></p>
+<h2 id="随机图片API-1"><a href="#随机图片API-1" class="headerlink" title="随机图片API"></a>随机图片API</h2><p>API文档：<a target="_blank" rel="noopener" href="https://api.pixivweb.com/">随机图片API (pixivweb.com)</a></p>
+<p>接口：<a target="_blank" rel="noopener" href="https://api.pixivweb.com/anime18r.php?return=img">https://api.pixivweb.com/anime18r.php?return=img</a></p>
+<h2 id="无名"><a href="#无名" class="headerlink" title="无名"></a>无名</h2><p>API文档：<a target="_blank" rel="noopener" href="https://www.12580sky.com/fenxiang/23336.html">https://www.12580sky.com/fenxiang/23336.html</a></p>
+<p>接口：</p>
+<p>电脑动漫图片：</p>
+<p><a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=dongman">http://api.btstu.cn/sjbz/?lx=dongman</a></p>
+<p>电脑美女图片：</p>
+<p><a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=meizi">http://api.btstu.cn/sjbz/?lx=meizi</a></p>
+<p>电脑随机动漫妹子：</p>
+<p><a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=suiji">http://api.btstu.cn/sjbz/?lx=suiji</a></p>
+<p>手机动漫图片：</p>
+<p><a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=m_dongman">http://api.btstu.cn/sjbz/?lx=m_dongman</a></p>
+<p>手机美女图片：</p>
+<p><a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=m_meizi">http://api.btstu.cn/sjbz/?lx=m_meizi</a></p>
+<p>手机随机动漫妹子：</p>
+<p><a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?m_lx=suiji">http://api.btstu.cn/sjbz/?m_lx=suiji</a></p>
+<p>手机电脑自动判断，电脑显示适合电脑的壁纸，手机显示适合手机的壁纸</p>
+<p><a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/zsy.php">http://api.btstu.cn/sjbz/zsy.php</a></p>
+<p>二次元随机图：</p>
+<p><a target="_blank" rel="noopener" href="https://acg.toubiec.cn/random">https://acg.toubiec.cn/random</a></p>
+<p>二次元随机图：</p>
+<p><a target="_blank" rel="noopener" href="http://www.dmoe.cc/random.php">http://www.dmoe.cc/random.php</a></p>
+<p><a target="_blank" rel="noopener" href="https://uploadbeta.com/api/pictures/random/?key=%E6%8E%A8%E5%A5%B3%E9%83%8E">https://uploadbeta.com/api/pictures/random/?key=推女郎</a></p>
+<p><a target="_blank" rel="noopener" href="https://uploadbeta.com/api/pictures/random/?key=%E4%BA%8C%E6%AC%A1%E5%85%83">https://uploadbeta.com/api/pictures/random/?key=二次元</a></p>
+<p><a target="_blank" rel="noopener" href="https://uploadbeta.com/api/pictures/random/?key=%E5%8A%A8%E6%BC%AB">https://uploadbeta.com/api/pictures/random/?key=动漫</a></p>
+<p>电脑动漫图片：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=dongman">http://api.btstu.cn/sjbz/?lx=dongman</a></p>
+<p>电脑美女图片：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=meizi">http://api.btstu.cn/sjbz/?lx=meizi</a></p>
+<p>电脑随机动漫妹子：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=suiji">http://api.btstu.cn/sjbz/?lx=suiji</a></p>
+<p>手机动漫图片：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=m_dongman">http://api.btstu.cn/sjbz/?lx=m_dongman</a></p>
+<p>手机美女图片：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?lx=m_meizi">http://api.btstu.cn/sjbz/?lx=m_meizi</a></p>
+<p>手机随机动漫妹子：<a target="_blank" rel="noopener" href="http://api.btstu.cn/sjbz/?m_lx=suiji">http://api.btstu.cn/sjbz/?m_lx=suiji</a></p>
+<hr>
+<h2 id="随机图片API搭建源码"><a href="#随机图片API搭建源码" class="headerlink" title="随机图片API搭建源码"></a>随机图片API搭建源码</h2><p><a target="_blank" rel="noopener" href="https://github.com/galnetwen/Random-Image">GitHub - galnetwen/Random-Image: 随机图片服务</a></p>
+<p>樱花：<a target="_blank" rel="noopener" href="https://www.dmoe.cc/random.php">https://www.dmoe.cc/random.php</a><br>晓晴博客：<a target="_blank" rel="noopener" href="https://acg.toubiec.cn/random.php">https://acg.toubiec.cn/random.php</a><br>Unsplash Source | API Documentation：详情请看官网介绍<br>夏沫博客：<a target="_blank" rel="noopener" href="https://cdn.seovx.com/?mom=302">https://cdn.seovx.com/?mom=302</a><br><a target="_blank" rel="noopener" href="https://cdn.seovx.com/d/?mom=302">https://cdn.seovx.com/d/?mom=302</a><br><a target="_blank" rel="noopener" href="https://cdn.seovx.com/ha/?mom=302">https://cdn.seovx.com/ha/?mom=302</a><br>二次元随机图：<a target="_blank" rel="noopener" href="https://api.blogbig.cn/random/api.php">https://api.blogbig.cn/random/api.php</a><br>搏天api：<a target="_blank" rel="noopener" href="https://api.btstu.cn/sjbz/api.php">https://api.btstu.cn/sjbz/api.php</a><br>姬长信API For Docker：<br>—-每日bing：<a target="_blank" rel="noopener" href="https://api.isoyu.com/bing_images.php">https://api.isoyu.com/bing_images.php</a><br>—-美女图片壁纸：<a target="_blank" rel="noopener" href="https://api.isoyu.com/mm_images.php">https://api.isoyu.com/mm_images.php</a><br>—-网红专栏壁纸：<a target="_blank" rel="noopener" href="https://api.isoyu.com/beibei_images.php">https://api.isoyu.com/beibei_images.php</a><br>—-动态IP签名图片：<a target="_blank" rel="noopener" href="https://api.isoyu.com/ip_images.php?signature=%E6%97%A9%E5%AE%89">https://api.isoyu.com/ip_images.php?signature=早安</a><br>—-ARU(阿鲁)表情包：<a target="_blank" rel="noopener" href="https://api.isoyu.com/ARU_GIF_S.php">https://api.isoyu.com/ARU_GIF_S.php</a><br>樱道：<a target="_blank" rel="noopener" href="https://api.r10086.com/%E5%8A%A8%E6%BC%AB%E7%BB%BC%E5%90%881.php">https://api.r10086.com/动漫综合1.php</a> （网站中有更多api接口）<br>小歪API：<a target="_blank" rel="noopener" href="https://api.ixiaowai.cn/api/api.php%EF%BC%88%E4%BA%8C%E6%AC%A1%E5%85%83%E5%8A%A8%E6%BC%AB%EF%BC%89">https://api.ixiaowai.cn/api/api.php（二次元动漫）</a><br><a target="_blank" rel="noopener" href="https://api.ixiaowai.cn/mcapi/mcapi.php%EF%BC%88mc%E9%85%B1%E5%8A%A8%E6%BC%AB%EF%BC%89">https://api.ixiaowai.cn/mcapi/mcapi.php（mc酱动漫）</a><br><a target="_blank" rel="noopener" href="https://api.ixiaowai.cn/gqapi/gqapi.php%EF%BC%88%E9%AB%98%E6%B8%85%E5%A3%81%E7%BA%B8%EF%BC%89">https://api.ixiaowai.cn/gqapi/gqapi.php（高清壁纸）</a><br>保罗｜API：<a target="_blank" rel="noopener" href="https://api.paugram.com/wallpaper/">https://api.paugram.com/wallpaper/</a><br>墨天逸：<a target="_blank" rel="noopener" href="https://api.mtyqx.cn/tapi/random.php">https://api.mtyqx.cn/tapi/random.php</a><br>EEE.DOG：<a target="_blank" rel="noopener" href="https://api.yimian.xyz/img">https://api.yimian.xyz/img</a><br>动漫星空：<a target="_blank" rel="noopener" href="https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php">https://api.dongmanxingkong.com/suijitupian/acg/1080p/index.php</a><br>岁月小筑：#https调用<a target="_blank" rel="noopener" href="https://img.xjh.me/random_img.php">https://img.xjh.me/random_img.php</a><br>#http调用<a target="_blank" rel="noopener" href="http://img.xjh.me/random_img.php">http://img.xjh.me/random_img.php</a><br>东方Project：<a target="_blank" rel="noopener" href="https://img.paulzzh.tech/touhou/random">https://img.paulzzh.tech/touhou/random</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/%E7%94%9F%E5%91%BD%E4%B8%8D%E7%86%84%EF%BC%8C%E6%8A%98%E8%85%BE%E4%B8%8D%E6%AD%A2%EF%BC%81/">生命不熄，折腾不止！</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%94%9F%E5%91%BD%E4%B8%8D%E6%81%AF%EF%BC%8C%E6%8A%98%E8%85%BE%E4%B8%8D%E6%AD%A2%EF%BC%81/">生命不息，折腾不止！</a>
+                    
+                      <a class="hover-with-bg" href="/tags/API/">API</a>
+                    
+                  </div>
+                
+              </div>
+              <p class="note note-warning">
+                <strong>本文作者: </strong><a href="/">CodeAnime</a> <br>
+                <strong>本文链接: </strong><a href="https://codeanime.cc/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87API.html">https://codeanime.cc/%E4%BA%8C%E6%AC%A1%E5%85%83%E9%9A%8F%E6%9C%BA%E5%9B%BE%E7%89%87API.html</a> <br>
+                <strong>版权声明: </strong>本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                   </p>
+                   
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/WordPress%E5%8D%9A%E5%AE%A2%E7%BD%91%E7%AB%99%E6%90%AC%E5%AE%B6%E5%92%8C%E6%8D%A2%E5%9F%9F%E5%90%8D%E6%96%B9%E6%B3%95.html">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">WordPress博客网站搬家和换域名方法</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"efUGH3iRCQVYfCMKsbvjfxyw-gzGzoHsz","appKey":"MWcG5RaewKo24maCvfnwCjBQ","placeholder":"说点什么","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"requiredFields":[]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-x-md">
+    <div class="container custom post-custom mx-auto">
+      <img src="http://p4.music.126.net/P_CPl0PsdbYkDxxA7KC4_A==/109951166172055304.jpg" srcset="/img/lamu.gif" lazyload class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">
+    </div>
+  </div>
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+  
+  <!-- 备案信息 -->
+  <div class="beian">
+    <span>
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+        京ICP证123456号
+      </a>
+    </span>
+    
+      
+        <span>
+          <a
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12345678"
+            rel="nofollow noopener"
+            class="beian-police"
+            target="_blank"
+          >
+            
+              <span style="visibility: hidden; width: 0">|</span>
+              <img src="/img/police_beian.png" srcset="/img/lamu.gif" lazyload alt="police-icon"/>
+            
+            <span>京公网安备12345678号</span>
+          </a>
+        </span>
+      
+    
+  </div>
+
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+    
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/mermaid@8.10.1/dist/mermaid.min.js" ></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({"theme":"default"});
+    }
+  </script>
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  
+<script src="/js/diy/yinghua.js"></script>
+<script src="/js/diy/click_show_text.js"></script>
+<script src="/js/diy/FunnyTitle.js"></script>
+<script src="/js/diy/lihua.js"></script>
+<script src="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/metowolf/Metingjs@1.2/dist/Meting.min.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script>
+  <link defer rel="stylesheet" href="/styles/backgroundize.css" />
+  <!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":170,"height":297.5,"position":"lift","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":1,"opacityOnHover":0.5},"log":false});</script></body>
+</html>

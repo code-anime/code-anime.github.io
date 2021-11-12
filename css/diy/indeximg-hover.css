@@ -1,0 +1,10 @@
+/* 首页图片动画缩放*/
+.index-img
+{
+  transition: .4s ease .1s;      /*动画时间*/
+}
+.index-card:hover .index-img
+{
+  transform: scale(1.05);        /*放大倍数*/
+  filter: contrast(120%);        /*增加对比度*/
+}

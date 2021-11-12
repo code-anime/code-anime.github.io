@@ -1,0 +1,1586 @@
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=&#34;auto&#34;>
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/favicon.ico">
+  <link rel="icon" href="/img/favicon.ico">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="description" content="💕一个二次元的个人博客网站💕">
+  <meta name="author" content="CodeAnime">
+  <meta name="keywords" content="个人博客">
+  
+  <title>又学MySQL - 不荒废现在,不畏惧未来🌸</title>
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" />
+
+
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/github-markdown-css@4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      
+        
+          
+          
+          
+        
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/themes/prism-okaidia.min.css" />
+      
+      
+        <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.23.0/plugins/line-numbers/prism-line-numbers.min.css" />
+      
+    
+  
+
+  
+    <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1749284_ba1fz6golrf.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/font_1736178_kmeydafke9r.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+<!-- 自定义样式保持在最底部 -->
+
+  
+<link rel="stylesheet" href="/css/diy/gundongtiao.css">
+<link rel="stylesheet" href="/css/diy/indeximg-hover.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/bynotes/texiao/source/css/shubiao.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    var CONFIG = {"hostname":"codeanime.cc","root":"/","version":"1.8.11","typing":{"enable":true,"typeSpeed":120,"cursorChar":"🍬","loop":true},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"right","visible":"hover","icon":"§"},"progressbar":{"enable":true,"height_px":3,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"copy_btn":true,"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/lamu.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"baidu":null,"google":null,"gtag":null,"tencent":{"sid":null,"cid":null},"woyaola":null,"cnzz":null,"leancloud":{"app_id":"efUGH3iRCQVYfCMKsbvjfxyw-gzGzoHsz","app_key":"MWcG5RaewKo24maCvfnwCjBQ","server_url":null}},"search_path":"/local-search.xml"};
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="不荒废现在,不畏惧未来🌸" type="application/atom+xml">
+</head>
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  <header style="height: 70vh;">
+    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand"
+       href="/">&nbsp;<strong>🌸さくら荘 の 一只二刺猿</strong>&nbsp;</a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/">
+                <i class="iconfont icon-home-fill"></i>
+                首页
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/">
+                <i class="iconfont icon-archive-fill"></i>
+                归档
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/">
+                <i class="iconfont icon-category-fill"></i>
+                分类
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/">
+                <i class="iconfont icon-tags-fill"></i>
+                标签
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/bangumis/">
+                <i class="iconfont icon-bilibili-fill"></i>
+                追番
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" target="_blank" rel="noopener" href="https://api.codeanime.cn/">
+                <i class="iconfont icon-bug"></i>
+                API
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" target="_self" role="button"
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="iconfont icon-books"></i>
+                文档
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/">
+                    
+                    主题博客
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/guide/">
+                    
+                    配置指南
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://hexo.fluid-dev.com/docs/icon/">
+                    
+                    图标用法
+                  </a>
+                
+                  
+                  
+                  
+                  <a class="dropdown-item" target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid">
+                    
+                    主题 GitHub 仓库
+                  </a>
+                
+              </div>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/">
+                <i class="iconfont icon-user-fill"></i>
+                关于
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/">
+                <i class="iconfont icon-link-fill"></i>
+                友链
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" data-toggle="modal" data-target="#modalSearch">&nbsp;<i
+                class="iconfont icon-search"></i>&nbsp;</a>
+          </li>
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self">&nbsp;<i
+                class="iconfont icon-dark" id="color-toggle-icon"></i>&nbsp;</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <div class="banner" id="banner" parallax=true
+         style="background: url('https://www.dmoe.cc/random.php') no-repeat center center;
+           background-size: cover;">
+      <div class="full-bg-img">
+        <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+          <div class="page-header text-center fade-in-up">
+            <span class="h2" id="subtitle" title="又学MySQL">
+              
+            </span>
+
+            
+              <div class="mt-3">
+  
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-author" aria-hidden="true"></i>
+      CodeAnime
+    </span>
+  
+  
+    <span class="post-meta">
+      <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+      <time datetime="2021-09-13 22:36" pubdate>
+        2021年9月13日 晚上
+      </time>
+    </span>
+  
+</div>
+
+<div class="mt-1">
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-chart"></i>
+      8.3k 字
+    </span>
+  
+
+  
+    
+    <span class="post-meta mr-2">
+      <i class="iconfont icon-clock-fill"></i>
+      
+      
+      106
+       分钟
+    </span>
+  
+
+  
+  
+    
+      <!-- LeanCloud 统计文章PV -->
+      <span id="leancloud-page-views-container" class="post-meta" style="display: none">
+        <i class="iconfont icon-eye" aria-hidden="true"></i>
+        <span id="leancloud-page-views"></span> 次
+      </span>
+    
+  
+</div>
+
+            
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="d-none d-lg-block col-lg-2"></div>
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div class="py-5" id="board">
+          <article class="post-content mx-auto">
+            <!-- SEO header -->
+            <h1 style="display: none">又学MySQL</h1>
+            
+              <p class="note note-info">
+                
+                  本文最后更新于：2021年10月11日 凌晨
+                
+              </p>
+            
+            <div class="markdown-body">
+              <h1 id="又学MySQL"><a href="#又学MySQL" class="headerlink" title="又学MySQL"></a>又学MySQL</h1><h2 id="一、数据库的基本操作"><a href="#一、数据库的基本操作" class="headerlink" title="一、数据库的基本操作"></a>一、数据库的基本操作</h2><h3 id="1-1、启动"><a href="#1-1、启动" class="headerlink" title="1.1、启动"></a>1.1、启动</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">net <span class="token keyword">start</span> mysql <span class="token comment">-- 启动</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="1-2、断开"><a href="#1-2、断开" class="headerlink" title="1.2、断开"></a>1.2、断开</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">net stop mysql <span class="token comment">-- 断开</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="1-3、连接"><a href="#1-3、连接" class="headerlink" title="1.3、连接"></a>1.3、连接</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql">mysql <span class="token operator">-</span>uroot <span class="token operator">-</span>p <span class="token comment">-- 连接数据库</span>
+Enter password:<span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span><span class="token operator">*</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></div>
+
+<h3 id="1-4、退出"><a href="#1-4、退出" class="headerlink" title="1.4、退出"></a>1.4、退出</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">exit</span> <span class="token comment">-- 退出</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="1-5、创建数据库"><a href="#1-5、创建数据库" class="headerlink" title="1.5、创建数据库"></a>1.5、创建数据库</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">database</span> 数据库名<span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，创建一个叫db1的数据库</span>
+<span class="token keyword">show</span> <span class="token keyword">create</span> <span class="token keyword">database</span> db1<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="1-6、删除数据库"><a href="#1-6、删除数据库" class="headerlink" title="1.6、删除数据库"></a>1.6、删除数据库</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">drop</span> datebase 数据库名
+
+<span class="token comment">-- 例如，删除db1数据库</span>
+<span class="token keyword">drop</span> <span class="token keyword">database</span> db1<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="1-7、切换数据库"><a href="#1-7、切换数据库" class="headerlink" title="1.7、切换数据库"></a>1.7、切换数据库</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">use</span> 数据库名
+
+<span class="token comment">-- 例如，使用db1数据库</span>
+<span class="token keyword">use</span> db1<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="1-8、查询出MySQL中所有的数据库"><a href="#1-8、查询出MySQL中所有的数据库" class="headerlink" title="1.8、查询出MySQL中所有的数据库"></a>1.8、查询出MySQL中所有的数据库</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">show</span> <span class="token keyword">databases</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h3 id="1-9、查看当前使用的数据库"><a href="#1-9、查看当前使用的数据库" class="headerlink" title="1.9、查看当前使用的数据库"></a>1.9、查看当前使用的数据库</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">select</span> <span class="token keyword">database</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></div>
+
+<h2 id="二、数据表的基本操作"><a href="#二、数据表的基本操作" class="headerlink" title="二、数据表的基本操作"></a>二、数据表的基本操作</h2><h3 id="2-1、创建数据表"><a href="#2-1、创建数据表" class="headerlink" title="2.1、创建数据表"></a>2.1、创建数据表</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">table</span> 表名<span class="token punctuation">(</span>
+     字段<span class="token number">1</span> 字段类型<span class="token punctuation">,</span>
+     字段<span class="token number">2</span> 字段类型<span class="token punctuation">,</span>
+     …
+     字段n 字段类型
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，创建一个student表</span>
+ <span class="token keyword">create</span> <span class="token keyword">table</span> student<span class="token punctuation">(</span>
+ 	id <span class="token keyword">int</span><span class="token punctuation">,</span>
+ 	name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+ 	gender <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+ 	birthday <span class="token keyword">date</span>
+ <span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="2-2、查看数据表"><a href="#2-2、查看数据表" class="headerlink" title="2.2、查看数据表"></a>2.2、查看数据表</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">show</span> <span class="token keyword">tables</span><span class="token punctuation">;</span> <span class="token comment">-- 查看当前数据库中所有表</span>
+<span class="token keyword">show</span> <span class="token keyword">create</span> <span class="token keyword">table</span> student<span class="token punctuation">;</span> <span class="token comment">-- 查student表的基本信息</span>
+<span class="token keyword">desc</span> student<span class="token punctuation">;</span> <span class="token comment">-- 查看student表的字段信息</span>
+<span class="token comment">-- PS：此处desc是describe的缩写，用法： desc 表名/查询语句 </span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="2-3、修改数据表"><a href="#2-3、修改数据表" class="headerlink" title="2.3、修改数据表"></a>2.3、修改数据表</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">alter</span> <span class="token keyword">table</span> student <span class="token keyword">rename</span> <span class="token keyword">to</span> stu<span class="token punctuation">;</span> <span class="token comment">-- 修改student表名为stu</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> stu change name sname <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 修改stu表name字段名为sname</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> stu <span class="token keyword">modify</span> sname <span class="token keyword">int</span><span class="token punctuation">;</span> <span class="token comment">-- 修改sname字段数据类型为int</span>
+<span class="token comment">-- PS：此处modify意为修改、调整的意思。</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> stu <span class="token keyword">add</span> address <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">;</span> <span class="token comment">-- 增加address字段</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> stu <span class="token keyword">drop</span> address<span class="token punctuation">;</span> <span class="token comment">-- 删除stu表中address字段</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="2-4、删除数据表"><a href="#2-4、删除数据表" class="headerlink" title="2.4、删除数据表"></a>2.4、删除数据表</h3><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">drop</span> <span class="token keyword">table</span> 表名<span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，删除stu数据表</span>
+<span class="token keyword">drop</span> <span class="token keyword">table</span> stu<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h2 id="三、数据表的约束"><a href="#三、数据表的约束" class="headerlink" title="三、数据表的约束"></a>三、数据表的约束</h2><table>
+<thead>
+<tr>
+<th>约束条件</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>PRIMARY KEY</td>
+<td>主键约束用于唯一标识对应的记录</td>
+</tr>
+<tr>
+<td>FOREIGN KEY</td>
+<td>外键约束</td>
+</tr>
+<tr>
+<td>NOT NULL</td>
+<td>非空约束</td>
+</tr>
+<tr>
+<td>UNIQUE</td>
+<td>唯一性约束</td>
+</tr>
+<tr>
+<td>DEFAULT</td>
+<td>默认值约束，用于设置字段的默认值</td>
+</tr>
+</tbody></table>
+<p>以上五种约束条件针对表中字段进行限制从而保证数据表中数据的正确性和唯一性。换句话说，表的约束实际上就是表中数据的限制条件。</p>
+<h3 id="3-1、主键约束"><a href="#3-1、主键约束" class="headerlink" title="3.1、主键约束"></a>3.1、主键约束</h3><p>主键约束即primary key用于唯一的标识表中的每一行。被标识为主键的数据在表中是唯一的且其值不能为空。这点类似于我们每个人都有一个身份证号，并且这个身份证号是唯一的。</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 主键约束基本语法：</span>
+字段名 数据类型 <span class="token keyword">primary</span> <span class="token keyword">key</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 设置主键约束(primary key)的第一种方式</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> student<span class="token punctuation">(</span>
+	id <span class="token keyword">int</span> <span class="token keyword">primary</span> <span class="token keyword">key</span><span class="token punctuation">,</span>
+	name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 设置主键约束(primary key)的第二种方式</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> student01<span class="token punctuation">(</span>
+	id <span class="token keyword">int</span><span class="token punctuation">,</span>
+	name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	<span class="token keyword">primary</span> <span class="token keyword">key</span><span class="token punctuation">(</span>id<span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="3-2、非空约束"><a href="#3-2、非空约束" class="headerlink" title="3.2、非空约束"></a>3.2、非空约束</h3><p>非空约束即 NOT NULL指的是字段的值不能为空</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 基本的语法格式</span>
+字段名 数据类型 <span class="token operator">NOT</span> <span class="token boolean">NULL</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，给name字段加上非空约束</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> student02<span class="token punctuation">(</span>
+	id <span class="token keyword">int</span><span class="token punctuation">,</span>
+	name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token operator">not</span> <span class="token boolean">null</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+
+
+<h3 id="3-3、默认值约束"><a href="#3-3、默认值约束" class="headerlink" title="3.3、默认值约束"></a>3.3、默认值约束</h3><p>默认值约束即DEFAULT用于给数据表中的字段指定默认值，即当在表中插入一条新记录时若未给该字段赋值，那么，数据库系统会自动为这个字段插人默认值</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 基本的语法格式</span>
+字段名 数据类型 <span class="token keyword">DEFAULT</span> 默认值；
+
+<span class="token comment">-- 例如，给字段gender添加默认值约束</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> student03<span class="token punctuation">(</span>
+	id <span class="token keyword">int</span><span class="token punctuation">,</span>
+	name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+	gender <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span> <span class="token keyword">default</span> <span class="token string">'male'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+
+
+<h3 id="3-4、唯一性约束"><a href="#3-4、唯一性约束" class="headerlink" title="3.4、唯一性约束"></a>3.4、唯一性约束</h3><p>唯一性约束即UNIQUE用于保证数据表中字段的唯一性，即表中字段的值不能重复出现</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 基本的语法格式</span>
+字段名 数据类型 <span class="token keyword">UNIQUE</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，给字段name添加唯一性约束</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> student04<span class="token punctuation">(</span>
+	id <span class="token keyword">int</span><span class="token punctuation">,</span>
+	name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span> <span class="token keyword">unique</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="3-5、外键约束"><a href="#3-5、外键约束" class="headerlink" title="3.5、外键约束"></a>3.5、外键约束</h3><p>外键约束即FOREIGN KEY常用于多张表之间的约束</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 在创建数据表时语法如下：</span>
+<span class="token keyword">CONSTRAINT</span> 外键名 <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>从表外键字段<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> 主表 <span class="token punctuation">(</span>主键字段<span class="token punctuation">)</span>
+<span class="token comment">-- 将创建数据表创号后语法如下：</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> 从表名 <span class="token keyword">ADD</span> <span class="token keyword">CONSTRAINT</span> 外键名 <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span> <span class="token punctuation">(</span>从表外键字段<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> 主表 <span class="token punctuation">(</span>主键字段<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- PS：constraint意为限制</span>
+
+<span class="token comment">-- 例如：</span>
+<span class="token comment">-- 创建一个学生表</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> student05<span class="token punctuation">(</span>
+	id <span class="token keyword">int</span> <span class="token keyword">primary</span> <span class="token keyword">key</span><span class="token punctuation">,</span>
+	name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- 创建一个班级表</span>
+<span class="token keyword">create</span> <span class="token keyword">table</span> class<span class="token punctuation">(</span>
+	classid <span class="token keyword">int</span> <span class="token keyword">primary</span> <span class="token keyword">key</span><span class="token punctuation">,</span>
+	studentid <span class="token keyword">int</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- 学生表作为主表，班级表作为副表设置外键</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> class <span class="token keyword">add</span> <span class="token keyword">constraint</span> fk_class_studentid <span class="token keyword">foreign</span> <span class="token keyword">key</span><span class="token punctuation">(</span>studentid<span class="token punctuation">)</span> <span class="token keyword">references</span> student05<span class="token punctuation">(</span>id<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p>建立外键是为了保证数据的完整和统一性。但是，如果主表中的数据被删除或修改从表中对应的数据，从表中对应的数据也应该被删除，否则数据库中会存在很多无意义的垃圾数据</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 删除外键</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> 从表名 <span class="token keyword">drop</span> <span class="token keyword">foreign</span> <span class="token keyword">key</span> 外键名<span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，删除班级表外键</span>
+<span class="token keyword">alter</span> <span class="token keyword">table</span> class <span class="token keyword">drop</span> <span class="token keyword">foreign</span> <span class="token keyword">key</span> fk_class_studentid<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p><strong>关于外键约束需要注意的细节</strong></p>
+<p>1、从表里的外键通常为主表的主键<br>2、从表里外键的数据类型必须与主表中主键的数据类型一致<br>3、主表发生变化时应注意主表与从表的数据一致性问题</p>
+<h2 id="四、数据表插入数据"><a href="#四、数据表插入数据" class="headerlink" title="四、数据表插入数据"></a>四、数据表插入数据</h2><p>在MySQL通过INSERT语句向数据表中插入数据</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">table</span> student<span class="token punctuation">(</span>
+ 	id <span class="token keyword">int</span><span class="token punctuation">,</span>
+ 	name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+ 	age <span class="token keyword">int</span><span class="token punctuation">,</span>
+ 	gender <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+ <span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="4-1、为表中所有字段插入数据"><a href="#4-1、为表中所有字段插入数据" class="headerlink" title="4.1、为表中所有字段插入数据"></a>4.1、为表中所有字段插入数据</h3><p>每个字段与其值是严格一一对应的。也就是说：每个值、值的顺序、值的类型必须与对应的字段相匹配。但是，各字段也无须与其在表中定义的顺序一致，它们只要与 VALUES中值的顺序一致即可</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 基本的语法格式</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> 表名（字段名<span class="token number">1</span><span class="token punctuation">,</span>字段名<span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span>值 <span class="token number">1</span><span class="token punctuation">,</span>值 <span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，向学生表中插入一条学生信息</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> student <span class="token punctuation">(</span>id<span class="token punctuation">,</span>name<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'bob'</span><span class="token punctuation">,</span><span class="token number">16</span><span class="token punctuation">,</span><span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+
+
+<h3 id="4-2、为表中指定字段插入数据"><a href="#4-2、为表中指定字段插入数据" class="headerlink" title="4.2、为表中指定字段插入数据"></a>4.2、为表中指定字段插入数据</h3><p>插入数据的方法基本和为表中所有字段插入数据，一样，只是需要插入的字段由你自己指定</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 基本的语法格式</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> 表名（字段名<span class="token number">1</span><span class="token punctuation">,</span>字段名<span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span>值 <span class="token number">1</span><span class="token punctuation">,</span>值 <span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，向学生表中插入一条学生信息</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> student <span class="token punctuation">(</span>id<span class="token punctuation">,</span>name<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'lak'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+
+
+<h3 id="4-3、同时插入多条记录"><a href="#4-3、同时插入多条记录" class="headerlink" title="4.3、同时插入多条记录"></a>4.3、同时插入多条记录</h3><p>在该方式中：(字段名1,字段名2,…)是可选的，它用于指定插人的字段名；(值 1,值 2,…),(值 1,值 2,…)表示要插人的记录，该记录可有多条并且每条记录之间用逗号隔开</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 基本的语法格式</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> 表名 <span class="token punctuation">[</span><span class="token punctuation">(</span>字段名<span class="token number">1</span><span class="token punctuation">,</span>字段名<span class="token number">2</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">)</span><span class="token punctuation">]</span><span class="token keyword">VALUES</span> <span class="token punctuation">(</span>值 <span class="token number">1</span><span class="token punctuation">,</span>值 <span class="token number">2</span><span class="token punctuation">,</span>…<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span>值 <span class="token number">1</span><span class="token punctuation">,</span>值 <span class="token number">2</span><span class="token punctuation">,</span>…<span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，向学生表中插入多条学生信息</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> student <span class="token punctuation">(</span>id<span class="token punctuation">,</span>name<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'lucy'</span><span class="token punctuation">,</span><span class="token number">17</span><span class="token punctuation">,</span><span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">'jack'</span><span class="token punctuation">,</span><span class="token number">19</span><span class="token punctuation">,</span><span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token string">'tom'</span><span class="token punctuation">,</span><span class="token number">18</span><span class="token punctuation">,</span><span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h2 id="五、更新数据"><a href="#五、更新数据" class="headerlink" title="五、更新数据"></a>五、更新数据</h2><p>在MySQL通过UPDATE语句向数据表中更新数据</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">create</span> <span class="token keyword">table</span> student<span class="token punctuation">(</span>
+ 	id <span class="token keyword">int</span><span class="token punctuation">,</span>
+ 	name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+ 	age <span class="token keyword">int</span><span class="token punctuation">,</span>
+ 	gender <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+ <span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+ <span class="token comment">-- 基本的语法格式</span>
+ <span class="token comment">-- 在该语法中：字段名1、字段名2…用于指定要更新的字段名称；值1、值 2…用于表示字段的新数据；WHERE 条件表达式 是可选的，它用于指定更新数据需要满足的条件</span>
+<span class="token keyword">UPDATE</span> 表名 <span class="token keyword">SET</span> 字段名<span class="token number">1</span><span class="token operator">=</span>值<span class="token number">1</span><span class="token punctuation">[</span><span class="token punctuation">,</span>字段名<span class="token number">2</span> <span class="token operator">=</span>值<span class="token number">2</span><span class="token punctuation">,</span>…<span class="token punctuation">]</span> <span class="token punctuation">[</span><span class="token keyword">WHERE</span> 条件表达式<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 1、UPDATE更新部分数据</span>
+<span class="token comment">-- 将name为tom的记录的age设置为20并将其gender设置为female</span>
+<span class="token keyword">update</span> student <span class="token keyword">set</span> age<span class="token operator">=</span><span class="token number">20</span><span class="token punctuation">,</span>gender<span class="token operator">=</span><span class="token string">'female'</span> <span class="token keyword">where</span> name<span class="token operator">=</span><span class="token string">'tom'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 2、UPDATE更新全部数据</span>
+<span class="token comment">-- 将所有记录的age设置为18</span>
+<span class="token keyword">update</span> student <span class="token keyword">set</span> age<span class="token operator">=</span><span class="token number">18</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h2 id="六、删除数据"><a href="#六、删除数据" class="headerlink" title="六、删除数据"></a>六、删除数据</h2><p>在MySQL通过DELETE语句删除数据表中的数据</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">TRUNCATE</span> 删除数据
+<span class="token keyword">truncate</span> <span class="token keyword">table</span> student<span class="token punctuation">;</span> <span class="token comment">-- 创建学生表</span>
+ <span class="token keyword">create</span> <span class="token keyword">table</span> student<span class="token punctuation">(</span>
+ 	id <span class="token keyword">int</span><span class="token punctuation">,</span>
+ 	name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+ 	age <span class="token keyword">int</span><span class="token punctuation">,</span>
+ 	gender <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span>
+ <span class="token punctuation">)</span><span class="token punctuation">;</span>
+ 
+ <span class="token comment">-- 插入数据</span>
+<span class="token keyword">insert</span> <span class="token keyword">into</span> student <span class="token punctuation">(</span>id<span class="token punctuation">,</span>name<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">values</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'lucy'</span><span class="token punctuation">,</span><span class="token number">17</span><span class="token punctuation">,</span><span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'jack'</span><span class="token punctuation">,</span><span class="token number">19</span><span class="token punctuation">,</span><span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">'tom'</span><span class="token punctuation">,</span><span class="token number">18</span><span class="token punctuation">,</span><span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token string">'sal'</span><span class="token punctuation">,</span><span class="token number">19</span><span class="token punctuation">,</span><span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token string">'sun'</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token string">'male'</span><span class="token punctuation">)</span>
+<span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token string">'sad'</span><span class="token punctuation">,</span><span class="token number">13</span><span class="token punctuation">,</span><span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token string">'sam'</span><span class="token punctuation">,</span><span class="token number">14</span><span class="token punctuation">,</span><span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+ <span class="token comment">-- 基本的语法格式</span>
+ <span class="token comment">-- 在该语法中：表名用于指定要执行删除操作的表；[WHERE 条件表达式]为可选参数用于指定删除的条件。</span>
+<span class="token keyword">DELETE</span> <span class="token keyword">FROM</span> 表名 <span class="token punctuation">[</span><span class="token keyword">WHERE</span> 条件表达式<span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 1、DELETE删除部分数据</span>
+<span class="token comment">-- 删除age等于14的所有记录</span>
+<span class="token keyword">delete</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> age<span class="token operator">=</span><span class="token number">14</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 2、DELETE删除全部数据</span>
+<span class="token comment">-- 删除student表中的所有记录</span>
+<span class="token keyword">delete</span> <span class="token keyword">from</span> student<span class="token punctuation">;</span>
+
+<span class="token comment">-- 3、TRUNCATE删除数据</span>
+<span class="token keyword">truncate</span> <span class="token keyword">table</span> student<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<p><strong>TRUNCATE和DETELE的区别</strong><br>TRUNCATE和DETELE都能实现删除表中的所有数据的功能，但两者也是有区别的：<br>1、DELETE语句后可跟WHERE子句，可通过指定WHERE子句中的条件表达式只删除满足条件的部分记录；但是，TRUNCATE语句只能用于删除表中的所有记录。<br>2、使用TRUNCATE语句删除表中的数据后，再次向表中添加记录时自动增加字段的默认初始值重新由1开始；使用DELETE语句删除表中所有记录后，再次向表中添加记录时自动增加字段的值为删除时该字段的最大值加1<br>3、DELETE语句是DML语句，TRUNCATE语句通常被认为是DDL语句</p>
+<h2 id="七、MySQL数据表查询语句"><a href="#七、MySQL数据表查询语句" class="headerlink" title="七、MySQL数据表查询语句"></a>七、MySQL数据表查询语句</h2><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 创建数据库</span>
+<span class="token keyword">DROP</span> <span class="token keyword">DATABASE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> mydb<span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">DATABASE</span> mydb<span class="token punctuation">;</span>
+<span class="token keyword">USE</span> mydb<span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建student表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student <span class="token punctuation">(</span>
+    sid <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    sname <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    age <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    gender <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token string">'male'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 向student表插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1001'</span><span class="token punctuation">,</span> <span class="token string">'lili'</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1002'</span><span class="token punctuation">,</span> <span class="token string">'wang'</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1003'</span><span class="token punctuation">,</span> <span class="token string">'tywd'</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1004'</span><span class="token punctuation">,</span> <span class="token string">'hfgs'</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1005'</span><span class="token punctuation">,</span> <span class="token string">'qwer'</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1006'</span><span class="token punctuation">,</span> <span class="token string">'zxsd'</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1007'</span><span class="token punctuation">,</span> <span class="token string">'hjop'</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1008'</span><span class="token punctuation">,</span> <span class="token string">'tyop'</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1009'</span><span class="token punctuation">,</span> <span class="token string">'nhmk'</span><span class="token punctuation">,</span> <span class="token number">13</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1010'</span><span class="token punctuation">,</span> <span class="token string">'xdfv'</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="7-1、简单查询"><a href="#7-1、简单查询" class="headerlink" title="7.1、简单查询"></a>7.1、简单查询</h3><p>不含where的select语句</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 1、查询所有字段</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student<span class="token punctuation">;</span>
+
+<span class="token comment">-- 2、查询指定字段（sid、sname）</span>
+<span class="token keyword">select</span> sid<span class="token punctuation">,</span>sname <span class="token keyword">from</span> student<span class="token punctuation">;</span>
+
+<span class="token comment">-- 3、常数的查询日期标记</span>
+<span class="token keyword">select</span> sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span><span class="token string">'2021-03-02'</span> <span class="token keyword">from</span> student<span class="token punctuation">;</span>
+
+<span class="token comment">-- 4、从查询结果中过滤重复数据（DISTINCT）</span>
+<span class="token comment">-- 注：在SELECT查询语句中DISTINCT关键字只能用在第一个所查列名之前（distinct必须放在开头）。</span>
+<span class="token keyword">select</span> <span class="token keyword">distinct</span> gender <span class="token keyword">from</span> student<span class="token punctuation">;</span>
+
+<span class="token comment">-- 5、在SELECT查询语句中使用加减乘除运算符，例如，查询学生10年后的年龄</span>
+ <span class="token keyword">select</span> sname<span class="token punctuation">,</span>age<span class="token operator">+</span><span class="token number">10</span> <span class="token keyword">from</span> student<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h3 id="7-2、条件查询"><a href="#7-2、条件查询" class="headerlink" title="7.2、条件查询"></a>7.2、条件查询</h3><table>
+<thead>
+<tr>
+<th>关系运算符</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>=</td>
+<td>等于</td>
+</tr>
+<tr>
+<td>&lt;&gt;</td>
+<td>不等于</td>
+</tr>
+<tr>
+<td>!=</td>
+<td>不等于</td>
+</tr>
+<tr>
+<td>&lt;</td>
+<td>小于</td>
+</tr>
+<tr>
+<td>&lt;=</td>
+<td>小于等于</td>
+</tr>
+<tr>
+<td>&gt;</td>
+<td>大于</td>
+</tr>
+<tr>
+<td>&gt;=</td>
+<td>大于等于</td>
+</tr>
+</tbody></table>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 1、使用关系运算符查询</span>
+<span class="token comment">-- 查询年龄等于或大于17的学生的信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> age<span class="token operator">>=</span><span class="token number">17</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 2、使用IN关键字查询</span>
+<span class="token comment">-- IN关键字用于判断某个字段的值是否在指定集合中。如果字段的值恰好在指定的集合中，则将字段所在的记录将査询出来</span>
+<span class="token comment">-- 例如，查询sid为S_1002和S_1003的学生信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> sid <span class="token operator">in</span> <span class="token punctuation">(</span><span class="token string">'S_1002'</span><span class="token punctuation">,</span><span class="token string">'S_1003'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- 查询sid为S_1001以外的学生的信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> sid <span class="token operator">not</span> <span class="token operator">in</span> <span class="token punctuation">(</span><span class="token string">'S_1001'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 3、使用BETWEEN AND关键字查询</span>
+<span class="token comment">-- BETWEEN AND用于判断某个字段的值是否在指定的范围之内。如果字段的值在指定范围内，则将所在的记录将查询出来</span>
+<span class="token comment">-- 例如，查询15到18岁的学生信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> age <span class="token operator">between</span> <span class="token number">15</span> <span class="token operator">and</span> <span class="token number">18</span><span class="token punctuation">;</span>
+<span class="token comment">-- 查询不是15到18岁的学生信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> age <span class="token operator">not</span> <span class="token operator">between</span> <span class="token number">15</span> <span class="token operator">and</span> <span class="token number">18</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 4、使用空值查询</span>
+<span class="token comment">-- 在MySQL中，使用 IS NULL关键字判断字段的值是否为空值。请注意：空值NULL不同于0，也不同于空字符串</span>
+<span class="token comment">-- 例如，查询sname不为空值的学生信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> sname <span class="token operator">is</span> <span class="token operator">not</span> <span class="token boolean">null</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 5、使用AND关键字查询</span>
+<span class="token comment">-- 在MySQL中可使用AND关键字可以连接两个或者多个查询条件。</span>
+<span class="token comment">-- 例如，查询年纪大于15且性别为male的学生信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> age<span class="token operator">></span><span class="token number">15</span> <span class="token operator">and</span> gender<span class="token operator">=</span><span class="token string">'male'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 6、使用OR关键字查询</span>
+<span class="token comment">-- 在使用SELECT语句查询数据时可使用OR关键字连接多个査询条件。在使用OR关键字时，只要记录满足其中任意一个条件就会被查询出来</span>
+<span class="token comment">-- 例如，查询年纪大于15或者性别为male的学生信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> age<span class="token operator">></span><span class="token number">15</span> <span class="token operator">or</span> gender<span class="token operator">=</span><span class="token string">'male'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 7、使用LIKE关键字查询进行模糊查询（%、_）</span>
+<span class="token comment">-- MySQL中可使用LIKE关键字可以判断两个字符串是否相匹配</span>
+<span class="token comment">-- 例如，查询sname中与wang匹配的学生信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> sname <span class="token operator">like</span> <span class="token string">'wang'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询学生姓名以li开始的记录，使用%（%用于匹配任意长度的字符串。例如，字符串“a%”匹配以字符a开始任意长度的字符串）</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> sname <span class="token operator">like</span> <span class="token string">'li%'</span><span class="token punctuation">;</span>
+<span class="token comment">-- 查询学生姓名以g结尾的记录</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> sname <span class="token operator">like</span> <span class="token string">'%g'</span><span class="token punctuation">;</span>
+<span class="token comment">-- 查询学生姓名包含s的记录</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> sname <span class="token operator">like</span> <span class="token string">'%s%'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 查询学生姓名以zx开头且长度为4的记录，使用_（下划线通配符只匹配单个字符，如果要匹配多个字符，需要连续使用多个下划线通配符。例如，字符串“ab_”匹配以字符串“ab”开始长度为3的字符串，如abc、abp等等）</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> sname <span class="token operator">like</span> <span class="token string">'zx__'</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 8、使用LIMIT限制查询结果的数量</span>
+<span class="token comment">-- 当执行查询数据时可能会返回很多条记录，而用户需要的数据可能只是其中的一条或者几条</span>
+<span class="token comment">-- 例如，查询学生表中前三行同学,从第0行开始,查询3行数据</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">limit</span> <span class="token number">3</span><span class="token punctuation">;</span> <span class="token comment">-- limit 3 等价于limit 0,3</span>
+<span class="token comment">-- 查询学生表从索引从6取10行数据的同</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">limit</span> <span class="token number">5</span><span class="token punctuation">,</span><span class="token number">10</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">-- 9、使用GROUP BY进行分组查询</span>
+<span class="token comment">-- GROUP BY 子句可像切蛋糕一样将表中的数据进行分组，再进行查询等操作。换言之，可通俗地理解为：通过GROUP BY将原来的表拆分成了几张小表</span>
+<span class="token comment">-- 创建数据库</span>
+<span class="token keyword">DROP</span> <span class="token keyword">DATABASE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> mydb<span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">DATABASE</span> mydb<span class="token punctuation">;</span>
+<span class="token keyword">USE</span> mydb<span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建员工表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> employee <span class="token punctuation">(</span>
+    id <span class="token keyword">int</span><span class="token punctuation">,</span>
+    name <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    salary <span class="token keyword">int</span><span class="token punctuation">,</span>
+    departmentnumber <span class="token keyword">int</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 向员工表中插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'tome'</span><span class="token punctuation">,</span><span class="token number">2000</span><span class="token punctuation">,</span><span class="token number">1001</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'lucy'</span><span class="token punctuation">,</span><span class="token number">9000</span><span class="token punctuation">,</span><span class="token number">1002</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'joke'</span><span class="token punctuation">,</span><span class="token number">5000</span><span class="token punctuation">,</span><span class="token number">1003</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">'wang'</span><span class="token punctuation">,</span><span class="token number">3000</span><span class="token punctuation">,</span><span class="token number">1004</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token string">'chen'</span><span class="token punctuation">,</span><span class="token number">3000</span><span class="token punctuation">,</span><span class="token number">1001</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token string">'yukt'</span><span class="token punctuation">,</span><span class="token number">7000</span><span class="token punctuation">,</span><span class="token number">1002</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token string">'rett'</span><span class="token punctuation">,</span><span class="token number">6000</span><span class="token punctuation">,</span><span class="token number">1003</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">,</span><span class="token string">'mujk'</span><span class="token punctuation">,</span><span class="token number">4000</span><span class="token punctuation">,</span><span class="token number">1004</span><span class="token punctuation">)</span><span class="token punctuation">;</span> 
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">values</span><span class="token punctuation">(</span><span class="token number">9</span><span class="token punctuation">,</span><span class="token string">'poik'</span><span class="token punctuation">,</span><span class="token number">3000</span><span class="token punctuation">,</span><span class="token number">1001</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- GROUP BY和聚合函数一起使用</span>
+<span class="token comment">-- 例如，统计各部门员工个数 </span>
+<span class="token keyword">select</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">,</span> departmentnumber <span class="token keyword">from</span> employee <span class="token keyword">group</span> <span class="token keyword">by</span> departmentnumber<span class="token punctuation">;</span>
+<span class="token comment">-- 例如，统计部门编号大于1001的各部门员工个数</span>
+<span class="token keyword">select</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span><span class="token punctuation">,</span> departmentnumber <span class="token keyword">from</span> employee <span class="token keyword">where</span> departmentnumber<span class="token operator">></span><span class="token number">1001</span> <span class="token keyword">group</span> <span class="token keyword">by</span> departmentnumber<span class="token punctuation">;</span>
+
+<span class="token comment">-- GROUP BY和聚合函数以及HAVING一起使用</span>
+<span class="token comment">-- 例如，统计工资总和大于8000的部门</span>
+<span class="token keyword">select</span> <span class="token function">sum</span><span class="token punctuation">(</span>salary<span class="token punctuation">)</span><span class="token punctuation">,</span>departmentnumber <span class="token keyword">from</span> employee <span class="token keyword">group</span> <span class="token keyword">by</span> departmentnumber <span class="token keyword">having</span> <span class="token function">sum</span><span class="token punctuation">(</span>salary<span class="token punctuation">)</span><span class="token operator">></span><span class="token number">8000</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">-- 10、使用ORDER BY对查询结果排序</span>
+<span class="token comment">-- 从表中査询出来的数据可能是无序的或者其排列顺序不是我们期望的。为此，我们可以使用ORDER BY对查询结果进行排序</span>
+<span class="token comment">-- 基本的语法格式，在该语法中：字段名1、字段名2是查询结果排序的依据；参数 ASC表示按照升序排序，DESC表示按照降序排序；默认情况下，按照ASC方式排序。通常情况下，ORDER BY子句位于整个SELECT语句的末尾</span>
+<span class="token keyword">SELECT</span> 字段名<span class="token number">1</span><span class="token punctuation">,</span>字段名<span class="token number">2</span><span class="token punctuation">,</span>…
+<span class="token keyword">FROM</span> 表名
+<span class="token keyword">ORDER</span> <span class="token keyword">BY</span> 字段名<span class="token number">1</span> <span class="token punctuation">[</span><span class="token keyword">ASC</span> 丨 <span class="token keyword">DESC</span><span class="token punctuation">]</span><span class="token punctuation">,</span>字段名<span class="token number">2</span> <span class="token punctuation">[</span><span class="token keyword">ASC</span> <span class="token operator">|</span> <span class="token keyword">DESC</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，查询所有学生并按照年纪大小升序排列</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">order</span> <span class="token keyword">by</span> salary <span class="token keyword">asc</span><span class="token punctuation">;</span>
+<span class="token comment">-- 例如，查询所有学生并按照年纪大小降序排列</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> employee <span class="token keyword">order</span> <span class="token keyword">by</span> salary <span class="token keyword">desc</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+
+
+<h3 id="7-3、多表连接查询"><a href="#7-3、多表连接查询" class="headerlink" title="7.3、多表连接查询"></a>7.3、多表连接查询</h3><p><img src="https://i.loli.net/2021/09/16/TVobUlQ3GPRgwW9.png" srcset="/img/lamu.gif" lazyload alt="1941988-20200227015241978-101911609"></p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 1、交叉连接查询</span>
+<span class="token comment">-- 交叉连接返回的结果是被连接的两个表中所有数据行的笛卡儿积；比如：集合A=&#123;a,b&#125;，集合B=&#123;0,1,2&#125;，则集合A和B的笛卡尔积为&#123;(a,0),(a,1),(a,2),(b,0),(b,1),(b,2)&#125;。所以，交叉连接也被称为笛卡尔连接</span>
+
+<span class="token comment">-- 基本的语法格式，在该语法中：CROSS JOIN用于连接两个要查询的表，通过该语句可以查询两个表中所有的数据组合。</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> 表<span class="token number">1</span> <span class="token keyword">CROSS</span> <span class="token keyword">JOIN</span> 表<span class="token number">2</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 2、内连接查询</span>
+<span class="token comment">-- 内连接(Inner Join)又称简单连接或自然连接，是一种非常常见的连接查询。内连接使用比较运算符对两个表中的数据进行比较并列出与连接条件匹配的数据行，组合成新的 记录。也就是说在内连接查询中只有满足条件的记录才能出现在查询结果中</span>
+<span class="token comment">-- 基本的语法格式，在该语法中：INNER JOIN用于连接两个表，ON来指定连接条件；其中INNER可以省略。</span>
+<span class="token keyword">SELECT</span> 查询字段<span class="token number">1</span><span class="token punctuation">,</span>查询字段<span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">FROM</span> 表<span class="token number">1</span> <span class="token punctuation">[</span><span class="token keyword">INNER</span><span class="token punctuation">]</span> <span class="token keyword">JOIN</span> 表<span class="token number">2</span> <span class="token keyword">ON</span> 表<span class="token number">1.</span>关系字段<span class="token operator">=</span>表<span class="token number">2.</span>关系字段
+
+<span class="token comment">-- 若存在数据库mydb则删除</span>
+<span class="token keyword">DROP</span> <span class="token keyword">DATABASE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> mydb<span class="token punctuation">;</span>
+<span class="token comment">-- 创建数据库mydb</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">DATABASE</span> mydb<span class="token punctuation">;</span>
+<span class="token comment">-- 选择数据库mydb</span>
+<span class="token keyword">USE</span> mydb<span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建部门表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> department<span class="token punctuation">(</span>
+  did <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span> 
+  dname <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建员工表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> employee <span class="token punctuation">(</span>
+  eid <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span> 
+  ename <span class="token keyword">varchar</span> <span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+  eage <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+  departmentid <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 向部门表插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> department <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1001</span><span class="token punctuation">,</span><span class="token string">'财务部'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> department <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1002</span><span class="token punctuation">,</span><span class="token string">'技术部'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> department <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1003</span><span class="token punctuation">,</span><span class="token string">'行政部'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> department <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1004</span><span class="token punctuation">,</span><span class="token string">'生活部'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- 向员工表插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'张三'</span><span class="token punctuation">,</span><span class="token number">19</span><span class="token punctuation">,</span><span class="token number">1003</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'李四'</span><span class="token punctuation">,</span><span class="token number">18</span><span class="token punctuation">,</span><span class="token number">1002</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'王五'</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">1001</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> employee <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">'赵六'</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">1004</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，查询员工姓名及其所属部门名称</span>
+<span class="token keyword">select</span> ename<span class="token punctuation">,</span>dname <span class="token keyword">from</span> department <span class="token keyword">inner</span> <span class="token keyword">join</span> employee <span class="token keyword">on</span> did<span class="token operator">=</span>departmentid<span class="token punctuation">;</span>
+<span class="token comment">-- 也可以这么写,都可以</span>
+<span class="token keyword">select</span> employee<span class="token punctuation">.</span>ename<span class="token punctuation">,</span>department<span class="token punctuation">.</span>dname <span class="token keyword">from</span> department <span class="token keyword">inner</span> <span class="token keyword">join</span> employee <span class="token keyword">on</span> department<span class="token punctuation">.</span>did<span class="token operator">=</span>employee<span class="token punctuation">.</span>departmentid<span class="token punctuation">;</span>
+
+<span class="token comment">-- 3、外连接查询</span>
+<span class="token comment">-- 在使用内连接查询时我们发现：返回的结果只包含符合查询条件和连接条件的数据。但是，有时还需要在返回查询结果中不仅包含符合条件的数据，而且还包括左表、右表或两个表中的所有数据，此时我们就需要使用外连接查询。外连接又分为左(外)连接和右(外)连接</span>
+
+<span class="token comment">-- 基本的语法格式，由此可见，外连接的语法格式和内连接非常相似，只不过使用的是LEFT [OUTER] JOIN、RIGHT [OUTER] JOIN关键字。其中，关键字左边的表被称为左表，关键字右边的表被称为右表；OUTER可以省略。</span>
+<span class="token comment">-- 在使用左(外)连接和右(外)连接查询时，查询结果是不一致的，具体如下：</span>
+<span class="token comment">-- （1）LEFT [OUTER] JOIN 左(外)连接：返回包括左表中的所有记录和右表中符合连接条件的记录。</span>
+<span class="token comment">-- （2）RIGHT [OUTER] JOIN 右(外)连接：返回包括右表中的所有记录和左表中符合连接条件的记录</span>
+<span class="token keyword">SELECT</span> 查询字段<span class="token number">1</span><span class="token punctuation">,</span>查询字段<span class="token number">2</span><span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">FROM</span> 表<span class="token number">1</span> <span class="token keyword">LEFT</span> <span class="token operator">|</span> <span class="token keyword">RIGHT</span> <span class="token punctuation">[</span><span class="token keyword">OUTER</span><span class="token punctuation">]</span> <span class="token keyword">JOIN</span> 表<span class="token number">2</span> <span class="token keyword">ON</span> 表<span class="token number">1.</span>关系字段<span class="token operator">=</span>表<span class="token number">2.</span>关系字段 <span class="token keyword">WHERE</span> 条件
+
+<span class="token comment">-- 若存在数据库mydb则删除</span>
+<span class="token keyword">DROP</span> <span class="token keyword">DATABASE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> mydb<span class="token punctuation">;</span>
+<span class="token comment">-- 创建数据库mydb</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">DATABASE</span> mydb<span class="token punctuation">;</span>
+<span class="token comment">-- 选择数据库mydb</span>
+<span class="token keyword">USE</span> mydb<span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建班级表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> class<span class="token punctuation">(</span>
+  cid <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span> 
+  cname <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建学生表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student <span class="token punctuation">(</span>
+  sid <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span> 
+  sname <span class="token keyword">varchar</span> <span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+  sage <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+  classid <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- 向班级表插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1001</span><span class="token punctuation">,</span><span class="token string">'Java'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1002</span><span class="token punctuation">,</span><span class="token string">'C++'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1003</span><span class="token punctuation">,</span><span class="token string">'Python'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1004</span><span class="token punctuation">,</span><span class="token string">'PHP'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 向学生表插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'张三'</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">1001</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'李四'</span><span class="token punctuation">,</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token number">1002</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'王五'</span><span class="token punctuation">,</span><span class="token number">24</span><span class="token punctuation">,</span><span class="token number">1002</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">'赵六'</span><span class="token punctuation">,</span><span class="token number">23</span><span class="token punctuation">,</span><span class="token number">1003</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token string">'Jack'</span><span class="token punctuation">,</span><span class="token number">22</span><span class="token punctuation">,</span><span class="token number">1009</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 准备这组数据有一定的特点，为的是让大家直观的看出左连接与右连接的不同之处</span>
+<span class="token comment">-- （1）班级编号为1004的PHP班级没有学生</span>
+<span class="token comment">-- （2）学号为5的学生王跃跃班级编号为1009，该班级编号并不在班级表中</span>
+
+<span class="token comment">-- 3.1、左（外）连接查询</span>
+<span class="token comment">-- 左(外)连接的结果包括LEFT JOIN子句中指定的左表的所有记录，以及所有满足连接条件的记录。如果左表的某条记录在右表中不存在则在右表中显示为空</span>
+
+<span class="token comment">-- 例如，查询每个班的班级ID、班级名称及该班的所有学生的名字</span>
+<span class="token keyword">select</span> class<span class="token punctuation">.</span>cid<span class="token punctuation">,</span>class<span class="token punctuation">.</span>cname<span class="token punctuation">,</span>student<span class="token punctuation">.</span>sname <span class="token keyword">from</span> class <span class="token keyword">left</span> <span class="token keyword">join</span> student <span class="token keyword">on</span> class<span class="token punctuation">.</span>cid<span class="token operator">=</span>student<span class="token punctuation">.</span>classid<span class="token punctuation">;</span>
+
+<span class="token comment">-- 展示结果分析：</span>
+<span class="token comment">-- （1）分别找出Java班、C++班、Python班的学生</span>
+<span class="token comment">-- （2）右表的王跃跃不满足查询条件故其没有出现在查询结果中</span>
+<span class="token comment">-- （3）虽然左表的PHP班没有学生，但是任然显示了PHP的信息；但是，它对应的学生名字为NULL</span>
+
+<span class="token comment">-- 3.2、右（外）连接查询</span>
+<span class="token comment">-- 右(外)连接的结果包括RIGHT JOIN子句中指定的右表的所有记录，以及所有满足连接条件的记录。如果右表的某条记录在左表中没有匹配，则左表将返回空值</span>
+
+<span class="token comment">-- 例如，查询每个班的班级ID、班级名称及该班的所有学生的名字</span>
+<span class="token keyword">select</span> class<span class="token punctuation">.</span>cid<span class="token punctuation">,</span>class<span class="token punctuation">.</span>cname<span class="token punctuation">,</span>student<span class="token punctuation">.</span>sname <span class="token keyword">from</span> class <span class="token keyword">right</span> <span class="token keyword">join</span> student <span class="token keyword">on</span> class<span class="token punctuation">.</span>cid<span class="token operator">=</span>student<span class="token punctuation">.</span>classid<span class="token punctuation">;</span>
+
+<span class="token comment">-- 展示结果分析：</span>
+<span class="token comment">-- （1）分别找出Java班、C++班、Python班的学生</span>
+<span class="token comment">-- （2）左表的PHP班不满足查询条件故其没有出现在查询结果中</span>
+<span class="token comment">-- （3）虽然右表的jack没有对应班级，但是任然显示王跃跃的信息；但是，它对应的班级以及班级编号均为NULL</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+
+
+<h3 id="7-4、子查询"><a href="#7-4、子查询" class="headerlink" title="7.4、子查询"></a>7.4、子查询</h3><p>子查询是指一个查询语句嵌套在另一个查询语句内部的查询；该查询语句可以嵌套在一个 SELECT、SELECT…INTO、INSERT…INTO等语句中。在执行查询时，首先会执行子查询中的语句，再将返回的结果作为外层查询的过滤条件。在子査询中通常可以使用比较运算符和IN、EXISTS、ANY、ALL等关键字</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> student<span class="token punctuation">;</span>
+<span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> class<span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建班级表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> class<span class="token punctuation">(</span>
+  cid <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span> 
+  cname <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建学生表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student <span class="token punctuation">(</span>
+  sid <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span> 
+  sname <span class="token keyword">varchar</span> <span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+  sage <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">,</span> 
+  classid <span class="token keyword">int</span> <span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 向班级表插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1001</span><span class="token punctuation">,</span><span class="token string">'Java'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1002</span><span class="token punctuation">,</span><span class="token string">'C++'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1003</span><span class="token punctuation">,</span><span class="token string">'Python'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1004</span><span class="token punctuation">,</span><span class="token string">'PHP'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1005</span><span class="token punctuation">,</span><span class="token string">'Android'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 向学生表插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'张三'</span><span class="token punctuation">,</span><span class="token number">20</span><span class="token punctuation">,</span><span class="token number">1001</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'李四'</span><span class="token punctuation">,</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token number">1002</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'王五'</span><span class="token punctuation">,</span><span class="token number">24</span><span class="token punctuation">,</span><span class="token number">1003</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">'赵六'</span><span class="token punctuation">,</span><span class="token number">23</span><span class="token punctuation">,</span><span class="token number">1004</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">5</span><span class="token punctuation">,</span><span class="token string">'小明'</span><span class="token punctuation">,</span><span class="token number">21</span><span class="token punctuation">,</span><span class="token number">1001</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">,</span><span class="token string">'小红'</span><span class="token punctuation">,</span><span class="token number">26</span><span class="token punctuation">,</span><span class="token number">1001</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">7</span><span class="token punctuation">,</span><span class="token string">'小亮'</span><span class="token punctuation">,</span><span class="token number">27</span><span class="token punctuation">,</span><span class="token number">1002</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 1、带比较运算符的子查询</span>
+<span class="token comment">-- 比较运算符前面我们提到过得，就是>、&lt;、=、>=、&lt;=、!=等</span>
+
+<span class="token comment">-- 例如，查询张三同学所在班级的信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> class <span class="token keyword">where</span> cid<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">select</span> classid <span class="token keyword">from</span> student <span class="token keyword">where</span> sname<span class="token operator">=</span><span class="token string">'张三'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 例如，查询比张三同学所在班级编号还大的班级的信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> class <span class="token keyword">where</span> cid<span class="token operator">></span><span class="token punctuation">(</span><span class="token keyword">select</span> classid <span class="token keyword">from</span> student <span class="token keyword">where</span> sname<span class="token operator">=</span><span class="token string">'张三'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 2、带EXISTS关键字的子查询</span>
+<span class="token comment">-- EXISTS关键字后面的参数可以是任意一个子查询， 它不产生任何数据只返回TRUE或FALSE。当返回值为TRUE时外层查询才会 执行</span>
+
+<span class="token comment">-- 例如，假如王五同学在学生表中则从班级表查询所有班级信息</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> class <span class="token keyword">where</span> <span class="token keyword">exists</span> <span class="token punctuation">(</span><span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> sname<span class="token operator">=</span><span class="token string">'王五'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 3、带ANY关键字的子查询</span>
+<span class="token comment">-- ANY关键字表示满足其中任意一个条件就返回一个结果作为外层查询条件</span>
+
+<span class="token comment">-- 例如，查询比任一学生所属班级号还大的班级编号</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> class <span class="token keyword">where</span> cid <span class="token operator">></span> <span class="token keyword">any</span> <span class="token punctuation">(</span><span class="token keyword">select</span> classid <span class="token keyword">from</span> student<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 4、带ALL关键字的子查询</span>
+<span class="token comment">-- ALL关键字与ANY有点类似，只不过带ALL关键字的子査询返回的结果需同时满足所有内层査询条件</span>
+
+<span class="token comment">-- 例如，查询比所有学生所属班级号还大的班级编号</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> class <span class="token keyword">where</span> cid <span class="token operator">></span> <span class="token keyword">all</span> <span class="token punctuation">(</span><span class="token keyword">select</span> classid <span class="token keyword">from</span> student<span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+
+
+<h2 id="八、函数"><a href="#八、函数" class="headerlink" title="八、函数"></a>八、函数</h2><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 创建数据库</span>
+<span class="token keyword">DROP</span> <span class="token keyword">DATABASE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> mydb<span class="token punctuation">;</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">DATABASE</span> mydb<span class="token punctuation">;</span>
+<span class="token keyword">USE</span> mydb<span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建student表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student <span class="token punctuation">(</span>
+    sid <span class="token keyword">CHAR</span><span class="token punctuation">(</span><span class="token number">6</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    sname <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    age <span class="token keyword">INT</span><span class="token punctuation">,</span>
+    gender <span class="token keyword">VARCHAR</span><span class="token punctuation">(</span><span class="token number">50</span><span class="token punctuation">)</span> <span class="token keyword">DEFAULT</span> <span class="token string">'male'</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 向student表插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1001'</span><span class="token punctuation">,</span> <span class="token string">'lili'</span><span class="token punctuation">,</span> <span class="token number">14</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1002'</span><span class="token punctuation">,</span> <span class="token string">'wang'</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1003'</span><span class="token punctuation">,</span> <span class="token string">'tywd'</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1004'</span><span class="token punctuation">,</span> <span class="token string">'hfgs'</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1005'</span><span class="token punctuation">,</span> <span class="token string">'qwer'</span><span class="token punctuation">,</span> <span class="token number">18</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1006'</span><span class="token punctuation">,</span> <span class="token string">'zxsd'</span><span class="token punctuation">,</span> <span class="token number">19</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1007'</span><span class="token punctuation">,</span> <span class="token string">'hjop'</span><span class="token punctuation">,</span> <span class="token number">16</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1008'</span><span class="token punctuation">,</span> <span class="token string">'tyop'</span><span class="token punctuation">,</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1009'</span><span class="token punctuation">,</span> <span class="token string">'nhmk'</span><span class="token punctuation">,</span> <span class="token number">13</span><span class="token punctuation">,</span> <span class="token string">'male'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student <span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>age<span class="token punctuation">,</span>gender<span class="token punctuation">)</span> <span class="token keyword">VALUES</span> <span class="token punctuation">(</span><span class="token string">'S_1010'</span><span class="token punctuation">,</span> <span class="token string">'xdfv'</span><span class="token punctuation">,</span> <span class="token number">17</span><span class="token punctuation">,</span> <span class="token string">'female'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+
+<span class="token comment">-- 1、聚合函数</span>
+<span class="token comment">-- 在开发中，我们常常有类似的需求：统计某个字段的最大值、最小值、 平均值等等。为此，MySQL中提供了聚合函数来实现这些功能。所谓聚合，就是将多行汇总成一行；其实，所有的聚合函数均如此——输入多行，输出一行。聚合函数具有自动滤空的功能，若某一个值为NULL，那么会自动将其过滤使其不参与运算。</span>
+<span class="token comment">-- 聚合函数使用规则：</span>
+<span class="token comment">-- 只有SELECT子句和HAVING子句、ORDER BY子句中能够使用聚合函数。例如，在WHERE子句中使用聚合函数是错误的</span>
+
+<span class="token comment">-- 1.1、count()</span>
+<span class="token comment">-- 统计表中数据的行数或者统计指定列其值不为NULL的数据个数</span>
+<span class="token comment">-- 例如，查询有多少该表中有多少人</span>
+<span class="token keyword">select</span> <span class="token function">count</span><span class="token punctuation">(</span><span class="token operator">*</span><span class="token punctuation">)</span> <span class="token keyword">from</span> student<span class="token punctuation">;</span>
+
+<span class="token comment">-- 1.2、max()</span>
+<span class="token comment">-- 计算指定列的最大值，如果指定列是字符串类型则使用字符串排序运算</span>
+<span class="token comment">-- 例如，查询该学生表中年纪最大的学生</span>
+<span class="token keyword">select</span> <span class="token function">max</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token keyword">from</span> student<span class="token punctuation">;</span>
+
+<span class="token comment">-- 1.3、min()</span>
+<span class="token comment">-- 计算指定列的最小值，如果指定列是字符串类型则使用字符串排序运算</span>
+<span class="token comment">-- 例如，查询该学生表中年纪最小的学生</span>
+<span class="token keyword">select</span> sname<span class="token punctuation">,</span><span class="token function">min</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token keyword">from</span> student<span class="token punctuation">;</span>
+
+<span class="token comment">-- 1.4、sum()</span>
+<span class="token comment">-- 计算指定列的数值和，如果指定列类型不是数值类型则计算结果为0</span>
+<span class="token comment">-- 例如，查询该学生表中年纪的总和</span>
+<span class="token keyword">select</span> <span class="token function">sum</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token keyword">from</span> student<span class="token punctuation">;</span>
+
+<span class="token comment">-- 1.5、avg()</span>
+<span class="token comment">-- 计算指定列的平均值</span>
+<span class="token comment">-- 例如，查询该学生表中年纪的平均数</span>
+<span class="token keyword">select</span> <span class="token function">avg</span><span class="token punctuation">(</span>age<span class="token punctuation">)</span> <span class="token keyword">from</span> student<span class="token punctuation">;</span>
+
+
+<span class="token comment">-- 2.其他常用函数</span>
+<span class="token comment">-- 2.1、时间函数</span>
+<span class="token keyword">SELECT</span> <span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">DAY</span> <span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">DATE</span> <span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">TIME</span> <span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">YEAR</span> <span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">MONTH</span> <span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">CURRENT_DATE</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">CURRENT_TIME</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> <span class="token keyword">CURRENT_TIMESTAMP</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> ADDTIME<span class="token punctuation">(</span><span class="token string">'14:23:12'</span><span class="token punctuation">,</span><span class="token string">'01:02:01'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> DATE_ADD<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">INTERVAL</span> <span class="token number">1</span> <span class="token keyword">DAY</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> DATE_ADD<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">INTERVAL</span> <span class="token number">1</span> <span class="token keyword">MONTH</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> DATE_SUB<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">INTERVAL</span> <span class="token number">1</span> <span class="token keyword">DAY</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> DATE_SUB<span class="token punctuation">(</span><span class="token function">NOW</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">,</span><span class="token keyword">INTERVAL</span> <span class="token number">1</span> <span class="token keyword">MONTH</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> DATEDIFF<span class="token punctuation">(</span><span class="token string">'2019-07-22'</span><span class="token punctuation">,</span><span class="token string">'2019-05-05'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 2.2、字符串函数</span>
+<span class="token comment">-- 连接函数</span>
+<span class="token keyword">SELECT</span> CONCAT <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">SELECT</span> INSTR <span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- 统计长度</span>
+<span class="token keyword">SELECT</span> LENGTH<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 2.3、数学函数</span>
+<span class="token comment">-- 绝对值</span>
+<span class="token keyword">SELECT</span> ABS<span class="token punctuation">(</span><span class="token operator">-</span><span class="token number">136</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- 向下取整</span>
+<span class="token keyword">SELECT</span> FLOOR<span class="token punctuation">(</span><span class="token number">3.14</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- 向上取整</span>
+<span class="token keyword">SELECT</span> CEILING<span class="token punctuation">(</span><span class="token number">3.14</span><span class="token punctuation">)</span><span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+
+
+<h2 id="九、别名设置"><a href="#九、别名设置" class="headerlink" title="九、别名设置"></a>九、别名设置</h2><p>在査询数据时可为表和字段取別名，该别名代替表和字段的原名参与查询操作。</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 1.为表取别名</span>
+<span class="token comment">-- 在查询操作时，假若表名很长使用起来就不太方便，此时可为表取一个別名，用该别名来代替表的名称</span>
+
+<span class="token comment">-- 基本的语法格式</span>
+<span class="token keyword">SELECT</span> <span class="token operator">*</span> <span class="token keyword">FROM</span> 表名 <span class="token punctuation">[</span><span class="token keyword">AS</span><span class="token punctuation">]</span> 表的别名 <span class="token keyword">WHERE</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">;</span>
+<span class="token comment">-- 例如，将student改为stu查询整表</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">as</span> stu<span class="token punctuation">;</span>
+
+<span class="token comment">-- 2.为字段取别名</span>
+<span class="token comment">-- 在查询操作时，假若字段名很长使用起来就不太方便，此时可该字段取一个別名，用该别名来代替字段的名称</span>
+
+<span class="token comment">-- 基本的语法格式</span>
+<span class="token keyword">SELECT</span> 字段名<span class="token number">1</span> <span class="token punctuation">[</span><span class="token keyword">AS</span><span class="token punctuation">]</span> 别名<span class="token number">1</span> <span class="token punctuation">,</span> 字段名<span class="token number">2</span> <span class="token punctuation">[</span><span class="token keyword">AS</span><span class="token punctuation">]</span> 别名<span class="token number">2</span> <span class="token punctuation">,</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token keyword">FROM</span> 表名 <span class="token keyword">WHERE</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">;</span>
+<span class="token comment">-- 例如，将student中的name取别名为“姓名” 查询整表</span>
+<span class="token keyword">select</span> name <span class="token keyword">as</span> <span class="token string">'姓名'</span><span class="token punctuation">,</span>id <span class="token keyword">from</span> student<span class="token punctuation">;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+
+
+<h2 id="十、表的关联关系"><a href="#十、表的关联关系" class="headerlink" title="十、表的关联关系"></a>十、表的关联关系</h2><p>在实际开发中数据表之间存在着各种关联关系。在此，介绍MySQL中数据表的三种关联关系。<br>多对一<br>多对一(亦称为一对多)是数据表中最常见的一种关系。例如：员工与部门之间的关系，一个部门可以有多个员工；而一个员工不能属于多个部门只属于某个部门。在多对一的表关系 中，应将外键建在多的一方否则会造成数据的冗余。<br>多对多<br>多对多是数据表中常见的一种关系。例如：学生与老师之间的关系，一个学生可以有多个老师而且一个老师有多个学生。通常情况下，为了实现这种关系需要定义一张中间表(亦称为连接表)该表会存在两个外键分别参照老师表和学生表。<br>一对一<br>在开发过程中，一对一的关联关系在数据库中并不常见；因为以这种方式存储的信息通常会放在同一张表中。</p>
+<div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> student<span class="token punctuation">;</span>
+<span class="token keyword">DROP</span> <span class="token keyword">TABLE</span> <span class="token keyword">IF</span> <span class="token keyword">EXISTS</span> class<span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建班级表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> class<span class="token punctuation">(</span>
+    cid <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+    cname <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span> 
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 创建学生表</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TABLE</span> student<span class="token punctuation">(</span>
+    sid <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span> <span class="token keyword">PRIMARY</span> <span class="token keyword">KEY</span><span class="token punctuation">,</span>
+    sname <span class="token keyword">varchar</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">,</span>
+    classid <span class="token keyword">int</span><span class="token punctuation">(</span><span class="token number">8</span><span class="token punctuation">)</span> <span class="token operator">NOT</span> <span class="token boolean">NULL</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 为学生表添加外键约束</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">TABLE</span> student <span class="token keyword">ADD</span> <span class="token keyword">CONSTRAINT</span> fk_student_classid <span class="token keyword">FOREIGN</span> <span class="token keyword">KEY</span><span class="token punctuation">(</span>classid<span class="token punctuation">)</span> <span class="token keyword">REFERENCES</span> class<span class="token punctuation">(</span>cid<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token comment">-- 向班级表插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class<span class="token punctuation">(</span>cid<span class="token punctuation">,</span>cname<span class="token punctuation">)</span><span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'Java'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> class<span class="token punctuation">(</span>cid<span class="token punctuation">,</span>cname<span class="token punctuation">)</span><span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'Python'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 向学生表插入数据</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student<span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>classid<span class="token punctuation">)</span><span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token string">'tome'</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student<span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>classid<span class="token punctuation">)</span><span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token string">'lucy'</span><span class="token punctuation">,</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student<span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>classid<span class="token punctuation">)</span><span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">3</span><span class="token punctuation">,</span><span class="token string">'lili'</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">INSERT</span> <span class="token keyword">INTO</span> student<span class="token punctuation">(</span>sid<span class="token punctuation">,</span>sname<span class="token punctuation">,</span>classid<span class="token punctuation">)</span><span class="token keyword">VALUES</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span><span class="token string">'domi'</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 1.关联查询</span>
+<span class="token comment">-- 查询Java班的所有学生</span>
+<span class="token keyword">select</span> <span class="token operator">*</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> classid<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">select</span> cid <span class="token keyword">from</span> class <span class="token keyword">where</span> cname<span class="token operator">=</span><span class="token string">'Java'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 2.关于关联关系的删除数据</span>
+<span class="token comment">-- 请从班级表中删除Java班级。在此，请注意：班级表和学生表之间存在关联关系；要删除Java班级，应该先删除学生表中与该班相关联的学生。否则，假若先删除Java班那么学生表中的cid就失去了关联</span>
+<span class="token comment">-- 例如，删除Java班</span>
+<span class="token keyword">delete</span> <span class="token keyword">from</span> student <span class="token keyword">where</span> classid<span class="token operator">=</span><span class="token punctuation">(</span><span class="token keyword">select</span> cid <span class="token keyword">from</span> class <span class="token keyword">where</span> cname<span class="token operator">=</span><span class="token string">'Java'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">delete</span> <span class="token keyword">from</span> class <span class="token keyword">where</span> cname<span class="token operator">=</span><span class="token string">'Java'</span><span class="token punctuation">;</span>
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+<h2 id="十一、权限"><a href="#十一、权限" class="headerlink" title="十一、权限"></a>十一、权限</h2><div class="code-wrapper"><pre class="line-numbers language-sql" data-language="sql"><code class="language-sql"><span class="token comment">-- 用户和权限管理</span>
+<span class="token comment">-- 用户信息表：mysql.user</span>
+
+<span class="token comment">-- 刷新权限</span>
+FLUSH <span class="token keyword">PRIVILEGES</span>
+
+<span class="token comment">-- 增加用户 CREATE USER kuangshen IDENTIFIED BY '123456'</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">USER</span> 用户名 IDENTIFIED <span class="token keyword">BY</span> <span class="token punctuation">[</span>PASSWORD<span class="token punctuation">]</span> 密码<span class="token punctuation">(</span>字符串<span class="token punctuation">)</span>
+  <span class="token comment">-- 必须拥有mysql数据库的全局CREATE USER权限，或拥有INSERT权限。</span>
+  <span class="token comment">-- 只能创建用户，不能赋予权限。</span>
+  <span class="token comment">-- 用户名，注意引号：如 'user_name'@'192.168.1.1'</span>
+  <span class="token comment">-- 密码也需引号，纯数字密码也要加引号</span>
+  <span class="token comment">-- 要在纯文本中指定密码，需忽略PASSWORD关键词。要把密码指定为由PASSWORD()函数返回的混编值，需包含关键字PASSWORD</span>
+
+<span class="token comment">-- 重命名用户 RENAME USER kuangshen TO kuangshen2</span>
+<span class="token keyword">RENAME</span> <span class="token keyword">USER</span> old_user <span class="token keyword">TO</span> new_user
+
+<span class="token comment">-- 设置密码</span>
+<span class="token keyword">SET</span> PASSWORD <span class="token operator">=</span> PASSWORD<span class="token punctuation">(</span><span class="token string">'密码'</span><span class="token punctuation">)</span>    <span class="token comment">-- 为当前用户设置密码</span>
+<span class="token keyword">SET</span> PASSWORD <span class="token keyword">FOR</span> 用户名 <span class="token operator">=</span> PASSWORD<span class="token punctuation">(</span><span class="token string">'密码'</span><span class="token punctuation">)</span>    <span class="token comment">-- 为指定用户设置密码</span>
+
+<span class="token comment">-- 删除用户 DROP USER kuangshen2</span>
+<span class="token keyword">DROP</span> <span class="token keyword">USER</span> 用户名
+
+<span class="token comment">-- 分配权限/添加用户</span>
+<span class="token keyword">GRANT</span> 权限列表 <span class="token keyword">ON</span> 表名 <span class="token keyword">TO</span> 用户名 <span class="token punctuation">[</span>IDENTIFIED <span class="token keyword">BY</span> <span class="token punctuation">[</span>PASSWORD<span class="token punctuation">]</span> <span class="token string">'password'</span><span class="token punctuation">]</span>
+  <span class="token operator">-</span> <span class="token keyword">all</span> <span class="token keyword">privileges</span> 表示所有权限
+  <span class="token operator">-</span> <span class="token operator">*</span><span class="token punctuation">.</span><span class="token operator">*</span> 表示所有库的所有表
+  <span class="token operator">-</span> 库名<span class="token punctuation">.</span>表名 表示某库下面的某表
+
+<span class="token comment">-- 查看权限   SHOW GRANTS FOR root@localhost;</span>
+<span class="token keyword">SHOW</span> GRANTS <span class="token keyword">FOR</span> 用户名
+   <span class="token comment">-- 查看当前用户权限</span>
+  <span class="token keyword">SHOW</span> GRANTS<span class="token punctuation">;</span> 或 <span class="token keyword">SHOW</span> GRANTS <span class="token keyword">FOR</span> <span class="token keyword">CURRENT_USER</span><span class="token punctuation">;</span> 或 <span class="token keyword">SHOW</span> GRANTS <span class="token keyword">FOR</span> <span class="token keyword">CURRENT_USER</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+<span class="token comment">-- 撤消权限</span>
+<span class="token keyword">REVOKE</span> 权限列表 <span class="token keyword">ON</span> 表名 <span class="token keyword">FROM</span> 用户名
+<span class="token keyword">REVOKE</span> <span class="token keyword">ALL</span> <span class="token keyword">PRIVILEGES</span><span class="token punctuation">,</span> <span class="token keyword">GRANT</span> <span class="token keyword">OPTION</span> <span class="token keyword">FROM</span> 用户名    <span class="token comment">-- 撤销所有权限</span>
+权限解释
+
+<span class="token comment">-- 权限列表</span>
+<span class="token keyword">ALL</span> <span class="token punctuation">[</span><span class="token keyword">PRIVILEGES</span><span class="token punctuation">]</span>    <span class="token comment">-- 设置除GRANT OPTION之外的所有简单权限</span>
+<span class="token keyword">ALTER</span>    <span class="token comment">-- 允许使用ALTER TABLE</span>
+<span class="token keyword">ALTER</span> <span class="token keyword">ROUTINE</span>    <span class="token comment">-- 更改或取消已存储的子程序</span>
+<span class="token keyword">CREATE</span>    <span class="token comment">-- 允许使用CREATE TABLE</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">ROUTINE</span>    <span class="token comment">-- 创建已存储的子程序</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">TEMPORARY</span> <span class="token keyword">TABLES</span>        <span class="token comment">-- 允许使用CREATE TEMPORARY TABLE</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">USER</span>        <span class="token comment">-- 允许使用CREATE USER, DROP USER, RENAME USER和REVOKE ALL PRIVILEGES。</span>
+<span class="token keyword">CREATE</span> <span class="token keyword">VIEW</span>        <span class="token comment">-- 允许使用CREATE VIEW</span>
+<span class="token keyword">DELETE</span>    <span class="token comment">-- 允许使用DELETE</span>
+<span class="token keyword">DROP</span>    <span class="token comment">-- 允许使用DROP TABLE</span>
+<span class="token keyword">EXECUTE</span>        <span class="token comment">-- 允许用户运行已存储的子程序</span>
+<span class="token keyword">FILE</span>    <span class="token comment">-- 允许使用SELECT...INTO OUTFILE和LOAD DATA INFILE</span>
+<span class="token keyword">INDEX</span>     <span class="token comment">-- 允许使用CREATE INDEX和DROP INDEX</span>
+<span class="token keyword">INSERT</span>    <span class="token comment">-- 允许使用INSERT</span>
+<span class="token keyword">LOCK</span> <span class="token keyword">TABLES</span>        <span class="token comment">-- 允许对您拥有SELECT权限的表使用LOCK TABLES</span>
+PROCESS     <span class="token comment">-- 允许使用SHOW FULL PROCESSLIST</span>
+<span class="token keyword">REFERENCES</span>    <span class="token comment">-- 未被实施</span>
+RELOAD    <span class="token comment">-- 允许使用FLUSH</span>
+<span class="token keyword">REPLICATION</span> CLIENT    <span class="token comment">-- 允许用户询问从属服务器或主服务器的地址</span>
+<span class="token keyword">REPLICATION</span> SLAVE    <span class="token comment">-- 用于复制型从属服务器（从主服务器中读取二进制日志事件）</span>
+<span class="token keyword">SELECT</span>    <span class="token comment">-- 允许使用SELECT</span>
+<span class="token keyword">SHOW</span> <span class="token keyword">DATABASES</span>    <span class="token comment">-- 显示所有数据库</span>
+<span class="token keyword">SHOW</span> <span class="token keyword">VIEW</span>    <span class="token comment">-- 允许使用SHOW CREATE VIEW</span>
+<span class="token keyword">SHUTDOWN</span>    <span class="token comment">-- 允许使用mysqladmin shutdown</span>
+SUPER    <span class="token comment">-- 允许使用CHANGE MASTER, KILL, PURGE MASTER LOGS和SET GLOBAL语句，mysqladmin debug命令；允许您连接（一次），即使已达到max_connections。</span>
+<span class="token keyword">UPDATE</span>    <span class="token comment">-- 允许使用UPDATE</span>
+<span class="token keyword">USAGE</span>    <span class="token comment">-- “无权限”的同义词</span>
+<span class="token keyword">GRANT</span> <span class="token keyword">OPTION</span>    <span class="token comment">-- 允许授予权限</span>
+
+<span class="token comment">-- 表维护</span>
+
+<span class="token comment">-- 分析和存储表的关键字分布</span>
+<span class="token keyword">ANALYZE</span> <span class="token punctuation">[</span><span class="token keyword">LOCAL</span> <span class="token operator">|</span> NO_WRITE_TO_BINLOG<span class="token punctuation">]</span> <span class="token keyword">TABLE</span> 表名 <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token comment">-- 检查一个或多个表是否有错误</span>
+<span class="token keyword">CHECK</span> <span class="token keyword">TABLE</span> tbl_name <span class="token punctuation">[</span><span class="token punctuation">,</span> tbl_name<span class="token punctuation">]</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span> <span class="token punctuation">[</span><span class="token keyword">option</span><span class="token punctuation">]</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+<span class="token keyword">option</span> <span class="token operator">=</span> &#123;<span class="token keyword">QUICK</span> <span class="token operator">|</span> FAST <span class="token operator">|</span> MEDIUM <span class="token operator">|</span> <span class="token keyword">EXTENDED</span> <span class="token operator">|</span> CHANGED&#125;
+<span class="token comment">-- 整理数据文件的碎片</span>
+<span class="token keyword">OPTIMIZE</span> <span class="token punctuation">[</span><span class="token keyword">LOCAL</span> <span class="token operator">|</span> NO_WRITE_TO_BINLOG<span class="token punctuation">]</span> <span class="token keyword">TABLE</span> tbl_name <span class="token punctuation">[</span><span class="token punctuation">,</span> tbl_name<span class="token punctuation">]</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></div>
+
+
+
+<h2 id="十二、总结"><a href="#十二、总结" class="headerlink" title="十二、总结"></a>十二、总结</h2><p>重要（从关键字分析）：<br>查询语句的书写顺序和执行顺序<br>select ===&gt; from ===&gt; where ===&gt; group by ===&gt; having ===&gt; order by ===&gt; limit<br>查询语句的执行顺序<br>from ===&gt; where ===&gt; group by ===&gt; having ===&gt; select ===&gt; order by ===&gt; limi</p>
+<hr>
+<p>参考：</p>
+<p>1、CSDN博主「老赖的小弟」<br>链接：<a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_45851945/article/details/114287877">https://blog.csdn.net/weixin_45851945/article/details/114287877</a></p>
+<p>2、狂神</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/a4jA3B2j4KXBH7rci4C46w">https://mp.weixin.qq.com/s/a4jA3B2j4KXBH7rci4C46w</a></p>
+<p>​           <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/-_-fRKNOi5rI6tb8RINZ0Q">https://mp.weixin.qq.com/s/-_-fRKNOi5rI6tb8RINZ0Q</a></p>
+<p>​            <a target="_blank" rel="noopener" href="https://mp.weixin.qq.com/s/dCt_v5KQCTpgBdlY__0BSA">https://mp.weixin.qq.com/s/dCt_v5KQCTpgBdlY__0BSA</a></p>
+<p>3、菜鸟教程</p>
+<p>链接：<a target="_blank" rel="noopener" href="https://www.runoob.com/mysql/mysql-create-tables.html">https://www.runoob.com/mysql/mysql-create-tables.html</a></p>
+
+            </div>
+            <hr>
+            <div>
+              <div class="post-metas mb-3">
+                
+                  <div class="post-meta mr-3">
+                    <i class="iconfont icon-category"></i>
+                    
+                      <a class="hover-with-bg" href="/categories/MySQL/">MySQL</a>
+                    
+                  </div>
+                
+                
+                  <div class="post-meta">
+                    <i class="iconfont icon-tags"></i>
+                    
+                      <a class="hover-with-bg" href="/tags/Java/">Java</a>
+                    
+                      <a class="hover-with-bg" href="/tags/%E7%AC%94%E8%AE%B0/">笔记</a>
+                    
+                      <a class="hover-with-bg" href="/tags/MySQL/">MySQL</a>
+                    
+                  </div>
+                
+              </div>
+              <p class="note note-warning">
+                <strong>本文作者: </strong><a href="/">CodeAnime</a> <br>
+                <strong>本文链接: </strong><a href="https://codeanime.cc/%E5%8F%88%E5%AD%A6MySQL.html">https://codeanime.cc/%E5%8F%88%E5%AD%A6MySQL.html</a> <br>
+                <strong>版权声明: </strong>本博客所有文章除特别声明外，均采用 <a target="_blank" href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh" rel="nofollow noopener noopener">CC BY-SA 4.0 协议</a> ，转载请注明出处！
+                   </p>
+                   
+              
+                <div class="post-prevnext">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%99%E8%AF%AF-ERROR-1366-HY000-Incorrect-string-value-xD4xF8xBBxAA-for-column-Sname-at-row-1%E8%A7%A3%E5%86%B3.html">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">数据库错误 ERROR 1366 (HY000) Incorrect string value xD4xF8xBBxAA for column Sname at row 1解决</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/Markdown%E8%AF%AD%E6%B3%95%E5%A4%A7%E5%85%A8%EF%BC%88%E7%AC%94%E8%AE%B0%EF%BC%89.html">
+                        <span class="hidden-mobile">Markdown语法大全（笔记）</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+              <!-- Comments -->
+              <article class="comments" id="comments" lazyload>
+                
+                  
+                
+                
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://cdn.jsdelivr.net/npm/valine@1.4.14/dist/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"efUGH3iRCQVYfCMKsbvjfxyw-gzGzoHsz","appKey":"MWcG5RaewKo24maCvfnwCjBQ","placeholder":"说点什么","path":"window.location.pathname","avatar":"retro","meta":["nick","mail","link"],"pageSize":10,"lang":"zh-CN","highlight":true,"recordIP":true,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"requiredFields":[]},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+              </article>
+            
+          </article>
+        </div>
+      </div>
+    </div>
+    
+      <div class="d-none d-lg-block col-lg-2 toc-container" id="toc-ctn">
+        <div id="toc">
+  <p class="toc-header"><i class="iconfont icon-list"></i>&nbsp;目录</p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+
+<!-- Custom -->
+
+  <div class="col-lg-7 mx-auto nopadding-x-md">
+    <div class="container custom post-custom mx-auto">
+      <img src="http://p4.music.126.net/P_CPl0PsdbYkDxxA7KC4_A==/109951166172055304.jpg" srcset="/img/lamu.gif" lazyload class="rounded mx-auto d-block mt-5" style="width:150px; height:150px;">
+    </div>
+  </div>
+
+
+    
+
+    
+      <a id="scroll-top-button" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v"
+                 for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+
+    
+  </main>
+
+  <footer class="text-center mt-5 py-3">
+  <div class="footer-content">
+     <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+  </div>
+  
+  <div class="statistics">
+    
+    
+
+    
+      
+        <!-- LeanCloud 统计PV -->
+        <span id="leancloud-site-pv-container" style="display: none">
+            总访问量 
+            <span id="leancloud-site-pv"></span>
+             次
+          </span>
+      
+      
+        <!-- LeanCloud 统计UV -->
+        <span id="leancloud-site-uv-container" style="display: none">
+            总访客数 
+            <span id="leancloud-site-uv"></span>
+             人
+          </span>
+      
+
+    
+  </div>
+
+
+  
+  <!-- 备案信息 -->
+  <div class="beian">
+    <span>
+      <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+        京ICP证123456号
+      </a>
+    </span>
+    
+      
+        <span>
+          <a
+            href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=12345678"
+            rel="nofollow noopener"
+            class="beian-police"
+            target="_blank"
+          >
+            
+              <span style="visibility: hidden; width: 0">|</span>
+              <img src="/img/police_beian.png" srcset="/img/lamu.gif" lazyload alt="police-icon"/>
+            
+            <span>京公网安备12345678号</span>
+          </a>
+        </span>
+      
+    
+  </div>
+
+
+  
+</footer>
+
+
+  <!-- SCRIPTS -->
+  
+  <script  src="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://cdn.jsdelivr.net/npm/nprogress@0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
+    })
+  </script>
+
+
+<script  src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" ></script>
+<script  src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
+
+<!-- Plugins -->
+
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+  
+    
+  
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/tocbot@4.12.3/dist/tocbot.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/anchor-js@4.3.1/anchor.min.js" ></script>
+
+
+
+  <script defer src="https://cdn.jsdelivr.net/npm/clipboard@2.0.8/dist/clipboard.min.js" ></script>
+
+
+
+  <script  src="/js/local-search.js" ></script>
+
+
+
+
+  <script defer src="/js/leancloud.js" ></script>
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var title = document.getElementById('subtitle').title;
+      
+      typing(title)
+      
+    })(window, document);
+  </script>
+
+
+
+
+
+  
+
+  
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        options: {
+          renderActions: {
+            findScript: [10, doc => {
+              document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+                const display = !!node.type.match(/; *mode=display/);
+                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+                const text = document.createTextNode('');
+                node.parentNode.replaceChild(text, node);
+                math.start = { node: text, delim: '', n: 0 };
+                math.end = { node: text, delim: '', n: 0 };
+                doc.math.push(math);
+              });
+            }, '', false],
+            insertedScript: [200, () => {
+              document.querySelectorAll('mjx-container').forEach(node => {
+                let target = node.parentNode;
+                if (target.nodeName.toLowerCase() === 'li') {
+                  target.parentNode.classList.add('has-jax');
+                }
+              });
+            }, '', false]
+          }
+        }
+      };
+    </script>
+
+    <script async src="https://cdn.jsdelivr.net/npm/mathjax@3.1.4/es5/tex-svg.js" ></script>
+
+  
+
+
+
+
+
+  <script  src="https://cdn.jsdelivr.net/npm/mermaid@8.10.1/dist/mermaid.min.js" ></script>
+  <script>
+    if (window.mermaid) {
+      mermaid.initialize({"theme":"default"});
+    }
+  </script>
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+
+
+
+  
+<script src="/js/diy/yinghua.js"></script>
+<script src="/js/diy/click_show_text.js"></script>
+<script src="/js/diy/FunnyTitle.js"></script>
+<script src="/js/diy/lihua.js"></script>
+<script src="//cdn.jsdelivr.net/npm/aplayer/dist/APlayer.min.js"></script>
+<script src="//cdn.jsdelivr.net/gh/metowolf/Metingjs@1.2/dist/Meting.min.js"></script>
+
+
+
+<!-- 主题的启动项 保持在最底部 -->
+<script  src="/js/boot.js" ></script>
+
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script>
+  <link defer rel="stylesheet" href="/styles/backgroundize.css" />
+  <!-- hexo injector body_end end --><script src="/live2dw/lib/L2Dwidget.min.js?094cbace49a39548bed64abff5988b05"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618,"jsonPath":"/live2dw/assets/shizuku.model.json"},"display":{"superSample":2,"width":170,"height":297.5,"position":"lift","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.5},"react":{"opacityDefault":1,"opacityOnHover":0.5},"log":false});</script></body>
+</html>
